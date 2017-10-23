@@ -1,9 +1,9 @@
 app.module('objectMap', '#object-map', function() {
     this.ymapsInit = ymaps.ready(function() {
         this.map = new ymaps.Map('object-map', {
-            center: ['55.72929000', '37.64993000'],
+            center: [55.72929000, 37.64993000],
             controls: [],
-            zoom: 9
+            zoom: 10
         });
 
         var obj = this;
@@ -32,7 +32,7 @@ app.module('objectMap', '#object-map', function() {
         });
 
         this.balloonLayout = ymaps.templateLayoutFactory.createClass(
-            '<div class="yandex-balloon"><div class="yandex-balloon__inner">$[[options.contentLayout observeSize minWidth=180 maxWidth=180 minHeight=92 maxHeight=92]]</div></div>',
+            '<div class="yandex-balloon">$[[options.contentLayout observeSize minWidth=180 maxWidth=300 minHeight=92 maxHeight=200]]</div>',
             {
                 build: function() {
                     this.constructor.superclass.build.call(this);
@@ -99,8 +99,7 @@ app.module('objectMap', '#object-map', function() {
                         iconImageOffset: [-18, -47]
                     };
                     newPath = 'largeIconPath';
-                }
-                else if (newZoom < obj.changeZoom && prevZoom >= obj.changeZoom) {
+                } else if (newZoom < obj.changeZoom && prevZoom >= obj.changeZoom) {
                     newOptions = {
                         iconImageSize: app.mapOptions.defaultIconOptions.iconImageSize,
                         iconImageOffset: app.mapOptions.defaultIconOptions.iconImageOffset

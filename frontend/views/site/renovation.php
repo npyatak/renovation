@@ -13,8 +13,8 @@ $this->title = 'Реновация';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<?php $this->registerJsFile('/js/map-options.js', ['depends' => [\yii\web\JqueryAsset::className()]]);?>
-<?php $this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;onload=app.houseMap.ymapsInit');?>
+<?php $this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;onload=app.objectMap.ymapsInit');?>
+<?php $this->registerJsFile('/js/map.js', ['depends' => [\yii\web\JqueryAsset::className()]]);?>
 
 <?=$page->text;?>
 
@@ -62,52 +62,35 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php Pjax::end(); ?>
 
 <?php $pm = [];
-if($houses):?>
-    <?php foreach ($houses as $obj):?>
-        <?php /* Содержимое балунов. Тут надо использовать по минимуму html потому что этих объектов больше 5 тысяч*/ ?>
-        <div id="obj_<?=$obj['id'];?>" style="display: none">
-            <p><?=$regionArr[$obj['region_id']];?></p>
-            <p><?=$districtsArr[$obj['district_id']];?></p>
-            <p><?=$obj['address'];?></p>
-        </div>
+if($houses) {
+    foreach ($houses as $obj) {
+        /* Содержимое балунов. Тут надо использовать по минимуму html потому что этих объектов больше 5 тысяч*/
+        $content = '<div id="obj_'.$obj['id'].'" class="bln"><p>'.$districtsArr[$obj['district_id']].'</p><p>'.$regionArr[$obj['region_id']].'</p><p>'.$obj['address'].'</p></div>';
 
-        <?php $pm[] = "{
+        $pm[] = "{
             coords: [".$obj['lat'].", ".$obj['lng']."],
-            type: 'type_house',
-            content: document.getElementById('obj_".$obj['id']."').innerHTML
-        }";?>
-    <?php endforeach;?>
+            type: 'H',
+            content: '".$content."'
+        }";
+    }
+} elseif($startPlaces) {
+    foreach ($startPlaces as $obj) {
+        $content = '<div id="obj_'.$obj['id'].'" class="bln"><p>'.$districtsArr[$obj['district_id']].'</p><p>'.$regionArr[$obj['region_id']].'</p><p>'.$obj['address'].'</p></div>';
 
-    <script>
-        window.mapsImagesPath = '/images/';
-        window.objectPlacemarks = [
-            <?=implode(',', $pm);?>
-        ];
-    </script>
-
-<?php elseif($startPlaces):?>
-    <?php foreach ($startPlaces as $obj):?>
-        <?php /* Содержимое балунов. Тут надо использовать по минимуму html потому что этих объектов больше 5 тысяч*/ ?>
-        <div id="obj_<?=$obj['id'];?>" style="display: none">
-            <p><?=$regionArr[$obj['region_id']];?></p>
-            <p><?=$districtsArr[$obj['district_id']];?></p>
-            <p><?=$obj['address'];?></p>
-        </div>
-
-        <?php $pm[] = "{
+        $pm[] = "{
             coords: [".$obj['lat'].", ".$obj['lng']."],
-            type: 'type_start_place',
-            content: document.getElementById('obj_".$obj['id']."').innerHTML
-        }";?>
-    <?php endforeach;?>
+            type: 'SP',
+            content: '".$content."'
+        }";
+    }
+} ?>
 
-    <script>
-        window.mapsImagesPath = '/images/';
-        window.objectPlacemarks = [
-            <?=implode(',', $pm);?>
-        ];
-    </script>
-<?php endif;?>
+<script>
+    window.mapsImagesPath = '/images/';
+    window.objectPlacemarks = [
+        <?=implode(',', $pm);?>
+    ];
+</script>
 
 <?php 
 $script = $this->render('_map-script');

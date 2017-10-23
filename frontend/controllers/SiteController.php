@@ -61,6 +61,7 @@ class SiteController extends Controller
 
             $houses = House::find()
                 ->select(['id', 'address', 'lat', 'lng', 'district_id', 'region_id'])
+                ->where(['not', ['lat' => null]])->andWhere(['not', ['lng' => null]])
                 ->asArray()
                 ->all();
         } else {
@@ -73,6 +74,7 @@ class SiteController extends Controller
 
             $houses = StartPlaceSearch::find()
                 ->select(['id', 'address', 'new_address', 'lat', 'lng', 'district_id', 'region_id'])
+                ->where(['not', ['lat' => null]])->andWhere(['not', ['lng' => null]])
                 ->asArray()
                 ->all();
         }

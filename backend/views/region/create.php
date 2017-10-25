@@ -6,7 +6,7 @@ $this->title = 'Добавить регион';
 $this->params['breadcrumbs'][] = ['label' => 'Регионы', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="district-create">
+<div class="gallery-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

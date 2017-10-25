@@ -44,6 +44,7 @@ AppAsset::register($this);
         ]],
         ['label' => 'Хрущевки VS новые дома', 'url' => ['/compare']],
         ['label' => 'Страницы', 'url' => ['/page']],
+        ['label' => 'Галереи', 'url' => ['/gallery']],
         ['label' => 'Сторонний код', 'url' => ['/code']],
     ];
     if (Yii::$app->user->isGuest) {

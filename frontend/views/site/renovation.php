@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <?php $this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;onload=app.objectMap.ymapsInit');?>
-<?php $this->registerJsFile(Url::to('js/map.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);?>
+<?php $this->registerJsFile(Url::toRoute('js/map.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);?>
 <div class="renovation">
     <div class="container_inner top_block">
         <img class="tass_logo" src="<?=Url::to('images/tass_logo.png');?>"/>
@@ -66,7 +66,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             return $data->region->name;
                         },
                         'filter' => DepDrop::widget([
-                            'name' => '\yii\helpers\StringHelper::basename(get_class($searchModel))[region_id]',
+                            'name' => \yii\helpers\StringHelper::basename(get_class($searchModel)).'[region_id]',
                             'value' => $searchModel->attributes['region_id'],
                             'data' => [null => 'Выберите...'] + ($searchModel->attributes['district_id'] ? ArrayHelper::map(Region::find()->where(['district_id' => $searchModel->attributes['district_id']])->all(), 'id', 'name') : $regionArr),
                             'pluginOptions' => [

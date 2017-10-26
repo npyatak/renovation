@@ -14,10 +14,10 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <?php $this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;onload=app.objectMap.ymapsInit');?>
-<?php $this->registerJsFile('/js/map.js', ['depends' => [\yii\web\JqueryAsset::className()]]);?>
+<?php $this->registerJsFile(Url::to('js/map.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);?>
 <div class="renovation">
     <div class="container_inner top_block">
-        <img class="tass_logo" src="/frontend/web/images/tass_logo.png"/>
+        <img class="tass_logo" src="<?=Url::to('images/tass_logo.png');?>"/>
         <a class="go_front" href="/">На главную</a>
         <div class="social">
             <a class="fb" href="#"></a>
@@ -45,6 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <div class="" id="object-map" style="width: 100%; height: 500px;"></div>
+
     <div class="container_inner areas_table">
         <div class="title_table">Дома, включенные в программу реновации</div>
         <?php Pjax::begin(); ?>    
@@ -52,8 +53,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 'dataProvider' => $dataProvider,
                 'filterModel' => $searchModel,
                 'columns' => [
-                    ['class' => 'yii\grid\SerialColumn'],
-
                     [
                         'attribute' => 'district_id',
                         'value' => function($data) {

@@ -326,6 +326,7 @@
 		box-sizing: border-box;
 		height: 473px;
 		.slider_gallery {
+			padding-top: 36px;
 		}
 		.small {
 			color: #5b0c11;
@@ -333,24 +334,49 @@
 			font-weight: 300;
 		}
 		.slider_gallery_item {
+			height: 240px;
 			a {
 				font-size: 40px;
 				color: white;
+				font-weight: 300;
+				line-height: 50px;
+				text-decoration: none;
+				word-spacing: -3px;
 			}
 		}
 		.owl-dots {
+			padding-top: 17px;
 			span {
 				display: inline-block;
 				width: 10px;
 				height: 10px;
 				background: #5b0c11;
 				border-radius: 50%;
+				float: left;
+				margin-right: 40px;
 			}
 			.active {
 				span {
 					background: white;
 				}
 			}
+		}
+	}
+	.gallery_name {
+		background: #2e3346;
+		padding: 75px 56px;
+		padding-bottom: 89px;
+		.small {
+			font-size: 18px;
+			color: #a1a4ad;
+			font-weight: 300;
+		}
+		.text {
+			font-size: 40px;
+			color: white;
+			font-weight: 300;
+			line-height: 40px;
+			padding-top: 11px;
 		}
 	}
 }

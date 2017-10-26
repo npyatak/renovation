@@ -58,18 +58,18 @@ $this->title = 'Галерея';
 				<img src="/frontend/web/images/gallery/gallery_img_6.jpg"/>
 			</div>
 			<div class="grid_item">
-				<div class="gallery_name">
-					<div class="small">Галерея</div>
-					<div class="text">
-						Стартовые площадки 1 этапа реновации
-					</div>
-				</div>
-			</div>
-			<div class="grid_item">
 				<img src="/frontend/web/images/gallery/gallery_img_7.jpg"/>
 			</div>
 			<div class="grid_item">
 				<img src="/frontend/web/images/gallery/gallery_img_8.jpg"/>
+			</div>
+			<div class="grid_item">
+				<div class="gallery_name">
+					<div class="small">Карта</div>
+					<div class="text">
+						Стартовые площадки 1 этапа реновации
+					</div>
+				</div>
 			</div>
 			<div class="grid_item">
 				<img src="/frontend/web/images/gallery/gallery_img_9.jpg"/>
@@ -82,6 +82,20 @@ $this->title = 'Галерея';
 			</div>
 			<div class="grid_item">
 				<img src="/frontend/web/images/gallery/gallery_img_12.jpg"/>
+			</div>
+			<div class="grid_item">
+				<img src="/frontend/web/images/gallery/gallery_img_13.jpg"/>
+			</div>
+		</div>
+		<div class="popups_info">
+			<div class="popups_bg"></div>
+			<div class="gallert_popup" id="popup1">
+				<div class="popup_img">
+					<img src="/frontend/web/images/gallery/popup_img.jpg"/>				
+				</div>
+				<div class="popup_text">
+					В рамках программы реновации город берет на себя обязательства по благоустройству районов, в которых она будет проводится. Проведение инженерных коммуникаций, строительство новых детских садов, школ и дорог будет выполнено за счет бюджета.
+				</div>
 			</div>
 		</div>
 	</div>

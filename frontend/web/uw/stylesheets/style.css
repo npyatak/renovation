@@ -373,26 +373,64 @@
   box-sizing: border-box;
   height: 473px;
 }
-/* line 330, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
+.gallery .slider_gallery_wrap .slider_gallery {
+  padding-top: 36px;
+}
+/* line 331, ../sass/style.scss */
 .gallery .slider_gallery_wrap .small {
   color: #5b0c11;
   font-size: 18px;
   font-weight: 300;
 }
 /* line 336, ../sass/style.scss */
+.gallery .slider_gallery_wrap .slider_gallery_item {
+  height: 240px;
+}
+/* line 338, ../sass/style.scss */
 .gallery .slider_gallery_wrap .slider_gallery_item a {
   font-size: 40px;
   color: white;
+  font-weight: 300;
+  line-height: 50px;
+  text-decoration: none;
+  word-spacing: -3px;
 }
-/* line 342, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
+.gallery .slider_gallery_wrap .owl-dots {
+  padding-top: 17px;
+}
+/* line 349, ../sass/style.scss */
 .gallery .slider_gallery_wrap .owl-dots span {
   display: inline-block;
   width: 10px;
   height: 10px;
   background: #5b0c11;
   border-radius: 50%;
+  float: left;
+  margin-right: 40px;
 }
-/* line 350, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 .gallery .slider_gallery_wrap .owl-dots .active span {
   background: white;
+}
+/* line 365, ../sass/style.scss */
+.gallery .gallery_name {
+  background: #2e3346;
+  padding: 75px 56px;
+  padding-bottom: 89px;
+}
+/* line 369, ../sass/style.scss */
+.gallery .gallery_name .small {
+  font-size: 18px;
+  color: #a1a4ad;
+  font-weight: 300;
+}
+/* line 374, ../sass/style.scss */
+.gallery .gallery_name .text {
+  font-size: 40px;
+  color: white;
+  font-weight: 300;
+  line-height: 40px;
+  padding-top: 11px;
 }

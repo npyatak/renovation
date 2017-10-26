@@ -1,7 +1,0 @@
-AuthType Basic
-AuthName "/www/renovation.uw-t.com/webstat"
-AuthUserFile /var/www/uw/data/etc/113510165.passwd
-DirectoryIndex index.html
-<Limit GET POST>
-	require valid-user
-</Limit>

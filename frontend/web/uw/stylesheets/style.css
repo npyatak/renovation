@@ -1,0 +1,398 @@
+/* line 1, ../sass/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 4, ../sass/style.scss */
+.top_block {
+  padding-top: 51px;
+  text-align: center;
+}
+/* line 7, ../sass/style.scss */
+.top_block .tass_logo {
+  float: left;
+}
+/* line 10, ../sass/style.scss */
+.top_block .social {
+  float: right;
+  padding-top: 33px;
+  padding-right: 4px;
+}
+/* line 14, ../sass/style.scss */
+.top_block .social .fb {
+  display: inline-block;
+  background: url("../../images/fb_ico.png") center bottom no-repeat;
+  width: 20px;
+  height: 20px;
+}
+/* line 20, ../sass/style.scss */
+.top_block .social .vk {
+  display: inline-block;
+  background: url("../../images/vk_ico.png") center bottom no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 31px;
+}
+/* line 28, ../sass/style.scss */
+.top_block .go_front {
+  border: 1px solid #a1a4ad;
+  color: #010211;
+  position: relative;
+  top: 29px;
+  line-height: 38px;
+  display: inline-block;
+  padding: 0px 42px;
+  position: relative;
+}
+/* line 37, ../sass/style.scss */
+.top_block .go_front:before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 13px;
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  background: url("../../images/arrow_left_ico.png") center bottom no-repeat;
+}
+
+/* line 49, ../sass/style.scss */
+.container_inner {
+  width: 934px;
+  margin: 0 auto;
+}
+
+/* line 53, ../sass/style.scss */
+.wrap {
+  background: #eeeff1;
+}
+
+/* line 56, ../sass/style.scss */
+.compare {
+  color: #010211;
+}
+/* line 59, ../sass/style.scss */
+.compare h1 {
+  text-align: center;
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: bold;
+  color: #010211;
+  text-transform: uppercase;
+  margin-top: 73px;
+  margin-bottom: 19px;
+  line-height: 39px;
+}
+/* line 71, ../sass/style.scss */
+.compare .items_wrap .item {
+  padding-bottom: 36px;
+}
+/* line 73, ../sass/style.scss */
+.compare .items_wrap .item .item_title {
+  font-size: 30px;
+  font-family: "Proxima Nova";
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 80, ../sass/style.scss */
+.compare .items_wrap .item .item_img_logo {
+  padding-top: 12px;
+  text-align: center;
+  padding-bottom: 26px;
+}
+/* line 85, ../sass/style.scss */
+.compare .items_wrap .item .two_part {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 88, ../sass/style.scss */
+.compare .items_wrap .item .two_part .item_img {
+  position: relative;
+}
+/* line 90, ../sass/style.scss */
+.compare .items_wrap .item .two_part .item_img.item_img_padding {
+  padding-top: 35px;
+}
+/* line 93, ../sass/style.scss */
+.compare .items_wrap .item .two_part .item_img .read_more {
+  background: url("../../images/read_more_ico.jpg");
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+}
+/* line 103, ../sass/style.scss */
+.compare .items_wrap .item .two_part .item_img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+/* line 110, ../sass/style.scss */
+.compare .items_wrap .item .two_part .item_part {
+  width: calc(50% - 21px);
+  border-top: 2px solid #2e3346;
+  padding-bottom: 35px;
+  background: white;
+}
+/* line 115, ../sass/style.scss */
+.compare .items_wrap .item .two_part .item_part p {
+  padding: 0px 32px;
+  font-size: 18px;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  padding-top: 27px;
+  line-height: 30px;
+  padding-right: 20px;
+  margin-bottom: 0px;
+}
+
+/* line 130, ../sass/style.scss */
+.renovation {
+  color: #010211;
+}
+/* line 133, ../sass/style.scss */
+.renovation h1 {
+  text-align: center;
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: bold;
+  color: #010211;
+  text-transform: uppercase;
+  margin-top: 73px;
+  margin-bottom: 19px;
+  line-height: 39px;
+}
+/* line 144, ../sass/style.scss */
+.renovation .top_text {
+  font-size: 18px;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  padding-top: 42px;
+  line-height: 30px;
+}
+/* line 151, ../sass/style.scss */
+.renovation .select_area {
+  font-size: 15px;
+  padding-top: 51px;
+}
+/* line 154, ../sass/style.scss */
+.renovation .select_area a {
+  font-size: 15px;
+  border-radius: 0px;
+  line-height: 39px;
+  padding: 0px 18px;
+  margin-left: 16px;
+}
+/* line 160, ../sass/style.scss */
+.renovation .select_area a.include {
+  color: white;
+  background: #003878;
+  border: 1px solid #003878;
+}
+/* line 165, ../sass/style.scss */
+.renovation .select_area a.start {
+  border: 1px solid #c19f63;
+  background: none;
+  color: #010211;
+}
+/* line 173, ../sass/style.scss */
+.renovation #object-map {
+  margin-top: 19px;
+}
+/* line 176, ../sass/style.scss */
+.renovation .areas_table {
+  font-family: "Proxima Nova";
+}
+/* line 178, ../sass/style.scss */
+.renovation .areas_table .title_table {
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: 300;
+  padding-top: 58px;
+  padding-bottom: 23px;
+}
+/* line 185, ../sass/style.scss */
+.renovation .areas_table .summary {
+  display: none;
+}
+/* line 188, ../sass/style.scss */
+.renovation .areas_table table {
+  border: 1px solid #eeeff1;
+}
+/* line 191, ../sass/style.scss */
+.renovation .areas_table table thead th {
+  background: #003878;
+  color: white;
+  padding: 17px 23px;
+}
+/* line 195, ../sass/style.scss */
+.renovation .areas_table table thead th:nth-child(2) {
+  min-width: 130px;
+}
+/* line 198, ../sass/style.scss */
+.renovation .areas_table table thead th a {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+/* line 202, ../sass/style.scss */
+.renovation .areas_table table thead th a:after {
+  background: url("../../images/table_sort.png");
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 11px;
+}
+/* line 212, ../sass/style.scss */
+.renovation .areas_table table thead td {
+  padding: 0px;
+}
+/* line 214, ../sass/style.scss */
+.renovation .areas_table table thead td input {
+  height: 60px;
+  border: 0px;
+  font-size: 18px;
+}
+/* line 219, ../sass/style.scss */
+.renovation .areas_table table thead td select {
+  height: 60px;
+  border: 0px;
+  font-size: 18px;
+  width: 100%;
+}
+/* line 227, ../sass/style.scss */
+.renovation .areas_table table th {
+  border: 1px solid #eeeff1;
+}
+/* line 233, ../sass/style.scss */
+.renovation .areas_table table tbody tr:nth-child(2n-1) td {
+  background: #b29d7e;
+}
+/* line 237, ../sass/style.scss */
+.renovation .areas_table table tbody tr td {
+  font-size: 18px;
+}
+/* line 242, ../sass/style.scss */
+.renovation .areas_table table td {
+  border: 1px solid #eeeff1;
+  padding: 17px 23px;
+  vertical-align: middle;
+}
+/* line 248, ../sass/style.scss */
+.renovation .areas_table .pagination {
+  width: 100%;
+  text-align: center;
+}
+/* line 251, ../sass/style.scss */
+.renovation .areas_table .pagination li {
+  margin: 0px 4px;
+  display: inline-block;
+}
+/* line 254, ../sass/style.scss */
+.renovation .areas_table .pagination li a {
+  font-size: 15px;
+  line-height: 38px;
+  width: 38px;
+  display: inline-block;
+  border: 1px solid #a1a4ad;
+  color: #010211;
+  padding: 0px;
+  text-align: center;
+}
+/* line 265, ../sass/style.scss */
+.renovation .areas_table .pagination li.active a {
+  color: white;
+  background: #2e3346;
+  border: 1px solid #2e3346;
+}
+/* line 272, ../sass/style.scss */
+.renovation .areas_table .pagination li.next a, .renovation .areas_table .pagination li.prev a {
+  border: 1px solid transparent;
+}
+/* line 275, ../sass/style.scss */
+.renovation .areas_table .pagination li.next span, .renovation .areas_table .pagination li.prev span {
+  border: 1px solid transparent;
+  line-height: 38px;
+  width: 38px;
+  text-align: center;
+  display: inline-block;
+  padding: 0px;
+}
+
+/* line 288, ../sass/style.scss */
+.grid_wrap {
+  margin-top: 62px;
+  background: white;
+  padding-top: 13px;
+}
+
+/* line 293, ../sass/style.scss */
+.gallery {
+  color: #010211;
+  font-family: "Proxima Nova";
+}
+/* line 296, ../sass/style.scss */
+.gallery h1 {
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: bold;
+  color: #010211;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 19px;
+  line-height: 50px;
+}
+/* line 306, ../sass/style.scss */
+.gallery .small_title {
+  color: #a1a4ad;
+  font-size: 18px;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  padding-top: 94px;
+}
+/* line 313, ../sass/style.scss */
+.gallery .grid_item {
+  width: 50%;
+  padding: 9px;
+}
+/* line 318, ../sass/style.scss */
+.gallery .grid_item img {
+  width: 100%;
+  height: auto;
+}
+/* line 323, ../sass/style.scss */
+.gallery .slider_gallery_wrap {
+  background: #c01a24;
+  padding: 58px 96px;
+  box-sizing: border-box;
+  height: 473px;
+}
+/* line 330, ../sass/style.scss */
+.gallery .slider_gallery_wrap .small {
+  color: #5b0c11;
+  font-size: 18px;
+  font-weight: 300;
+}
+/* line 336, ../sass/style.scss */
+.gallery .slider_gallery_wrap .slider_gallery_item a {
+  font-size: 40px;
+  color: white;
+}
+/* line 342, ../sass/style.scss */
+.gallery .slider_gallery_wrap .owl-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #5b0c11;
+  border-radius: 50%;
+}
+/* line 350, ../sass/style.scss */
+.gallery .slider_gallery_wrap .owl-dots .active span {
+  background: white;
+}

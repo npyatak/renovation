@@ -43,6 +43,7 @@ AppAsset::register($this);
             ['label' => 'Стартовые площадки', 'url' => ['/start-place']],
         ]],
         ['label' => 'Хрущевки VS новые дома', 'url' => ['/compare']],
+        ['label' => 'История реноваций', 'url' => ['/timeline-slide']],
         ['label' => 'Страницы', 'url' => ['/page']],
         ['label' => 'Галереи', 'url' => ['/gallery']],
         ['label' => 'Сторонний код', 'url' => ['/code']],

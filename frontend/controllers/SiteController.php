@@ -14,6 +14,7 @@ use common\models\search\StartPlaceSearch;
 use common\models\District;
 use common\models\Region;
 use common\models\Compare;
+use common\models\TimelineSlide;
 /**
  * Site controller
  */
@@ -105,7 +106,13 @@ class SiteController extends Controller
 
     public function actionTimeline()
     {
-        return $this->render('timeline');
+        $page = Page::find()->where(['url' => 'timeline'])->one();
+        $slides = TimelineSlide::find()->orderBy('number')->all();
+
+        return $this->render('timeline', [
+            'page' => $page,
+            'slides' => $slides,
+        ]);
     }
 
     public function actionLaw()

@@ -4,28 +4,60 @@
 }
 
 /* line 4, ../sass/style.scss */
+.header {
+  background: white;
+}
+/* line 6, ../sass/style.scss */
+.header .logo {
+  float: left;
+}
+/* line 9, ../sass/style.scss */
+.header ul {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+/* line 15, ../sass/style.scss */
+.header ul li {
+  line-height: 66px;
+}
+/* line 18, ../sass/style.scss */
+.header ul a {
+  font-family: "Proxima Nova";
+  color: #010211;
+  font-size: 15px;
+  font-weight: 300;
+}
+/* line 23, ../sass/style.scss */
+.header ul a.active {
+  color: #003878;
+}
+
+/* line 29, ../sass/style.scss */
 .top_block {
   padding-top: 51px;
   text-align: center;
 }
-/* line 7, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .top_block .tass_logo {
   float: left;
 }
-/* line 10, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .top_block .social {
   float: right;
   padding-top: 33px;
   padding-right: 4px;
 }
-/* line 14, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .top_block .social .fb {
   display: inline-block;
   background: url("../../images/fb_ico.png") center bottom no-repeat;
   width: 20px;
   height: 20px;
 }
-/* line 20, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .top_block .social .vk {
   display: inline-block;
   background: url("../../images/vk_ico.png") center bottom no-repeat;
@@ -33,7 +65,7 @@
   height: 20px;
   margin-left: 31px;
 }
-/* line 28, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .top_block .go_front {
   border: 1px solid #a1a4ad;
   color: #010211;
@@ -44,7 +76,7 @@
   padding: 0px 42px;
   position: relative;
 }
-/* line 37, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .top_block .go_front:before {
   content: '';
   display: block;
@@ -56,22 +88,22 @@
   background: url("../../images/arrow_left_ico.png") center bottom no-repeat;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .container_inner {
   width: 934px;
   margin: 0 auto;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .wrap {
   background: #eeeff1;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .compare {
   color: #010211;
 }
-/* line 59, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .compare h1 {
   text-align: center;
   font-family: "Proxima Nova";
@@ -83,11 +115,11 @@
   margin-bottom: 19px;
   line-height: 39px;
 }
-/* line 71, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .compare .items_wrap .item {
   padding-bottom: 36px;
 }
-/* line 73, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .compare .items_wrap .item .item_title {
   font-size: 30px;
   font-family: "Proxima Nova";
@@ -95,26 +127,26 @@
   text-transform: uppercase;
   text-align: center;
 }
-/* line 80, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .compare .items_wrap .item .item_img_logo {
   padding-top: 12px;
   text-align: center;
   padding-bottom: 26px;
 }
-/* line 85, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .compare .items_wrap .item .two_part {
   display: flex;
   justify-content: space-between;
 }
-/* line 88, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .compare .items_wrap .item .two_part .item_img {
   position: relative;
 }
-/* line 90, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .compare .items_wrap .item .two_part .item_img.item_img_padding {
   padding-top: 35px;
 }
-/* line 93, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .compare .items_wrap .item .two_part .item_img .read_more {
   background: url("../../images/read_more_ico.jpg");
   display: block;
@@ -125,21 +157,21 @@
   right: 18px;
   bottom: 18px;
 }
-/* line 103, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .compare .items_wrap .item .two_part .item_img img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
-/* line 110, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .compare .items_wrap .item .two_part .item_part {
   width: calc(50% - 21px);
   border-top: 2px solid #2e3346;
   padding-bottom: 35px;
   background: white;
 }
-/* line 115, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .compare .items_wrap .item .two_part .item_part p {
   padding: 0px 32px;
   font-size: 18px;
@@ -151,11 +183,11 @@
   margin-bottom: 0px;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .renovation {
   color: #010211;
 }
-/* line 133, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .renovation h1 {
   text-align: center;
   font-family: "Proxima Nova";
@@ -167,7 +199,7 @@
   margin-bottom: 19px;
   line-height: 39px;
 }
-/* line 144, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .renovation .top_text {
   font-size: 18px;
   font-family: "Proxima Nova";
@@ -175,12 +207,12 @@
   padding-top: 42px;
   line-height: 30px;
 }
-/* line 151, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .renovation .select_area {
   font-size: 15px;
   padding-top: 51px;
 }
-/* line 154, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .renovation .select_area a {
   font-size: 15px;
   border-radius: 0px;
@@ -188,27 +220,27 @@
   padding: 0px 18px;
   margin-left: 16px;
 }
-/* line 160, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .renovation .select_area a.include {
   color: white;
   background: #003878;
   border: 1px solid #003878;
 }
-/* line 165, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .renovation .select_area a.start {
   border: 1px solid #c19f63;
   background: none;
   color: #010211;
 }
-/* line 173, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .renovation #object-map {
   margin-top: 19px;
 }
-/* line 176, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .renovation .areas_table {
   font-family: "Proxima Nova";
 }
-/* line 178, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .renovation .areas_table .title_table {
   font-family: "Proxima Nova";
   font-size: 40px;
@@ -216,31 +248,31 @@
   padding-top: 58px;
   padding-bottom: 23px;
 }
-/* line 185, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .renovation .areas_table .summary {
   display: none;
 }
-/* line 188, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .renovation .areas_table table {
   border: 1px solid #eeeff1;
 }
-/* line 191, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .renovation .areas_table table thead th {
   background: #003878;
   color: white;
   padding: 17px 23px;
 }
-/* line 195, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .renovation .areas_table table thead th:nth-child(2) {
   min-width: 130px;
 }
-/* line 198, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .renovation .areas_table table thead th a {
   color: white;
   font-size: 18px;
   font-weight: 300;
 }
-/* line 202, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .renovation .areas_table table thead th a:after {
   background: url("../../images/table_sort.png");
   content: '';
@@ -249,52 +281,52 @@
   height: 8px;
   margin-left: 11px;
 }
-/* line 212, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .renovation .areas_table table thead td {
   padding: 0px;
 }
-/* line 214, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .renovation .areas_table table thead td input {
   height: 60px;
   border: 0px;
   font-size: 18px;
 }
-/* line 219, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 .renovation .areas_table table thead td select {
   height: 60px;
   border: 0px;
   font-size: 18px;
   width: 100%;
 }
-/* line 227, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 .renovation .areas_table table th {
   border: 1px solid #eeeff1;
 }
-/* line 233, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .renovation .areas_table table tbody tr:nth-child(2n-1) td {
   background: #b29d7e;
 }
-/* line 237, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 .renovation .areas_table table tbody tr td {
   font-size: 18px;
 }
-/* line 242, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .renovation .areas_table table td {
   border: 1px solid #eeeff1;
   padding: 17px 23px;
   vertical-align: middle;
 }
-/* line 248, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .renovation .areas_table .pagination {
   width: 100%;
   text-align: center;
 }
-/* line 251, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 .renovation .areas_table .pagination li {
   margin: 0px 4px;
   display: inline-block;
 }
-/* line 254, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .renovation .areas_table .pagination li a {
   font-size: 15px;
   line-height: 38px;
@@ -305,17 +337,17 @@
   padding: 0px;
   text-align: center;
 }
-/* line 265, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .renovation .areas_table .pagination li.active a {
   color: white;
   background: #2e3346;
   border: 1px solid #2e3346;
 }
-/* line 272, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .renovation .areas_table .pagination li.next a, .renovation .areas_table .pagination li.prev a {
   border: 1px solid transparent;
 }
-/* line 275, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .renovation .areas_table .pagination li.next span, .renovation .areas_table .pagination li.prev span {
   border: 1px solid transparent;
   line-height: 38px;
@@ -325,19 +357,19 @@
   padding: 0px;
 }
 
-/* line 288, ../sass/style.scss */
+/* line 313, ../sass/style.scss */
 .grid_wrap {
   margin-top: 62px;
   background: white;
   padding-top: 13px;
 }
 
-/* line 293, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .gallery {
   color: #010211;
   font-family: "Proxima Nova";
 }
-/* line 296, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 .gallery h1 {
   font-family: "Proxima Nova";
   font-size: 40px;
@@ -348,7 +380,7 @@
   margin-bottom: 19px;
   line-height: 50px;
 }
-/* line 306, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 .gallery .small_title {
   color: #a1a4ad;
   font-size: 18px;
@@ -356,38 +388,38 @@
   font-weight: 300;
   padding-top: 94px;
 }
-/* line 313, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 .gallery .grid_item {
   width: 50%;
   padding: 9px;
 }
-/* line 318, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .gallery .grid_item img {
   width: 100%;
   height: auto;
 }
-/* line 323, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .gallery .slider_gallery_wrap {
   background: #c01a24;
   padding: 58px 96px;
   box-sizing: border-box;
   height: 473px;
 }
-/* line 328, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .gallery .slider_gallery_wrap .slider_gallery {
   padding-top: 36px;
 }
-/* line 331, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .gallery .slider_gallery_wrap .small {
   color: #5b0c11;
   font-size: 18px;
   font-weight: 300;
 }
-/* line 336, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 .gallery .slider_gallery_wrap .slider_gallery_item {
   height: 240px;
 }
-/* line 338, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 .gallery .slider_gallery_wrap .slider_gallery_item a {
   font-size: 40px;
   color: white;
@@ -396,11 +428,11 @@
   text-decoration: none;
   word-spacing: -3px;
 }
-/* line 347, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 .gallery .slider_gallery_wrap .owl-dots {
   padding-top: 17px;
 }
-/* line 349, ../sass/style.scss */
+/* line 374, ../sass/style.scss */
 .gallery .slider_gallery_wrap .owl-dots span {
   display: inline-block;
   width: 10px;
@@ -410,27 +442,169 @@
   float: left;
   margin-right: 40px;
 }
-/* line 359, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .gallery .slider_gallery_wrap .owl-dots .active span {
   background: white;
 }
-/* line 365, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .gallery .gallery_name {
   background: #2e3346;
   padding: 75px 56px;
   padding-bottom: 89px;
 }
-/* line 369, ../sass/style.scss */
+/* line 394, ../sass/style.scss */
 .gallery .gallery_name .small {
   font-size: 18px;
   color: #a1a4ad;
   font-weight: 300;
 }
-/* line 374, ../sass/style.scss */
+/* line 399, ../sass/style.scss */
 .gallery .gallery_name .text {
   font-size: 40px;
   color: white;
   font-weight: 300;
   line-height: 40px;
   padding-top: 11px;
+}
+
+/* line 408, ../sass/style.scss */
+#cboxContent {
+  background: none;
+}
+
+/* line 411, ../sass/style.scss */
+#cboxLoadedContent {
+  background: none;
+}
+
+/* line 414, ../sass/style.scss */
+#cboxTitle {
+  display: none;
+}
+
+/* line 418, ../sass/style.scss */
+.gallery_popup img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 422, ../sass/style.scss */
+.gallery_popup .popup_text {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  padding-top: 46px;
+}
+/* line 429, ../sass/style.scss */
+.gallery_popup .close {
+  float: none;
+  padding-top: 20px;
+  opacity: 1;
+}
+/* line 433, ../sass/style.scss */
+.gallery_popup .close img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 441, ../sass/style.scss */
+#cboxOverlay {
+  background: #2e3346;
+  opacity: 0.9;
+}
+
+/* line 445, ../sass/style.scss */
+.popups_info {
+  display: none;
+}
+
+/* line 448, ../sass/style.scss */
+.gallery_inline {
+  position: relative;
+  display: block;
+}
+/* line 451, ../sass/style.scss */
+.gallery_inline:before {
+  content: '';
+  display: none;
+  background: rgba(0, 56, 120, 0.4) url("../../images/gallery_open.svg") center no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 460, ../sass/style.scss */
+.gallery_inline:hover:before {
+  display: block;
+}
+
+/* line 467, ../sass/style.scss */
+.bottom_gallery {
+  padding-top: 122px;
+}
+/* line 469, ../sass/style.scss */
+.bottom_gallery .title_bottom_gallery {
+  font-size: 15px;
+  color: #000108;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  text-align: center;
+  padding: 0px 10px;
+  padding-bottom: 29px;
+}
+/* line 478, ../sass/style.scss */
+.bottom_gallery .bottom_gallery_img {
+  position: relative;
+}
+/* line 480, ../sass/style.scss */
+.bottom_gallery .bottom_gallery_img .bottom_gallery_video {
+  display: block;
+}
+/* line 482, ../sass/style.scss */
+.bottom_gallery .bottom_gallery_img .bottom_gallery_video img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 487, ../sass/style.scss */
+.bottom_gallery .bottom_gallery_img .bottom_gallery_video:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 56, 120, 0.4) url("../../images/gallery_bottom_play.png") center no-repeat;
+}
+/* line 495, ../sass/style.scss */
+.bottom_gallery .bottom_gallery_img iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/* line 506, ../sass/style.scss */
+.footer {
+  background: url("../../images/footer_img.jpg") center no-repeat;
+  background-size: cover;
+}
+/* line 509, ../sass/style.scss */
+.footer .text_wrap {
+  text-align: center;
+  max-width: 684px;
+  margin: 0 auto;
+  padding-top: 36px;
+  line-height: 17px;
+  padding-bottom: 5px;
+}
+/* line 516, ../sass/style.scss */
+.footer .text_wrap p {
+  font-size: 14px;
+  color: white;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  margin-bottom: 0px;
+  padding-bottom: 34px;
 }

@@ -18,7 +18,7 @@ $this->title = 'Галерея';
 	<div class="grid_wrap">
 		<div class="grid">
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_1.jpg"/>
+				<a href="#popup1" class="gallery_inline"><img src="/frontend/web/images/gallery/gallery_img_1.jpg"/></a>
 			</div>
 			<div class="grid_item">
 				<div class="slider_gallery_wrap">
@@ -88,14 +88,15 @@ $this->title = 'Галерея';
 			</div>
 		</div>
 		<div class="popups_info">
-			<div class="popups_bg"></div>
-			<div class="gallert_popup" id="popup1">
+			<!-- <div class="popups_bg"></div>-->
+			<div class="gallery_popup" id="popup1">
 				<div class="popup_img">
 					<img src="/frontend/web/images/gallery/popup_img.jpg"/>				
 				</div>
 				<div class="popup_text">
 					В рамках программы реновации город берет на себя обязательства по благоустройству районов, в которых она будет проводится. Проведение инженерных коммуникаций, строительство новых детских садов, школ и дорог будет выполнено за счет бюджета.
 				</div>
+				<div class="close"><img src="/frontend/web/images/gallery_close.svg"/></div>
 			</div>
 		</div>
 	</div>

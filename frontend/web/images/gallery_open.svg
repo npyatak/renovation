@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 134 134" enable-background="new 0 0 134 134" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M67,134c-37,0-67-30-67-67S30,0,67,0s67,30,67,67S104,134,67,134z M67,133c36.4,0,66-29.6,66-66
+			S103.4,1,67,1S1,30.6,1,67S30.6,133,67,133"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" width="134" height="134"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<image overflow="visible" clip-path="url(#SVGID_4_)" width="134" height="134" xlink:href="8E1F225C.jpg" >
+		</image>
+	</g>
+</g>
+<g>
+	<path fill="#E1C6A9" d="M67,40c-14.9,0-27,12.1-27,27s12.1,27,27,27s27-12.1,27-27S81.9,40,67,40z M73.5,67.8H67v6.9h-1.9v-6.9
+		h-6.5v-1.7h6.5v-6.8H67v6.8h6.5V67.8z"/>
+</g>
+</svg>

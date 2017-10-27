@@ -15,6 +15,31 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php $this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;onload=app.objectMap.ymapsInit');?>
 <?php $this->registerJsFile(Url::toRoute('js/map.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);?>
+<div class="header">
+    <img class="logo" src="/frontend/web/images/logo.png" />
+    <div class="container_inner">
+        <ul class="menu">
+            <li>
+                <a href="#">Закон о реновациях</a>
+            </li>
+            <li>
+                <a class="active" href="#">Карта</a>
+            </li>
+            <li>
+                <a href="#">Даты реализации</a>
+            </li>
+            <li>
+                <a href="#">Герои</a>
+            </li> 
+            <li>
+                <a href="#">История реноваций</a>
+            </li>
+            <li>
+                <a href="#">Хрущевки VS новые дома</a>
+            </li>
+        </ul>
+    </div>
+</div>
 <div class="renovation">
     <div class="container_inner top_block">
         <img class="tass_logo" src="<?=Url::to('images/tass_logo.png');?>"/>
@@ -117,4 +142,24 @@ $this->params['breadcrumbs'][] = $this->title;
     $script = $this->render('_map-script');
     $this->registerJs($script, yii\web\View::POS_END);
     ?>
+</div>
+<div class="bottom_gallery">
+    <div class="title_bottom_gallery">Социальные обязательства: детские площадки, садики, школы и поликлиники</div>
+    <div class="bottom_gallery_img">
+        <a href="#" class="bottom_gallery_video"><img src="/frontend/web/images/footer_gallery_img.jpg"/></a>
+        <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<div class="footer">
+    <div class="text_wrap">
+        <p>
+            ТАСС информационное агентство(св-во о регистрации СМИ №03247 выдано 02 апреля 1999 г. Государственным комитетом Российской Федерации по печати)<br/>
+            Отдельные публикации могут содержать информацию, не предназначенную для пользователей до 16 лет.
+        </p>
+
+        <p>
+            Подробнее на ТАСС:<br/>
+            http://tass.ru/
+        </p>
+    </div>
 </div>

@@ -1,6 +1,31 @@
 .clear {
 	clear: both;
 }
+.header {
+	background: white;
+	.logo {
+		float: left;
+	}
+	ul {
+		padding: 0px;
+		margin: 0px;
+		display: flex;
+		list-style: none;
+		justify-content: space-between;
+		li {
+			line-height: 66px;
+		}
+		a {
+			font-family: "Proxima Nova";
+			color: #010211;
+			font-size: 15px;
+			font-weight: 300;
+			&.active {
+				color: #003878;
+			}
+		}
+	}
+}
 .top_block {
 	padding-top: 51px;
 	text-align: center;
@@ -377,6 +402,124 @@
 			font-weight: 300;
 			line-height: 40px;
 			padding-top: 11px;
+		}
+	}
+}
+#cboxContent {
+	background: none;
+}
+#cboxLoadedContent {
+	background: none;
+}
+#cboxTitle {
+	display: none;
+}
+.gallery_popup {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.popup_text {
+		font-size: 30px;
+		color: #ffffff;
+		font-family: "Proxima Nova";
+		font-weight: 300;
+		padding-top: 46px;
+	}
+	.close {
+		float: none;
+		padding-top: 20px;
+		opacity: 1;
+		img {
+			width: 150px;
+			height: 150px;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+}
+#cboxOverlay {
+	background: #2e3346;
+	opacity: 0.9;
+}
+.popups_info {
+	display: none;
+}
+.gallery_inline {
+	position: relative;
+	display: block;
+	&:before {
+		content: '';
+		display: none;
+		background: rgba(0, 56, 120, 0.4) url('../../images/gallery_open.svg') center no-repeat;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	&:hover {
+		&:before {
+			display: block;
+		}
+	}
+	
+}
+
+.bottom_gallery {
+	padding-top: 122px;
+	.title_bottom_gallery {
+		font-size: 15px;
+		color: #000108;
+		font-family: "Proxima Nova";
+		font-weight: 300;
+		text-align: center;
+		padding: 0px 10px;
+		padding-bottom: 29px;
+	}
+	.bottom_gallery_img {
+		position: relative;
+		.bottom_gallery_video {
+			display: block;
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 56, 120, 0.4) url('../../images/gallery_bottom_play.png') center no-repeat;
+			}
+		}
+		iframe {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%; 
+			display: none;
+		}
+	}
+}
+
+.footer {
+	background: url('../../images/footer_img.jpg') center no-repeat;
+	background-size: cover;
+	.text_wrap {
+		text-align: center;
+	    max-width: 684px;
+	    margin: 0 auto;
+	    padding-top: 36px;
+	    line-height: 17px;
+	    padding-bottom: 5px;
+		p {
+			font-size: 14px;
+			color: white;
+			font-family: "Proxima Nova";
+			font-weight: 300;
+			margin-bottom: 0px;
+			padding-bottom: 34px;
 		}
 	}
 }

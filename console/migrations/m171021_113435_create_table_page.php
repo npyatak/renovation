@@ -27,14 +27,8 @@ class m171021_113435_create_table_page extends Migration
         ], $tableOptions);
 
         $this->batchInsert('{{%page}}', ['url', 'title', 'is_page', 'text', 'created_at', 'updated_at'],  [
-            [
-                'renovation',
-                'Реновация',
-                0,
-                'текст по реновации. в админке /page/update/1',
-                time(),
-                time()
-            ]
+            ['renovation', 'Реновация', 0, 'текст по реновации. в админке /page/update/1', time(), time()],
+            ['timeline', 'Даты реализации проекта по реновации. Таймлайн.', 0, 'Какой-то текст. admin - page/2', time(), time()],
         ]);
     }
 

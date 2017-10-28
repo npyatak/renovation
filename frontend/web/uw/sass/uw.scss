@@ -1,0 +1,196 @@
+.clear {
+	clear: both;
+}
+
+.top_block {
+	padding-top: 51px;
+	text-align: center;
+	position: relative;
+	min-height: 113px;
+	.tass_logo {
+		float: left;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	&.white {
+		.social {
+			a {
+				color: white;
+			}
+		}
+		.go_front {
+			color: #a1a4ad;
+			border: 1px solid #a1a4ad;
+		}
+	}
+	.social {
+		float: right;
+    	position: absolute;
+    	right: 2px;
+    	top: 36px;
+		a {
+			margin-left: 38px;
+			color: #003878;
+			font-size: 17px;
+			transition: all 0.3s linear;
+			&:nth-child(1) {
+				margin-left: 0px;
+			}
+			&:hover {
+				color: #E1C6A9;
+			}
+		}
+		@media screen and (max-width: 999px) {
+			float: right;
+		    position: absolute;
+		    right: 29px;
+		    top: 34px;
+		    text-align: right;
+		    width: 119px;
+		    a {
+		    	display: inline-block;
+		    	margin-bottom: 27px;
+		    }
+		}
+	}
+	.go_front {
+		border: 1px solid #a1a4ad;
+	    color: #010211;
+	    position: relative;
+	    top: 29px;
+	    line-height: 38px;
+	    display: inline-block;
+	    padding: 0px 42px;
+	    position: relative;
+	    i {
+			margin-right: 10px;
+			position: relative;
+			top: 2px;
+			font-size: 22px;
+	    }
+	}
+}
+.container_inner {
+	width: 934px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	@media screen and (max-width: 933px) {
+		width: 100%;
+	}
+
+}
+.wrap {
+	background: #eeeff1;
+}
+
+
+.grid_wrap {
+    margin-top: 62px;
+    background: white;
+    padding-top: 13px;
+}
+
+#cboxContent {
+	background: none;
+}
+#cboxLoadedContent {
+	background: none;
+}
+#cboxTitle {
+	display: none;
+}
+.gallery_popup {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.popup_text {
+		font-size: 30px;
+		color: #ffffff;
+		font-family: "Proxima Nova";
+		font-weight: 300;
+		padding-top: 46px;
+	}
+	.close {
+		float: none;
+		padding-top: 20px;
+		opacity: 1;
+		img {
+			width: 150px;
+			height: 150px;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+}
+#cboxOverlay {
+	background: #2e3346;
+	opacity: 0.9;
+}
+.popups_info {
+	display: none;
+}
+
+
+.bottom_gallery {
+	padding-top: 122px;
+	.title_bottom_gallery {
+		font-size: 15px;
+		color: #000108;
+		font-family: "Proxima Nova";
+		font-weight: 300;
+		text-align: center;
+		padding: 0px 10px;
+		padding-bottom: 29px;
+	}
+	.bottom_gallery_img {
+		position: relative;
+		.bottom_gallery_video {
+			display: block;
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 56, 120, 0.4) url('../../images/gallery_bottom_play.png') center no-repeat;
+			}
+		}
+		iframe {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%; 
+			display: none;
+		}
+	}
+}
+
+.blue_top_bg {
+	position: relative;
+	&:before {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-size: 100% auto;
+		display: block;
+		content: '';
+		background: url('../../images/blue_top_bg.png') center top no-repeat;
+	}
+}
+
+#object-map {
+	position: relative;
+	z-index: 1;
+}
+
+.white_text {
+	color: white!important;
+}

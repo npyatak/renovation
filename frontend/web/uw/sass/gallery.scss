@@ -1,0 +1,144 @@
+.gallery {
+	color: #010211;
+	font-family: "Proxima Nova";
+	h1 {
+		font-family: "Proxima Nova";
+	    font-size: 40px;
+	    font-weight: bold;
+	    color: #010211;
+	    text-transform: uppercase;
+	    margin-top: 5px;
+	    margin-bottom: 19px;
+	    line-height: 50px;
+	    @media screen and (max-width: 1000px) {
+			font-size: 30px;
+			padding-left: 10px;
+			padding-right: 10px;
+			line-height: 40px;
+		}
+	}
+	.small_title {
+		color: #a1a4ad;
+		font-size: 18px;
+		font-family: "Proxima Nova";
+		font-weight: 300;
+		padding-top: 94px;
+		@media screen and (max-width: 1000px) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	.grid_item {
+		//width: 50%;
+		width: 50%;
+		  padding: 9px;
+		  //float: left;
+		@media screen and (max-width: 999px) {
+			width: 100%;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.slider_gallery_wrap {
+		background: #c01a24;
+		padding: 58px 96px;
+		box-sizing: border-box;
+		height: 473px;
+		@media screen and (max-width: 1000px) {
+			height: auto;
+		}
+		@media screen and (max-width: 1200px) {
+			padding: 50px;
+		}
+		.slider_gallery {
+			padding-top: 36px;
+		}
+		.small {
+			color: #5b0c11;
+			font-size: 18px;
+			font-weight: 300;
+		}
+		.slider_gallery_item {
+			height: 240px;
+			@media screen and (max-width: 1000px) {
+				height: auto;
+			}
+			a {
+				font-size: 40px;
+				color: white;
+				font-weight: 300;
+				line-height: 50px;
+				text-decoration: none;
+				word-spacing: -3px;
+				@media screen and (max-width: 767px) {
+					font-size: 30px;
+					line-height: 40px;
+				}
+			}
+		}
+		.owl-dots {
+			padding-top: 17px;
+			span {
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				background: #5b0c11;
+				border-radius: 50%;
+				float: left;
+				margin-right: 40px;
+			}
+			.active {
+				span {
+					background: white;
+				}
+			}
+		}
+	}
+	.gallery_name {
+		background: #2e3346;
+		padding: 75px 56px;
+		padding-bottom: 89px;
+		@media screen and (max-width: 1200px) {
+			padding: 50px;
+		}
+		.small {
+			font-size: 18px;
+			color: #a1a4ad;
+			font-weight: 300;
+		}
+		.text {
+			font-size: 40px;
+			color: white;
+			font-weight: 300;
+			line-height: 40px;
+			padding-top: 11px;
+			@media screen and (max-width: 1200px) {
+				font-size: 35px;
+			}
+			@media screen and (max-width: 767px) {
+				font-size: 30px;
+				line-height: 40px;
+			}
+		}
+	}
+	.gallery_inline {
+		position: relative;
+		display: block;
+		&:before {
+			content: '';
+			display: none;
+			background: rgba(0, 56, 120, 0.4) url('../../images/gallery_open.svg') center no-repeat;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			&:before {
+				display: block;
+			}
+		}
+		
+	}
+}

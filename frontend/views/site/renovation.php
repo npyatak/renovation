@@ -18,6 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="header">
     <img class="logo" src="/frontend/web/images/logo.png" />
     <div class="container_inner">
+        <a class="map_link" href="#">Карта</a>
         <ul class="menu">
             <li>
                 <a href="#">Закон о реновациях</a>
@@ -38,20 +39,26 @@ $this->params['breadcrumbs'][] = $this->title;
                 <a href="#">Хрущевки VS новые дома</a>
             </li>
         </ul>
+        <div class="menu-btn">
+            <div class="open-menu-btn show"><span></span><span></span><span></span></div>
+            <div class="close-menu__btn"><span></span><span></span></div>
+        </div>
     </div>
 </div>
-<div class="renovation">
-    <div class="container_inner top_block">
-        <img class="tass_logo" src="<?=Url::to('images/tass_logo.png');?>"/>
-        <a class="go_front" href="/">На главную</a>
-        <div class="social">
-            <a class="fb" href="#"></a>
-            <a class="vk" href="#"></a>
+<div class="renovation blue_top_bg">
+    <div class="container_inner top_block white">
+        <img class="tass_logo" src="<?=Url::to('images/tass_logo_white.png');?>"/>
+        <a class="go_front" href="/"><i class="fa fa-angle-left" aria-hidden="true"></i>На главную</a>
+        <div class="social white">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
         </div>
         <div class="clear"></div>
     </div>
-    <div class="container_inner">
-        <h1>Стартовые площадки 1 этапа реновации. Карта</h1>
+    <div class="container_inner white_text">
+        <h1 class="white_text">Стартовые площадки 1 этапа реновации. Карта</h1>
         <div class="top_text">
             <p>
                 1 августа Сергей Собянин утвердил программу реновации. Вместо квартир в ветхих пятиэтажках москвичи получат жилье в новых монолитных и панельных домах.<br>
@@ -64,7 +71,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="select_area">
             Отобразить
             <?=Html::a('Дома, включенные в программу', Url::toRoute(['site/renovation', 'type' => 'house']), ['class' => 'btn btn-primary include']);?>
-            <?=Html::a('Страртовые площадки', Url::toRoute(['site/renovation']), ['class' => 'btn btn-primary start']);?>
+            <?=Html::a('Страртовые площадки', Url::toRoute(['site/renovation']), ['class' => 'btn btn-primary start white_text']);?>
         </div>
     </div>
 

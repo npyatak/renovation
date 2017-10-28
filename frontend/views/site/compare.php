@@ -6,9 +6,11 @@ $this->title = 'Хрущевки VS новые дома';
 		<img class="tass_logo" src="/frontend/web/images/tass_logo.png"/>
 		<a class="go_front" href="/">На главную</a>
 		<div class="social">
-			<a class="fb" href="#"></a>
-			<a class="vk" href="#"></a>
-		</div>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+        </div>
 		<div class="clear"></div>
 	</div>
 	<div class="container_inner">

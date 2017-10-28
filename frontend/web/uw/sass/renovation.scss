@@ -1,0 +1,201 @@
+.renovation {
+	color: #010211;
+	.top_block {
+		padding-top: 0px;
+	}
+	
+	h1 {
+		text-align: center;
+		font-family: "Proxima Nova";
+		font-size: 40px;
+		font-weight: bold;
+		color: #010211;
+		text-transform: uppercase;
+		margin-top: 73px;
+		margin-bottom: 19px;
+		line-height: 39px;
+		@media screen and (max-width: 1000px) {
+			font-size: 30px;
+			padding-left: 10px;
+			padding-right: 10px;
+			line-height: 40px;
+		}
+	}
+	.top_text {
+		font-size: 18px;
+		font-family: "Proxima Nova";
+		font-weight: 300;
+		padding-top: 42px;
+		line-height: 30px;
+		@media screen and (max-width: 1000px) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	.select_area {
+		font-size: 15px;
+		padding-top: 51px;
+		@media screen and (max-width: 1000px) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		@media screen and (max-width: 639px) {
+			text-align: center;
+		}
+		a {
+			font-size: 15px;
+			border-radius: 0px;
+    		line-height: 39px;
+    		padding: 0px 18px;
+    		margin-left: 16px;
+    		@media screen and (max-width: 639px) {
+				display: block;
+				margin-bottom: 5px;
+				margin-left: 0px;
+			}
+			&.include {
+				color: white;
+				background: #003878;
+				border: 1px solid #003878;
+			}
+			&.start {
+				border: 1px solid #c19f63;
+				background: none;
+				color: #010211;
+				
+			}
+		}
+	}
+	#object-map {
+		margin-top: 19px;
+	}
+	.areas_table {
+		font-family: "Proxima Nova";
+		.title_table {
+			font-family: "Proxima Nova";
+			font-size: 40px;
+			font-weight: 300;
+			padding-top: 58px;
+			padding-bottom: 23px;
+			@media screen and (max-width: 1000px) {
+				padding-left: 10px;
+				padding-right: 10px;
+				line-height: 40px;
+			}
+		}
+		.summary {
+			display: none;
+		}
+		input {
+			border-radius: 0px;
+		}
+		table {
+			border: 1px solid transparent;
+			thead {
+				th {
+					background: #003878;
+					color: white;
+					padding: 17px 23px;
+					@media screen and (max-width: 639px) {
+						padding: 12px;
+					}
+					&:nth-child(2) {
+						min-width: 130px;
+					}
+					a {
+						color: white;
+						font-size: 18px;
+						font-weight: 300;
+						white-space: nowrap;
+						&:after {
+							background: url('../../images/table_sort.png');
+							content: '';
+							display: inline-block;
+							width: 13px;
+							height: 8px;
+							margin-left: 11px;
+						}
+					}
+				}
+				td {
+					background:#eeeff1;
+					padding: 0px;
+					input {
+						height: 60px;
+						border: 0px;
+						font-size: 18px;
+					}
+					select {
+						height: 60px;
+						border: 0px;
+						font-size: 18px;
+						width: 100%;
+					}
+				}
+			}
+			th {
+				border: 1px solid transparent;
+			}
+			tbody {
+				tr {
+					&:nth-child(2n-1) {
+						td {
+							background: #b29d7e;
+						}
+					}
+					td {
+						font-size: 18px;
+
+					}
+				}
+			}
+			td {
+				border: 1px solid transparent;
+				padding: 17px 23px;
+				vertical-align: middle;
+				background: #eeeff1;
+				@media screen and (max-width: 639px) {
+					padding: 12px;
+				}
+			}
+		}
+		.pagination {
+			width: 100%;
+			text-align: center;
+			li {
+				margin: 0px 4px;
+				display: inline-block;
+				a {
+					font-size: 15px;
+					line-height: 38px;
+					width: 38px;
+					display: inline-block;
+					border: 1px solid #a1a4ad;
+					color: #010211;
+					padding: 0px;
+					text-align: center;
+				}
+				&.active {
+					a {
+						color: white;
+						background: #2e3346;
+						border: 1px solid #2e3346;
+					}
+				}
+				&.next,&.prev {
+					a {
+						border:1px solid transparent;
+					}
+					span {
+						border:1px solid transparent;
+						line-height: 38px;
+						width: 38px;
+						text-align: center;
+						display: inline-block;
+						padding: 0px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,241 @@
+/* line 1, ../sass/renovation.scss */
+.renovation {
+  color: #010211;
+}
+/* line 3, ../sass/renovation.scss */
+.renovation .top_block {
+  padding-top: 0px;
+}
+/* line 7, ../sass/renovation.scss */
+.renovation h1 {
+  text-align: center;
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: bold;
+  color: #010211;
+  text-transform: uppercase;
+  margin-top: 73px;
+  margin-bottom: 19px;
+  line-height: 39px;
+}
+@media screen and (max-width: 1000px) {
+  /* line 7, ../sass/renovation.scss */
+  .renovation h1 {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+  }
+}
+/* line 24, ../sass/renovation.scss */
+.renovation .top_text {
+  font-size: 18px;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  padding-top: 42px;
+  line-height: 30px;
+}
+@media screen and (max-width: 1000px) {
+  /* line 24, ../sass/renovation.scss */
+  .renovation .top_text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* line 35, ../sass/renovation.scss */
+.renovation .select_area {
+  font-size: 15px;
+  padding-top: 51px;
+}
+@media screen and (max-width: 1000px) {
+  /* line 35, ../sass/renovation.scss */
+  .renovation .select_area {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 639px) {
+  /* line 35, ../sass/renovation.scss */
+  .renovation .select_area {
+    text-align: center;
+  }
+}
+/* line 45, ../sass/renovation.scss */
+.renovation .select_area a {
+  font-size: 15px;
+  border-radius: 0px;
+  line-height: 39px;
+  padding: 0px 18px;
+  margin-left: 16px;
+}
+@media screen and (max-width: 639px) {
+  /* line 45, ../sass/renovation.scss */
+  .renovation .select_area a {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+}
+/* line 56, ../sass/renovation.scss */
+.renovation .select_area a.include {
+  color: white;
+  background: #003878;
+  border: 1px solid #003878;
+}
+/* line 61, ../sass/renovation.scss */
+.renovation .select_area a.start {
+  border: 1px solid #c19f63;
+  background: none;
+  color: #010211;
+}
+/* line 69, ../sass/renovation.scss */
+.renovation #object-map {
+  margin-top: 19px;
+}
+/* line 72, ../sass/renovation.scss */
+.renovation .areas_table {
+  font-family: "Proxima Nova";
+}
+/* line 74, ../sass/renovation.scss */
+.renovation .areas_table .title_table {
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: 300;
+  padding-top: 58px;
+  padding-bottom: 23px;
+}
+@media screen and (max-width: 1000px) {
+  /* line 74, ../sass/renovation.scss */
+  .renovation .areas_table .title_table {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+  }
+}
+/* line 86, ../sass/renovation.scss */
+.renovation .areas_table .summary {
+  display: none;
+}
+/* line 89, ../sass/renovation.scss */
+.renovation .areas_table input {
+  border-radius: 0px;
+}
+/* line 92, ../sass/renovation.scss */
+.renovation .areas_table table {
+  border: 1px solid transparent;
+}
+/* line 95, ../sass/renovation.scss */
+.renovation .areas_table table thead th {
+  background: #003878;
+  color: white;
+  padding: 17px 23px;
+}
+@media screen and (max-width: 639px) {
+  /* line 95, ../sass/renovation.scss */
+  .renovation .areas_table table thead th {
+    padding: 12px;
+  }
+}
+/* line 102, ../sass/renovation.scss */
+.renovation .areas_table table thead th:nth-child(2) {
+  min-width: 130px;
+}
+/* line 105, ../sass/renovation.scss */
+.renovation .areas_table table thead th a {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  white-space: nowrap;
+}
+/* line 110, ../sass/renovation.scss */
+.renovation .areas_table table thead th a:after {
+  background: url("../../images/table_sort.png");
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 11px;
+}
+/* line 120, ../sass/renovation.scss */
+.renovation .areas_table table thead td {
+  background: #eeeff1;
+  padding: 0px;
+}
+/* line 123, ../sass/renovation.scss */
+.renovation .areas_table table thead td input {
+  height: 60px;
+  border: 0px;
+  font-size: 18px;
+}
+/* line 128, ../sass/renovation.scss */
+.renovation .areas_table table thead td select {
+  height: 60px;
+  border: 0px;
+  font-size: 18px;
+  width: 100%;
+}
+/* line 136, ../sass/renovation.scss */
+.renovation .areas_table table th {
+  border: 1px solid transparent;
+}
+/* line 142, ../sass/renovation.scss */
+.renovation .areas_table table tbody tr:nth-child(2n-1) td {
+  background: #b29d7e;
+}
+/* line 146, ../sass/renovation.scss */
+.renovation .areas_table table tbody tr td {
+  font-size: 18px;
+}
+/* line 152, ../sass/renovation.scss */
+.renovation .areas_table table td {
+  border: 1px solid transparent;
+  padding: 17px 23px;
+  vertical-align: middle;
+  background: #eeeff1;
+}
+@media screen and (max-width: 639px) {
+  /* line 152, ../sass/renovation.scss */
+  .renovation .areas_table table td {
+    padding: 12px;
+  }
+}
+/* line 162, ../sass/renovation.scss */
+.renovation .areas_table .pagination {
+  width: 100%;
+  text-align: center;
+}
+/* line 165, ../sass/renovation.scss */
+.renovation .areas_table .pagination li {
+  margin: 0px 4px;
+  display: inline-block;
+}
+/* line 168, ../sass/renovation.scss */
+.renovation .areas_table .pagination li a {
+  font-size: 15px;
+  line-height: 38px;
+  width: 38px;
+  display: inline-block;
+  border: 1px solid #a1a4ad;
+  color: #010211;
+  padding: 0px;
+  text-align: center;
+}
+/* line 179, ../sass/renovation.scss */
+.renovation .areas_table .pagination li.active a {
+  color: white;
+  background: #2e3346;
+  border: 1px solid #2e3346;
+}
+/* line 186, ../sass/renovation.scss */
+.renovation .areas_table .pagination li.next a, .renovation .areas_table .pagination li.prev a {
+  border: 1px solid transparent;
+}
+/* line 189, ../sass/renovation.scss */
+.renovation .areas_table .pagination li.next span, .renovation .areas_table .pagination li.prev span {
+  border: 1px solid transparent;
+  line-height: 38px;
+  width: 38px;
+  text-align: center;
+  display: inline-block;
+  padding: 0px;
+}

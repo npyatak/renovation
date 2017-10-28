@@ -1,0 +1,371 @@
+/* line 2, ../sass/front.scss */
+.front .tass_logo {
+  display: none;
+}
+/* line 5, ../sass/front.scss */
+.front .grid_wrap {
+  margin-top: 49px;
+}
+/* line 8, ../sass/front.scss */
+.front .front_text {
+  text-align: center;
+  position: relative;
+  top: -29px;
+}
+/* line 12, ../sass/front.scss */
+.front .front_text h1 {
+  color: #283045;
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 22px;
+  letter-spacing: 0px;
+  font-size: 40px;
+  line-height: 49px;
+}
+@media screen and (max-width: 1000px) {
+  /* line 12, ../sass/front.scss */
+  .front .front_text h1 {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+  }
+}
+/* line 28, ../sass/front.scss */
+.front .front_text .logo_big {
+  display: inline-block;
+  margin: 0 auto;
+}
+@media screen and (max-width: 999px) {
+  /* line 28, ../sass/front.scss */
+  .front .front_text .logo_big {
+    width: 100px;
+  }
+}
+/* line 36, ../sass/front.scss */
+.front .grid_item {
+  width: 50%;
+  padding: 9px;
+}
+@media screen and (max-width: 999px) {
+  /* line 36, ../sass/front.scss */
+  .front .grid_item {
+    width: 100%;
+  }
+}
+/* line 44, ../sass/front.scss */
+.front .grid_item img {
+  width: 100%;
+  height: auto;
+}
+/* line 50, ../sass/front.scss */
+.front .map .text_info {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 59px 54px;
+  padding-top: 0px;
+}
+@media screen and (max-width: 1199px) {
+  /* line 50, ../sass/front.scss */
+  .front .map .text_info {
+    padding: 30px 30px;
+    padding-top: 0px;
+  }
+}
+/* line 62, ../sass/front.scss */
+.front .map .small {
+  color: #010211;
+  font-size: 18px;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  padding-bottom: 11px;
+}
+/* line 69, ../sass/front.scss */
+.front .map a {
+  color: #010211;
+  font-size: 40px;
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  line-height: 39px;
+  word-spacing: -6px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  /* line 69, ../sass/front.scss */
+  .front .map a {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+/* line 84, ../sass/front.scss */
+.front .text1 .block_text {
+  background: #003878;
+  padding: 68px 56px;
+  padding-right: 100px;
+  padding-bottom: 95px;
+}
+@media screen and (max-width: 1199px) {
+  /* line 84, ../sass/front.scss */
+  .front .text1 .block_text {
+    padding: 68px 30px;
+    padding-right: 30px;
+    padding-bottom: 95px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 84, ../sass/front.scss */
+  .front .text1 .block_text {
+    padding: 68px 30px;
+  }
+}
+/* line 98, ../sass/front.scss */
+.front .text1 .small {
+  color: #010211;
+  font-size: 18px;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+}
+/* line 104, ../sass/front.scss */
+.front .text1 .text {
+  padding-top: 17px;
+}
+/* line 107, ../sass/front.scss */
+.front .text1 a {
+  color: white;
+  font-size: 40px;
+  font-family: "Proxima Nova";
+  line-height: 49px;
+  clear: both;
+  text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  /* line 107, ../sass/front.scss */
+  .front .text1 a {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+/* line 121, ../sass/front.scss */
+.front .article .small {
+  color: #010211;
+  font-size: 18px;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+}
+/* line 127, ../sass/front.scss */
+.front .article a {
+  color: #010211;
+  font-size: 40px;
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  line-height: 39px;
+  word-spacing: -6px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  /* line 127, ../sass/front.scss */
+  .front .article a {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+/* line 140, ../sass/front.scss */
+.front .article .text_info {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 59px 54px;
+  padding-top: 0px;
+}
+@media screen and (max-width: 1199px) {
+  /* line 140, ../sass/front.scss */
+  .front .article .text_info {
+    padding: 30px 30px;
+    padding-top: 0px;
+  }
+}
+/* line 153, ../sass/front.scss */
+.front .text2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 157, ../sass/front.scss */
+.front .text2 .small {
+  color: #010211;
+  font-size: 18px;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+}
+/* line 163, ../sass/front.scss */
+.front .text2 a {
+  color: white;
+  font-size: 40px;
+  font-family: "Proxima Nova";
+  line-height: 39px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1300px) {
+  /* line 163, ../sass/front.scss */
+  .front .text2 a {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 163, ../sass/front.scss */
+  .front .text2 a {
+    line-height: 30px;
+  }
+}
+/* line 176, ../sass/front.scss */
+.front .text2 .part1 {
+  background: #b29d7e;
+}
+@media screen and (max-width: 1199px) {
+  /* line 176, ../sass/front.scss */
+  .front .text2 .part1 {
+    margin-bottom: 18px;
+  }
+}
+/* line 182, ../sass/front.scss */
+.front .text2 .part2 {
+  background: #c01a28;
+}
+/* line 185, ../sass/front.scss */
+.front .text2 .part {
+  width: calc(50% - 9px);
+}
+@media screen and (max-width: 1199px) {
+  /* line 185, ../sass/front.scss */
+  .front .text2 .part {
+    width: 100%;
+  }
+}
+/* line 190, ../sass/front.scss */
+.front .text2 .part .block_text {
+  padding: 93px 32px;
+  padding-bottom: 97px;
+}
+@media screen and (max-width: 1199px) {
+  /* line 190, ../sass/front.scss */
+  .front .text2 .part .block_text {
+    padding: 30px;
+  }
+}
+/* line 196, ../sass/front.scss */
+.front .text2 .part .block_text .text {
+  padding-top: 13px;
+}
+/* line 204, ../sass/front.scss */
+.front .slider_front_item .slider_front img {
+  width: 100%;
+  height: auto;
+}
+/* line 209, ../sass/front.scss */
+.front .slider_front_item .owl-prev {
+  background: url("../../images/front_slider_left.png") center no-repeat;
+  text-indent: -9999px;
+  display: block;
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  margin-top: -27px;
+  left: 42px;
+}
+@media screen and (max-width: 1199px) {
+  /* line 209, ../sass/front.scss */
+  .front .slider_front_item .owl-prev {
+    width: 40px;
+    height: 40px;
+    left: 30px;
+    background-size: cover;
+  }
+}
+/* line 226, ../sass/front.scss */
+.front .slider_front_item .owl-next {
+  background: url("../../images/front_slider_right.png") center no-repeat;
+  text-indent: -9999px;
+  display: block;
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  margin-top: -27px;
+  right: 42px;
+}
+@media screen and (max-width: 1199px) {
+  /* line 226, ../sass/front.scss */
+  .front .slider_front_item .owl-next {
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    background-size: cover;
+  }
+}
+/* line 243, ../sass/front.scss */
+.front .slider_front_item .owl-dots {
+  position: absolute;
+  bottom: 27px;
+  left: 49px;
+}
+@media screen and (max-width: 1199px) {
+  /* line 243, ../sass/front.scss */
+  .front .slider_front_item .owl-dots {
+    bottom: 10px;
+    left: 30px;
+  }
+}
+/* line 251, ../sass/front.scss */
+.front .slider_front_item .owl-dots .owl-dot {
+  float: left;
+  margin-right: 40px;
+}
+/* line 254, ../sass/front.scss */
+.front .slider_front_item .owl-dots .owl-dot span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #c19f63;
+  border-radius: 50%;
+}
+/* line 262, ../sass/front.scss */
+.front .slider_front_item .owl-dots .owl-dot.active span {
+  background: white;
+}
+/* line 269, ../sass/front.scss */
+.front .video {
+  position: relative;
+}
+/* line 271, ../sass/front.scss */
+.front .video .bottom_video {
+  position: relative;
+  display: block;
+}
+/* line 274, ../sass/front.scss */
+.front .video .bottom_video img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 279, ../sass/front.scss */
+.front .video .bottom_video:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 56, 120, 0.4) url("../../images/gallery_bottom_play.png") center no-repeat;
+}
+/* line 287, ../sass/front.scss */
+.front .video iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}

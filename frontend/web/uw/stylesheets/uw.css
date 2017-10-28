@@ -1,0 +1,235 @@
+/* line 1, ../sass/uw.scss */
+.clear {
+  clear: both;
+}
+
+/* line 5, ../sass/uw.scss */
+.top_block {
+  padding-top: 51px;
+  text-align: center;
+  position: relative;
+  min-height: 113px;
+}
+/* line 10, ../sass/uw.scss */
+.top_block .tass_logo {
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/* line 18, ../sass/uw.scss */
+.top_block.white .social a {
+  color: white;
+}
+/* line 22, ../sass/uw.scss */
+.top_block.white .go_front {
+  color: #a1a4ad;
+  border: 1px solid #a1a4ad;
+}
+/* line 27, ../sass/uw.scss */
+.top_block .social {
+  float: right;
+  position: absolute;
+  right: 2px;
+  top: 36px;
+}
+/* line 32, ../sass/uw.scss */
+.top_block .social a {
+  margin-left: 38px;
+  color: #003878;
+  font-size: 17px;
+  transition: all 0.3s linear;
+}
+/* line 37, ../sass/uw.scss */
+.top_block .social a:nth-child(1) {
+  margin-left: 0px;
+}
+/* line 40, ../sass/uw.scss */
+.top_block .social a:hover {
+  color: #E1C6A9;
+}
+@media screen and (max-width: 999px) {
+  /* line 27, ../sass/uw.scss */
+  .top_block .social {
+    float: right;
+    position: absolute;
+    right: 29px;
+    top: 34px;
+    text-align: right;
+    width: 119px;
+  }
+  /* line 51, ../sass/uw.scss */
+  .top_block .social a {
+    display: inline-block;
+    margin-bottom: 27px;
+  }
+}
+/* line 57, ../sass/uw.scss */
+.top_block .go_front {
+  border: 1px solid #a1a4ad;
+  color: #010211;
+  position: relative;
+  top: 29px;
+  line-height: 38px;
+  display: inline-block;
+  padding: 0px 42px;
+  position: relative;
+}
+/* line 66, ../sass/uw.scss */
+.top_block .go_front i {
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+  font-size: 22px;
+}
+
+/* line 74, ../sass/uw.scss */
+.container_inner {
+  width: 934px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 933px) {
+  /* line 74, ../sass/uw.scss */
+  .container_inner {
+    width: 100%;
+  }
+}
+
+/* line 84, ../sass/uw.scss */
+.wrap {
+  background: #eeeff1;
+}
+
+/* line 89, ../sass/uw.scss */
+.grid_wrap {
+  margin-top: 62px;
+  background: white;
+  padding-top: 13px;
+}
+
+/* line 95, ../sass/uw.scss */
+#cboxContent {
+  background: none;
+}
+
+/* line 98, ../sass/uw.scss */
+#cboxLoadedContent {
+  background: none;
+}
+
+/* line 101, ../sass/uw.scss */
+#cboxTitle {
+  display: none;
+}
+
+/* line 105, ../sass/uw.scss */
+.gallery_popup img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 109, ../sass/uw.scss */
+.gallery_popup .popup_text {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  padding-top: 46px;
+}
+/* line 116, ../sass/uw.scss */
+.gallery_popup .close {
+  float: none;
+  padding-top: 20px;
+  opacity: 1;
+}
+/* line 120, ../sass/uw.scss */
+.gallery_popup .close img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 128, ../sass/uw.scss */
+#cboxOverlay {
+  background: #2e3346;
+  opacity: 0.9;
+}
+
+/* line 132, ../sass/uw.scss */
+.popups_info {
+  display: none;
+}
+
+/* line 137, ../sass/uw.scss */
+.bottom_gallery {
+  padding-top: 122px;
+}
+/* line 139, ../sass/uw.scss */
+.bottom_gallery .title_bottom_gallery {
+  font-size: 15px;
+  color: #000108;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  text-align: center;
+  padding: 0px 10px;
+  padding-bottom: 29px;
+}
+/* line 148, ../sass/uw.scss */
+.bottom_gallery .bottom_gallery_img {
+  position: relative;
+}
+/* line 150, ../sass/uw.scss */
+.bottom_gallery .bottom_gallery_img .bottom_gallery_video {
+  display: block;
+}
+/* line 152, ../sass/uw.scss */
+.bottom_gallery .bottom_gallery_img .bottom_gallery_video img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 157, ../sass/uw.scss */
+.bottom_gallery .bottom_gallery_img .bottom_gallery_video:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 56, 120, 0.4) url("../../images/gallery_bottom_play.png") center no-repeat;
+}
+/* line 165, ../sass/uw.scss */
+.bottom_gallery .bottom_gallery_img iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/* line 176, ../sass/uw.scss */
+.blue_top_bg {
+  position: relative;
+}
+/* line 178, ../sass/uw.scss */
+.blue_top_bg:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 100% auto;
+  display: block;
+  content: '';
+  background: url("../../images/blue_top_bg.png") center top no-repeat;
+}
+
+/* line 189, ../sass/uw.scss */
+#object-map {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 194, ../sass/uw.scss */
+.white_text {
+  color: white !important;
+}

@@ -39,4 +39,20 @@ $(window).load(function(){
 	    return false;
 	    //$(this).parent().parent().parent().after('<div class="close-video"></div>');
 	});
+	$('.open-menu-btn,.close-menu__btn').on('click', function(){
+		$('.open-menu-btn,.close-menu__btn').toggleClass('show');
+		$('.header ul').toggleClass('show');
+	});
+	if ($(window).width() < 999) {
+		$('.header ul').css('height',($(window).height()-$('.header').height()))
+	} else {
+		$('.header ul').css('height','initial');
+	}
+});
+$(window).resize(function(){
+	if ($(window).width() < 999) {
+		$('.header ul').css('height',($(window).height()-$('.header').height()))
+	} else {
+		$('.header ul').css('height','initial');
+	}
 });

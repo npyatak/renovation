@@ -41,4 +41,9 @@ class Gallery extends \yii\db\ActiveRecord
             'title' => 'Заголовок',
         ];
     }
+
+    public function getGallerySlides()
+    {
+        return $this->hasMany(GallerySlide::className(), ['gallery_id' => 'id']);
+    }
 }

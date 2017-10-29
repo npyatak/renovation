@@ -51,6 +51,11 @@ class GallerySlide extends \yii\db\ActiveRecord
         return parent::afterDelete();
     }
 
+    public function getGallery()
+    {
+        return $this->hasOne(Gallery::className(), ['id' => 'gallery_id']);
+    }
+
     public function getImageSrcPath() {
         return __DIR__ . '/../../frontend/web/uploads/gallery/';
     }

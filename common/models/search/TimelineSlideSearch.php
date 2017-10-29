@@ -18,7 +18,8 @@ class TimelineSlideSearch extends TimelineSlide
     public function rules()
     {
         return [
-            [['id', 'number', 'date', 'width_preset'], 'integer'],
+            [['id', 'number', 'width_preset'], 'integer'],
+            [['date_1', 'date_2'], 'string'],
         ];
     }
 
@@ -60,9 +61,11 @@ class TimelineSlideSearch extends TimelineSlide
         $query->andFilterWhere([
             'id' => $this->id,
             'number' => $this->number,
-            'date' => $this->date,
             'width_preset' => $this->width_preset,
         ]);
+
+        $query->andFilterWhere(['like', 'date_1', $this->date_1])
+            ->andFilterWhere(['like', 'date_2', $this->date_2]);
 
         return $dataProvider;
     }

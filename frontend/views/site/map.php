@@ -115,6 +115,7 @@ $this->title = 'Карта';
     $this->registerJs($script, yii\web\View::POS_END);
     ?>
 </div>
+
 <div class="bottom_gallery">
     <div class="title_bottom_gallery">Социальные обязательства: детские площадки, садики, школы и поликлиники</div>
     <div class="bottom_gallery_img">

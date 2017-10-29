@@ -18,7 +18,14 @@ $(window).load(function(){
 	$('.grid_front').masonry({
 	  itemSelector: '.grid_item',
 	});
-	$(".gallery_inline").colorbox({inline:true, width:"66%"});
+	$(".gallery_inline").colorbox({
+		inline:true, 
+		width:"66%", 
+		onOpen: function(){
+			$('#popup .popup_img').html($.colorbox.element().html());
+			$('#popup .popup_text').html($.colorbox.element().parent().find('p').html());
+		}
+	});
 	$('.gallery_popup .close').click(function(){
 		$.colorbox.close();
 		return false;

@@ -9,7 +9,6 @@ class TimelineSlide extends \yii\db\ActiveRecord
     const WIDTH_PRESET_NARROW = 1;
     const WIDTH_PRESET_WIDE = 2;
 
-    public $dateFormatted;
     /**
      * @inheritdoc
      */
@@ -24,22 +23,10 @@ class TimelineSlide extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['dateFormatted'], 'required'],
+            [['date_1', 'date_2'], 'required'],
             [['number', 'width_preset'], 'integer'],
-            [['text'], 'string'],
+            [['text', 'date_1', 'date_2'], 'string'],
         ];
-    }
-
-    public function beforeSave($insert) {
-        $this->date = strtotime($this->dateFormatted);
-
-        return parent::beforeSave($insert);
-    }
-
-    public function afterFind() {
-        $this->dateFormatted = date('d.m.Y', $this->date);
-
-        return parent::afterFind();
     }
 
     /**
@@ -49,7 +36,8 @@ class TimelineSlide extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'dateFormatted' => 'Дата',
+            'date_1' => 'Дата 1',
+            'date_2' => 'Дата 2',
             'text' => 'Текст',
             'number' => 'Порядок',
             'width_preset' => 'Ширина',

@@ -23,7 +23,9 @@ $this->title = $gallery->title;
 		<div class="grid">
 			<?php if(!empty($slides)):?>
 			<div class="grid_item">
-				<a href="#popup" class="gallery_inline"><img src="<?=$slides[0]->imageUrl;?>"/></a>
+				<a href="#popup" class="gallery_inline">
+					<img src="<?=$slides[0]->imageUrl;?>"/>
+				</a>
 				<p class="hidden"><?=$slides[0]->title;?></p>
 			</div>
 			<?php endif;?>
@@ -65,11 +67,13 @@ $this->title = $gallery->title;
 					</a>
 				</div>
 			</div>
-			
+
 			<?php if(!empty($slides) && count($slides) > 8):?>
 				<?php for ($i=9; $i <= count($slides) - 1; $i++):?>
 					<div class="grid_item">
-						<img src="<?=$slides[$i]->imageUrl;?>"/>
+						<a href="#popup" class="gallery_inline">
+							<img src="<?=$slides[$i]->imageUrl;?>"/>
+						</a>
 						<p class="hidden"><?=$slides[$i]->title;?></p>
 					</div>
 				<?php endfor;?>
@@ -77,14 +81,9 @@ $this->title = $gallery->title;
 		</div>
 
 		<div class="popups_info">
-			<!-- <div class="popups_bg"></div>-->
 			<div class="gallery_popup" id="popup">
-				<div class="popup_img">
-					<img src="<?=Url::toRoute('images/gallery/popup_img.jpg');?>"/>				
-				</div>
-				<div class="popup_text">
-					В рамках программы реновации город берет на себя обязательства по благоустройству районов, в которых она будет проводится. Проведение инженерных коммуникаций, строительство новых детских садов, школ и дорог будет выполнено за счет бюджета.
-				</div>
+				<div class="popup_img"></div>
+				<div class="popup_text"></div>
 				<div class="close"><img src="<?=Url::toRoute('images/close.svg');?>"/></div>
 			</div>
 		</div>

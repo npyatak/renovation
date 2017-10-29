@@ -51,6 +51,14 @@ AppAsset::register($this);
 
     <?= $content ?>
 
+    <div class="bottom_gallery">
+        <div class="title_bottom_gallery">Социальные обязательства: детские площадки, садики, школы и поликлиники</div>
+        <div class="bottom_gallery_img">
+            <a href="#" class="bottom_gallery_video"><img src="<?=Url::toRoute('images/footer_gallery_img.jpg');?>"/></a>
+            <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
     <div class="footer">
         <div class="text_wrap">
             <p>

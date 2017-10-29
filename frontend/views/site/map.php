@@ -9,42 +9,12 @@ use kartik\depdrop\DepDrop;
 use common\models\District;
 use common\models\Region;
 
-$this->title = 'Реновация';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Карта';
 ?>
 
 <?php $this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;onload=app.objectMap.ymapsInit');?>
 <?php $this->registerJsFile(Url::toRoute('js/map.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);?>
-<div class="header">
-    <img class="logo" src="/frontend/web/images/logo.png" />
-    <div class="container_inner">
-        <a class="map_link" href="#">Карта</a>
-        <ul class="menu">
-            <li>
-                <a href="#">Закон о реновациях</a>
-            </li>
-            <li>
-                <a class="active" href="#">Карта</a>
-            </li>
-            <li>
-                <a href="#">Даты реализации</a>
-            </li>
-            <li>
-                <a href="#">Герои</a>
-            </li> 
-            <li>
-                <a href="#">История реноваций</a>
-            </li>
-            <li>
-                <a href="#">Хрущевки VS новые дома</a>
-            </li>
-        </ul>
-        <div class="menu-btn">
-            <div class="open-menu-btn show"><span></span><span></span><span></span></div>
-            <div class="close-menu__btn"><span></span><span></span></div>
-        </div>
-    </div>
-</div>
+
 <div class="renovation blue_top_bg">
     <div class="container_inner top_block white">
         <img class="tass_logo" src="<?=Url::to('images/tass_logo_white.png');?>"/>
@@ -58,28 +28,24 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="clear"></div>
     </div>
     <div class="container_inner white_text">
-        <h1 class="white_text">Стартовые площадки 1 этапа реновации. Карта</h1>
+        <h1 class="white_text"><?=$type == 'house' ? 'Дома, включенные в программу' : 'Стартовые площадки';?> 1 этапа реновации. Карта</h1>
         <div class="top_text">
             <p>
-                1 августа Сергей Собянин утвердил программу реновации. Вместо квартир в ветхих пятиэтажках москвичи получат жилье в новых монолитных и панельных домах.<br>
-                26 сентября опубликован список стартовых площадок программы реновации. При выборе учитывалось мнение москвичей и дальнейшее осуществление квартальной застройки.
+                <?=$page->text;?>
             </p>
-            <!--
-            <?=$page->text;?>
-            -->
         </div>
         <div class="select_area">
             Отобразить
-            <?=Html::a('Дома, включенные в программу', Url::toRoute(['site/renovation', 'type' => 'house']), ['class' => 'btn btn-primary active include']);?>
-            <?=Html::a('Стартовые площадки', Url::toRoute(['site/renovation']), ['class' => 'btn btn-primary start white_text']);?>
+            <a href="<?=Url::toRoute(['site/map', 'type' => 'house'])?>" class="btn btn-primary <?=$type == 'house' ? 'active' : 'start white_text';?>">Дома, включенные в программу</a>
+            <a href="<?=Url::toRoute(['site/map', 'type' => null])?>" class="btn btn-primary <?=$type == 'house' ? 'start white_text' : 'active';?>">Стартовые площадки</a>
         </div>
     </div>
 
 
-    <div class="" id="object-map" style="width: 100%; height: 500px;"></div>
+    <div id="object-map" style="width: 100%; height: 500px;"></div>
 
     <div class="container_inner areas_table">
-        <div class="title_table">Дома, включенные в программу реновации</div>
+        <div class="title_table"><?=$type == 'house' ? 'Дома' : 'Стартовые площадки';?>, включенные в программу реновации</div>
         <?php Pjax::begin(); ?>    
             <?= GridView::widget([
                 'dataProvider' => $dataProvider,
@@ -117,7 +83,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php $pm = [];
     if($houses) {
         foreach ($houses as $obj) {
-            /* Содержимое балунов. Тут надо использовать по минимуму html потому что этих объектов больше 5 тысяч*/
             $content = '<div id="obj_'.$obj['id'].'" class="bln"><p>'.$districtsArr[$obj['district_id']].'</p><p>'.$regionArr[$obj['region_id']].'</p><p>'.$obj['address'].'</p></div>';
 
             $pm[] = "{
@@ -146,27 +111,14 @@ $this->params['breadcrumbs'][] = $this->title;
     </script>
 
     <?php 
-    $script = $this->render('_map-script');
+    $script = $this->render('_map-script', ['type' => $houses ? 'houses' : 'places']);
     $this->registerJs($script, yii\web\View::POS_END);
     ?>
 </div>
 <div class="bottom_gallery">
     <div class="title_bottom_gallery">Социальные обязательства: детские площадки, садики, школы и поликлиники</div>
     <div class="bottom_gallery_img">
-        <a href="#" class="bottom_gallery_video"><img src="/frontend/web/images/footer_gallery_img.jpg"/></a>
+        <a href="#" class="bottom_gallery_video"><img src="<?=Url::toRoute('images/footer_gallery_img.jpg');?>"/></a>
         <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-<div class="footer">
-    <div class="text_wrap">
-        <p>
-            ТАСС информационное агентство(св-во о регистрации СМИ №03247 выдано 02 апреля 1999 г. Государственным комитетом Российской Федерации по печати)<br/>
-            Отдельные публикации могут содержать информацию, не предназначенную для пользователей до 16 лет.
-        </p>
-
-        <p>
-            Подробнее на ТАСС:<br/>
-            http://tass.ru/
-        </p>
     </div>
 </div>

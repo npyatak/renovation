@@ -3,7 +3,7 @@ $this->title = 'Галерея';
 ?>
 <div class="gallery">
 	<div class="container_inner top_block">
-		<img class="tass_logo" src="/frontend/web/images/tass_logo.png"/>
+		<img class="tass_logo" src="<?=Url::toRoute('images/tass_logo.png');?>"/>
 		<a class="go_front" href="/"><i class="fa fa-angle-left" aria-hidden="true"></i>На главную</a>
 		<div class="social">
             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -20,7 +20,7 @@ $this->title = 'Галерея';
 	<div class="grid_wrap">
 		<div class="grid">
 			<div class="grid_item">
-				<a href="#popup1" class="gallery_inline"><img src="/frontend/web/images/gallery/gallery_img_1.jpg"/></a>
+				<a href="#popup1" class="gallery_inline"><img src="<?=Url::toRoute('images/gallery/gallery_img_1.jpg');?>"/></a>
 			</div>
 			<div class="grid_item">
 				<div class="slider_gallery_wrap">
@@ -45,25 +45,25 @@ $this->title = 'Галерея';
 				</div>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_2.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_2.jpg');?>"/>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_3.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_3.jpg');?>"/>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_4.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_4.jpg');?>"/>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_5.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_5.jpg');?>"/>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_6.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_6.jpg');?>"/>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_7.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_7.jpg');?>"/>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_8.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_8.jpg');?>"/>
 			</div>
 			<div class="grid_item">
 				<div class="gallery_name">
@@ -74,31 +74,31 @@ $this->title = 'Галерея';
 				</div>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_9.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_9.jpg');?>"/>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_10.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_10.jpg');?>"/>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_11.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_11.jpg');?>"/>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_12.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_12.jpg');?>"/>
 			</div>
 			<div class="grid_item">
-				<img src="/frontend/web/images/gallery/gallery_img_13.jpg"/>
+				<img src="<?=Url::toRoute('images/gallery/gallery_img_13.jpg');?>"/>
 			</div>
 		</div>
 		<div class="popups_info">
 			<!-- <div class="popups_bg"></div>-->
 			<div class="gallery_popup" id="popup1">
 				<div class="popup_img">
-					<img src="/frontend/web/images/gallery/popup_img.jpg"/>				
+					<img src="<?=Url::toRoute('images/gallery/popup_img.jpg');?>"/>				
 				</div>
 				<div class="popup_text">
 					В рамках программы реновации город берет на себя обязательства по благоустройству районов, в которых она будет проводится. Проведение инженерных коммуникаций, строительство новых детских садов, школ и дорог будет выполнено за счет бюджета.
 				</div>
-				<div class="close"><img src="/frontend/web/images/close.svg"/></div>
+				<div class="close"><img src="<?=Url::toRoute('images/close.svg');?>"/></div>
 			</div>
 		</div>
 	</div>

@@ -44,7 +44,7 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    public function actionRenovation($type = null) {
+    public function actionMap($type = null) {
         $houses = null;
         $startPlaces = null;
         $page = Page::find()->where(['url' => 'renovation'])->one();
@@ -80,7 +80,7 @@ class SiteController extends Controller
                 ->all();
         }
 
-        return $this->render('renovation', [
+        return $this->render('map', [
             'page' => $page,
             'houses' => $houses,
             'startPlaces' => $startPlaces,
@@ -88,6 +88,7 @@ class SiteController extends Controller
             'dataProvider' => $dataProvider,
             'regionArr' => $regionArr,
             'districtsArr' => $districtsArr,
+            'type' => $type,
         ]);
     }
 

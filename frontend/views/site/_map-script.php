@@ -20,9 +20,9 @@ app.module('objectMap', '#object-map', function() {
 
         this.clusterer = new ymaps.Clusterer({
             clusterIcons: [{
-                href: window.mapsImagesPath + 'map-icons/cluster.svg',
-                size: [36, 47],
-                offset: [-18, -47]
+                href: window.mapsImagesPath + 'map-icons/cluster_<?=$type;?>.png',
+                size: [79, 81],
+                offset: [0, 0]
             }],
 
             groupByCoordinates: false,

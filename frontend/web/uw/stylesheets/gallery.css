@@ -18,8 +18,8 @@
   /* line 4, ../sass/gallery.scss */
   .gallery h1 {
     font-size: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     line-height: 40px;
   }
 }
@@ -34,14 +34,14 @@
 @media screen and (max-width: 1000px) {
   /* line 20, ../sass/gallery.scss */
   .gallery .small_title {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 /* line 31, ../sass/gallery.scss */
 .gallery .grid_item {
   width: 50%;
-  padding: 9px;
+  padding: 10px;
 }
 @media screen and (max-width: 999px) {
   /* line 31, ../sass/gallery.scss */
@@ -175,12 +175,13 @@
 .gallery .gallery_inline:before {
   content: '';
   display: none;
-  background: rgba(0, 56, 120, 0.4) url("../../images/gallery_open.svg") center no-repeat;
+  background: rgba(0, 56, 120, 0.4) url("../../images/open.svg") center no-repeat;
+  background-size: 134px;
   position: absolute;
   width: 100%;
   height: 100%;
 }
-/* line 138, ../sass/gallery.scss */
+/* line 139, ../sass/gallery.scss */
 .gallery .gallery_inline:hover:before {
   display: block;
 }

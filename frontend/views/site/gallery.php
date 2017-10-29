@@ -4,7 +4,7 @@ $this->title = 'Галерея';
 <div class="gallery">
 	<div class="container_inner top_block">
 		<img class="tass_logo" src="/frontend/web/images/tass_logo.png"/>
-		<a class="go_front" href="/">На главную</a>
+		<a class="go_front" href="/"><i class="fa fa-angle-left" aria-hidden="true"></i>На главную</a>
 		<div class="social">
             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
@@ -98,7 +98,7 @@ $this->title = 'Галерея';
 				<div class="popup_text">
 					В рамках программы реновации город берет на себя обязательства по благоустройству районов, в которых она будет проводится. Проведение инженерных коммуникаций, строительство новых детских садов, школ и дорог будет выполнено за счет бюджета.
 				</div>
-				<div class="close"><img src="/frontend/web/images/gallery_close.svg"/></div>
+				<div class="close"><img src="/frontend/web/images/close.svg"/></div>
 			</div>
 		</div>
 	</div>

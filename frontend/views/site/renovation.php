@@ -70,8 +70,8 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
         <div class="select_area">
             Отобразить
-            <?=Html::a('Дома, включенные в программу', Url::toRoute(['site/renovation', 'type' => 'house']), ['class' => 'btn btn-primary include']);?>
-            <?=Html::a('Страртовые площадки', Url::toRoute(['site/renovation']), ['class' => 'btn btn-primary start white_text']);?>
+            <?=Html::a('Дома, включенные в программу', Url::toRoute(['site/renovation', 'type' => 'house']), ['class' => 'btn btn-primary active include']);?>
+            <?=Html::a('Стартовые площадки', Url::toRoute(['site/renovation']), ['class' => 'btn btn-primary start white_text']);?>
         </div>
     </div>
 

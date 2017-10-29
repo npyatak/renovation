@@ -4,7 +4,7 @@ $this->title = 'Хрущевки VS новые дома';
 <div class="compare">
 	<div class="container_inner top_block">
 		<img class="tass_logo" src="/frontend/web/images/tass_logo.png"/>
-		<a class="go_front" href="/">На главную</a>
+		<a class="go_front" href="/"><i class="fa fa-angle-left" aria-hidden="true"></i>На главную</a>
 		<div class="social">
             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>

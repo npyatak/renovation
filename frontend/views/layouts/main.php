@@ -37,6 +37,7 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'Карта', 'url' => ['/site/timeline']],
         ['label' => 'About', 'url' => ['/site/about']],
         ['label' => 'Contact', 'url' => ['/site/contact']],
     ];
@@ -70,10 +71,25 @@ AppAsset::register($this);
 </div>
 
 <footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+    <div class="container_inner">
+        <div class="top">
+            <p>
+                ТАСС информационное агентство(св-во о регистрации СМИ №03247 выдано 02 апреля 1999 г.
+            </p>
+            <p>
+                Государственным комитетом Российской Федерации по печати)
+            </p>
+            <p>
+                Отдельные публикации могут содержать информацию, не предназначенную для пользователей до 16 лет.
+            </p>
+        </div>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <div class="bottom">
+            <p class="more">Подробнее на ТАСС:</p>
+            <p class="link">
+                <a href="http://tass.ru/">http://tass.ru/</a>
+            </p>
+        </div>
     </div>
 </footer>
 

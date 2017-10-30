@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Url;
 
-$this->title = 'Таймлайн';
+$this->title = 'Даты реализации проекта по реновации. Таймлайн';
 
 $this->registerJsFile(Url::toRoute('js/timeline.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile(Url::toRoute('css/timeline.css'));
@@ -13,19 +13,10 @@ $this->registerCssFile(Url::toRoute('css/timeline.scss'));
 </svg>
 <div class="timeline">
     <div id="section0">
-        <div class="container_inner top_block">
-            <a href="http://">
-                <img class="tass_logo" src="<?=Url::toRoute('images/tass_logo_white.png');?>" />
-            </a>
-            <a class="go_front" href="<?=Url::home();?>">На главную</a>
-            <div class="social">
-                <a class="fb_white" href="#"></a>
-                <a class="vk_white" href="#"></a>
-            </div>
-            <div class="clear"></div>
-        </div>
+    	<?=$this->render('_top_block');?>
+    	
         <div class="container_inner">
-            <h1>Даты реализации проекта по реновации. Таймлайн</h1>
+            <h1><?=$this->title;?></h1>
         </div>
         <div class="horizontal-scroll-wrapper squares">
 			<?php if($slides):?>

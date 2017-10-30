@@ -1,4 +1,6 @@
 <?php
+use yii\helpers\Url;
+
 $this->title = 'Главная';
 ?>
 <div class="front">
@@ -22,14 +24,14 @@ $this->title = 'Главная';
                 <img src="<?=Url::toRoute('images/map_img_front.jpg');?>"/>
                 <div class="text_info">
                     <div class="small">Карта</div>
-                    <a href="#">Стартовые площадки 1 этапа реновации</a>
+                    <a href="<?=Url::toRoute('site/map');?>">Стартовые площадки 1 этапа реновации</a>
                 </div>
             </div>
             <div class="grid_item text1">
                 <div class="block_text">
                     <div class="small">Читать</div>
                     <div class="text">
-                        <a href="#">История реноваций: даты и факты</a>
+                        <a href="<?=Url::toRoute('site/history');?>">История реноваций: даты и факты</a>
                     </div>
                 </div>
             </div>
@@ -37,7 +39,7 @@ $this->title = 'Главная';
                 <img src="<?=Url::toRoute('images/article_img_front.jpg');?>"/>
                 <div class="text_info">
                     <div class="small">Читать</div>
-                    <a href="#">Герои: личные истории</a>
+                    <a href="<?=Url::toRoute('site/heroes');?>">Герои: личные истории</a>
                 </div>
             </div>
             <div class="grid_item text2">
@@ -45,7 +47,7 @@ $this->title = 'Главная';
                     <div class="block_text">
                         <div class="small">Закон</div>
                         <div class="text">
-                            <a href="#">Расшифровка внутри</a>
+                            <a href="<?=Url::toRoute('site/law');?>">Расшифровка внутри</a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +55,7 @@ $this->title = 'Главная';
                     <div class="block_text">
                         <div class="small">Таймлайн</div>
                         <div class="text">
-                            <a href="#">Даты реализации проекта по реновации</a>
+                            <a href="<?=Url::toRoute('site/timeline');?>">Даты реализации проекта по реновации</a>
                         </div>
                     </div>
                 </div>

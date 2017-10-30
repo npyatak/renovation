@@ -16,17 +16,8 @@ $this->title = 'Карта';
 <?php $this->registerJsFile(Url::toRoute('js/map.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);?>
 
 <div class="renovation blue_top_bg">
-    <div class="container_inner top_block white">
-        <img class="tass_logo" src="<?=Url::to('images/tass_logo_white.png');?>"/>
-        <a class="go_front" href="/"><i class="fa fa-angle-left" aria-hidden="true"></i>На главную</a>
-        <div class="social white">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-        </div>
-        <div class="clear"></div>
-    </div>
+    <?=$this->render('_top_block', ['class' => ' white']);?>
+
     <div class="container_inner white_text">
         <h1 class="white_text"><?=$type == 'house' ? 'Дома, включенные в программу' : 'Стартовые площадки';?> 1 этапа реновации. Карта</h1>
         <div class="top_text">
@@ -36,8 +27,8 @@ $this->title = 'Карта';
         </div>
         <div class="select_area">
             Отобразить
-            <a href="<?=Url::toRoute(['site/map', 'type' => 'house'])?>" class="btn btn-primary <?=$type == 'house' ? 'active' : 'start white_text';?>">Дома, включенные в программу</a>
-            <a href="<?=Url::toRoute(['site/map', 'type' => null])?>" class="btn btn-primary <?=$type == 'house' ? 'start white_text' : 'active';?>">Стартовые площадки</a>
+            <a class="btn btn-primary <?=$type == 'house' ? 'active' : 'start white_text';?>" href="<?=Url::toRoute(['site/map', 'type' => 'house'])?>">Дома, включенные в программу</a>
+            <a class="btn btn-primary <?=$type != 'house' ? 'active' : 'start white_text';?>" href="<?=Url::toRoute(['site/map', 'type' => null])?>">Стартовые площадки</a>
         </div>
     </div>
 

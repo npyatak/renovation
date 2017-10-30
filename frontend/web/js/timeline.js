@@ -10,22 +10,27 @@ if (window.addEventListener) {
 }
 
 function workProcessInit() {
+	var scrollContainer = document.getElementsByClassName('sliderbox')[0];
 	var items = document.getElementsByClassName('item'),
 		fls = document.getElementsByClassName('fl'),
 		frs = document.getElementsByClassName('fr'),
-		hsw = document.getElementsByClassName('horizontal-scroll-wrapper')
-		;
+		currentdateIndex = 0,
+		prevInd = 0;
+	;
 
 	for (var i = 0; i < items.length; i++) {
 		items[i].onclick = function () {
-			if (hasClass(this, 'active')) return;
+			if (hasClass(this, 'active')) {
+				return;
+			}
 			for (var j = 0; j < items.length; j++) {
 				removeClass(items[j], 'active');
 			}
 
 			addClass(this, 'active');
 
-			var currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
+			currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
+			prevInd = currentdateIndex;
 
 			for (var j = 0; j < fls.length; j++) {
 				removeClass(fls[j], 'active');
@@ -39,36 +44,54 @@ function workProcessInit() {
 			}
 		};
 	}
-	for (var z = 0; z < items.length; z++) {
-		items[z].onwheel = function (event) {
 
-			var currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
-			console.log(currentdateIndex);
+	var ind = 0;
 
-			if (hasClass(this, 'active')) return;
-			for (var j = 0; j < items.length; j++) {
-				removeClass(items[j], 'active');
+	scrollContainer.addEventListener('mousewheel', function (evt) {
+
+		var rectEl = scrollContainer.getBoundingClientRect();
+		if ((rectEl.top > 0 && rectEl.top < 75) && (ind > -1 && ind < 21)) {
+			var currentdateIndex = ind;
+			removeClass(items[currentdateIndex], 'active');
+			removeClass(fls[currentdateIndex], 'active');
+			removeClass(frs[currentdateIndex], 'active');
+			if (evt.deltaY < 0) {
+				ind--;
+				removeClass(items[currentdateIndex + 1], 'active');
+				removeClass(fls[currentdateIndex + 1], 'active');
+				removeClass(frs[currentdateIndex + 1], 'active');
+				scrollContainer.style.marginLeft = (items.length - 1 - currentdateIndex * items[0].offsetWidth) + 'px';
+				addClass(items[currentdateIndex], 'active');
+				if (currentdateIndex != 0) {
+					addClass(fls[currentdateIndex], 'active');
+				}
+				if (currentdateIndex != 20) {
+					addClass(frs[currentdateIndex], 'active');
+				}
+			} else {
+				ind++;
+				scrollContainer.style.marginLeft = (-currentdateIndex * items[0].offsetWidth) + 'px';
 			}
 
-			addClass(this, 'active');
-
-			for (var j = 0; j < fls.length; j++) {
-				removeClass(fls[j], 'active');
-				removeClass(frs[j], 'active');
+			if (ind > -1 && ind < 21) {
+				evt.preventDefault();
+				var activeItem = items[ind];
+				addClass(activeItem, 'active');
+				if (ind != 0) {
+					addClass(fls[ind], 'active');
+				}
+				if (ind != 20) {
+					addClass(frs[ind], 'active');
+				}
 			}
-			if (currentdateIndex != 0) {
-				addClass(fls[currentdateIndex], 'active');
-			}
-			if (currentdateIndex != 20) {
-				addClass(frs[currentdateIndex], 'active');
-			}
+		} else {
+			ind = 0;
 		}
-	};
+		console.log(rectEl);
+		// evt.preventDefault();
+	});
 
-	// Инициализация. Состояние по умолчанию.
 	items[0].onclick();
-	// hsw[0].addEventListener('mousewheel', onwheel);
-	// hsw[0].addEventListener('mouseover', onwheel);
 
 }
 

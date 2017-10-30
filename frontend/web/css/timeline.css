@@ -4,33 +4,25 @@ body {
 .clear {
   clear: both; }
 
-::-webkit-scrollbar {
-  width: 1px;
-  height: 1px; }
-
-::-webkit-scrollbar-button {
-  width: 1px;
-  height: 1px; }
-
-.wrap {
-  overflow-x: hidden; }
-
 .container_inner {
   width: 934px;
   margin: 0 auto; }
 
 .timeline-bg {
-  position: absolute;
   background: #dddedf;
   background: -webkit-linear-gradient(left, #dddedf, #edeef0);
   background: -o-linear-gradient(right, #dddedf, #edeef0);
   background: -moz-linear-gradient(right, #dddedf, #edeef0);
   background: linear-gradient(to right, #dddedf, #edeef0);
+  position: absolute;
   width: 100%; }
 
 .top_block {
+  font-family: "Proxima Nova Thin";
   padding-top: 51px;
   text-align: center; }
+  .top_block a {
+    text-decoration: none; }
   .top_block .tass_logo {
     float: left; }
   .top_block .social {
@@ -49,15 +41,13 @@ body {
       width: 20px;
       height: 20px; }
   .top_block .go_front {
-    font-family: "Proxima Nova Thin";
     border: 1px solid #fff;
     color: #fff;
     position: relative;
     top: 29px;
     line-height: 38px;
     display: inline-block;
-    padding: 0px 42px;
-    text-decoration: none; }
+    padding: 0px 42px; }
     .top_block .go_front:before {
       content: '';
       display: block;
@@ -72,8 +62,8 @@ body {
   color: #010211;
   position: relative; }
   .timeline h1 {
-    font-family: "Proxima Nova Bold";
     text-align: center;
+    font-family: "Proxima Nova Bold";
     font-size: 40px;
     font-weight: bold;
     color: #fff;
@@ -83,58 +73,42 @@ body {
     line-height: 39px; }
   .timeline #section0 {
     height: 1050px; }
-    .timeline #section0 .squares > .item {
-      width: 544px;
-      height: 544px; }
-    .timeline #section0 .squares > .item.mt {
-      margin-top: 215px; }
-    .timeline #section0 .horizontal-scroll-wrapper {
-      position: absolute;
-      cursor: pointer;
-      display: block;
-      top: 370px;
-      left: 0px;
-      width: calc(544px + 1px);
-      max-height: 1360px;
-      margin: 0;
-      padding-top: 1px;
-      overflow-y: auto;
-      overflow-x: hidden;
-      transform: rotate(-90deg) translateY(-544px);
-      transform-origin: right top; }
-      .timeline #section0 .horizontal-scroll-wrapper .hr {
-        margin: 0 0 0 210px;
-        border: 1.6px solid #dbc8ae; }
-      .timeline #section0 .horizontal-scroll-wrapper > .item {
-        display: block;
-        transform: rotate(90deg); }
-      .timeline #section0 .horizontal-scroll-wrapper .item {
-        margin-top: 125px; }
-        .timeline #section0 .horizontal-scroll-wrapper .item .date {
-          cursor: pointer;
-          padding-left: 30px;
-          padding-top: 30px;
-          width: 450px;
+    .timeline #section0 .sliderbox {
+      display: flex;
+      flex-direction: row;
+      margin-top: 40px; }
+      .timeline #section0 .sliderbox .item {
+        cursor: pointer;
+        -webkit-transition: margin-left .5s ease-out;
+        -moz-transition: margin-left .5s ease-out;
+        -o-transition: margin-left .5s ease-out;
+        transition: margin-left .5s ease-out; }
+        .timeline #section0 .sliderbox .item .date {
+          padding: 30px 0 0 30px;
           height: 100px; }
-          .timeline #section0 .horizontal-scroll-wrapper .item .date .date-item {
+          .timeline #section0 .sliderbox .item .date .date-item {
             color: #dbc8ae;
-            font-family: "Proxima Nova Bold";
             font-size: 18px;
-            line-height: 24px; }
-        .timeline #section0 .horizontal-scroll-wrapper .item.active > .date {
+            line-height: 24px;
+            font-weight: 600; }
+        .timeline #section0 .sliderbox .item.active > .date {
           padding-top: 0px; }
-        .timeline #section0 .horizontal-scroll-wrapper .item.active > .date > .date-item {
+        .timeline #section0 .sliderbox .item.active > .date > .date-item {
           font-size: 40px;
           line-height: 40px; }
-        .timeline #section0 .horizontal-scroll-wrapper .item .description {
-          width: 510px;
-          height: 375px;
+        .timeline #section0 .sliderbox .item .hr {
+          border: 1.6px solid #dbc8ae; }
+        .timeline #section0 .sliderbox .item .description {
+          margin: 0 100px 0 0;
+          min-width: 510px;
+          max-width: 600px;
+          height: 500px;
           background: #fff; }
-          .timeline #section0 .horizontal-scroll-wrapper .item .description .circle {
+          .timeline #section0 .sliderbox .item .description .circle {
             display: none; }
-            .timeline #section0 .horizontal-scroll-wrapper .item .description .circle.active {
+            .timeline #section0 .sliderbox .item .description .circle.active {
               display: unset;
-              top: 300px;
+              top: 44%;
               position: absolute;
               border: 2px solid #dbc8ae;
               border-radius: 50%;
@@ -143,29 +117,29 @@ body {
               font-size: 20px;
               line-height: 50px;
               text-align: center;
-              height: 130px;
-              width: 130px; }
-              .timeline #section0 .horizontal-scroll-wrapper .item .description .circle.active.fl {
+              height: 125px;
+              width: 125px; }
+              .timeline #section0 .sliderbox .item .description .circle.active.fl {
                 margin-left: -65px; }
-              .timeline #section0 .horizontal-scroll-wrapper .item .description .circle.active.fr {
-                margin-left: 440px; }
-              .timeline #section0 .horizontal-scroll-wrapper .item .description .circle.active .prev {
+              .timeline #section0 .sliderbox .item .description .circle.active.fr {
+                margin-left: 445px; }
+              .timeline #section0 .sliderbox .item .description .circle.active .prev {
                 border-radius: 50%;
                 background-color: #dbc8ae;
                 height: 50px;
                 width: 50px;
-                margin: 38px; }
-                .timeline #section0 .horizontal-scroll-wrapper .item .description .circle.active .prev:hover {
-                  transform: scale(1.3); }
-              .timeline #section0 .horizontal-scroll-wrapper .item .description .circle.active .next {
+                margin: 35px; }
+                .timeline #section0 .sliderbox .item .description .circle.active .prev:hover {
+                  transform: scale(1.25); }
+              .timeline #section0 .sliderbox .item .description .circle.active .next {
                 border-radius: 50%;
                 background-color: #dbc8ae;
                 height: 50px;
                 width: 50px;
-                margin: 38px; }
-                .timeline #section0 .horizontal-scroll-wrapper .item .description .circle.active .next:hover {
-                  transform: scale(1.3); }
-          .timeline #section0 .horizontal-scroll-wrapper .item .description .dot {
+                margin: 35px; }
+                .timeline #section0 .sliderbox .item .description .circle.active .next:hover {
+                  transform: scale(1.25); }
+          .timeline #section0 .sliderbox .item .description .dot {
             position: absolute;
             background-color: #fff;
             border: 3px solid #dbc8ae;
@@ -173,15 +147,17 @@ body {
             height: 26px;
             width: 26px;
             margin: -13px 0 0 15px; }
-          .timeline #section0 .horizontal-scroll-wrapper .item .description .dot + p {
+          .timeline #section0 .sliderbox .item .description .dot + p {
             padding-top: 40px;
             padding-bottom: 20px; }
-          .timeline #section0 .horizontal-scroll-wrapper .item .description p {
+          .timeline #section0 .sliderbox .item .description p {
             font-family: "Proxima Nova Light";
             font-size: 18px;
             line-height: 30px;
             padding: 0 30px;
             margin: 0; }
+    .timeline #section0 .sliderbox:first-child {
+      margin-left: 225px; }
   .timeline #section1 {
     background: url("../images/timeline_section1.png") center top no-repeat;
     width: 100%; }
@@ -190,5 +166,47 @@ body {
       opacity: 0.65;
       width: 100%;
       height: 790px; }
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px; }
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px; }
+
+body {
+  background: #111; }
+
+div {
+  box-sizing: border-box; }
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: calc(250px + 1px);
+  max-height: 750px;
+  margin: 0;
+  padding-top: 1px;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-250px);
+  transform-origin: right top; }
+  .horizontal-scroll-wrapper > div {
+    display: block;
+    padding: 5px;
+    background: #cab;
+    transform: rotate(90deg);
+    transform-origin: right top; }
+
+.squares {
+  padding: 250px 0 0 0; }
+  .squares > div {
+    width: 250px;
+    height: 250px;
+    margin: 10px 0; }
 
 /*# sourceMappingURL=timeline.css.map */

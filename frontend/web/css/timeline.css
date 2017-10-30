@@ -1,6 +1,3 @@
-body {
-  font-family: "Proxima Nova"; }
-
 .clear {
   clear: both; }
 
@@ -82,7 +79,8 @@ body {
       -o-transition: margin-left .5s ease-out;
       transition: margin-left .5s ease-out; }
       .timeline #section0 .sliderbox .item {
-        cursor: pointer; }
+        cursor: pointer;
+        font-family: "Proxima Nova Bold"; }
         .timeline #section0 .sliderbox .item .date {
           padding: 30px 0 0 30px;
           height: 100px; }
@@ -156,8 +154,6 @@ body {
             line-height: 30px;
             padding: 0 30px;
             margin: 0; }
-    .timeline #section0 .sliderbox:first-child {
-      margin-left: 225px; }
   .timeline #section1 {
     background: url("../images/timeline_section1.png") center top no-repeat;
     width: 100%; }

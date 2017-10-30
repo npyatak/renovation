@@ -10,22 +10,28 @@ if (window.addEventListener) {
 }
 
 function workProcessInit() {
+	var scrollContainer = document.getElementsByClassName('sliderbox')[0];
 	var items = document.getElementsByClassName('item'),
 		fls = document.getElementsByClassName('fl'),
 		frs = document.getElementsByClassName('fr'),
-		hsw = document.getElementsByClassName('horizontal-scroll-wrapper')
-		;
+		currentdateIndex = 0,
+		prevInd = 0;
+	;
+	itemsLength = items.length;
 
 	for (var i = 0; i < items.length; i++) {
 		items[i].onclick = function () {
-			if (hasClass(this, 'active')) return;
+			if (hasClass(this, 'active')) {
+				return;
+			}
 			for (var j = 0; j < items.length; j++) {
 				removeClass(items[j], 'active');
 			}
 
 			addClass(this, 'active');
 
-			var currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
+			currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
+			prevInd = currentdateIndex;
 
 			for (var j = 0; j < fls.length; j++) {
 				removeClass(fls[j], 'active');
@@ -34,41 +40,56 @@ function workProcessInit() {
 			if (currentdateIndex != 0) {
 				addClass(fls[currentdateIndex], 'active');
 			}
-			if (currentdateIndex != 20) {
+			if (currentdateIndex != itemsLength) {
 				addClass(frs[currentdateIndex], 'active');
 			}
 		};
 	}
-	for (var z = 0; z < items.length; z++) {
-		items[z].onwheel = function (event) {
 
-			var currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
+	var ind = 0;
+
+	document.addEventListener('mousewheel', function (evt) {
+		var rectEl = scrollContainer.getBoundingClientRect();
+		if ((rectEl.top > 0 && rectEl.top < 120) && (ind > -1 && ind < itemsLength)) {
+			var currentdateIndex = ind;
+
 			console.log(currentdateIndex);
-
-			if (hasClass(this, 'active')) return;
-			for (var j = 0; j < items.length; j++) {
-				removeClass(items[j], 'active');
+			removeClass(fls[currentdateIndex], 'active');
+			removeClass(frs[currentdateIndex], 'active');
+			if (currentdateIndex > 0) {
+				removeClass(items[currentdateIndex], 'active');
+			}
+			if (evt.deltaY < 0) {
+				ind--;
+				if (ind > -1) {
+					scrollContainer.style.marginLeft = (items.length - ind * items[0].offsetWidth) + 'px';
+				}
+			} else {
+				ind++;
+				if (ind < items.length - 1) {
+					scrollContainer.style.marginLeft = (-ind * items[0].offsetWidth) + 'px';
+				}
 			}
 
-			addClass(this, 'active');
-
-			for (var j = 0; j < fls.length; j++) {
-				removeClass(fls[j], 'active');
-				removeClass(frs[j], 'active');
+			if (ind > -1 && ind < itemsLength) {
+				evt.preventDefault();
+				var activeItem = items[ind];
+				addClass(activeItem, 'active');
+				if (ind > 0) {
+					addClass(fls[ind], 'active');
+				}
+				if (ind != itemsLength) {
+					addClass(frs[ind], 'active');
+				}
 			}
-			if (currentdateIndex != 0) {
-				addClass(fls[currentdateIndex], 'active');
-			}
-			if (currentdateIndex != 20) {
-				addClass(frs[currentdateIndex], 'active');
-			}
+		} else {
+			ind = 0;
 		}
-	};
+		console.log(rectEl);
+		// evt.preventDefault();
+	});
 
-	// Инициализация. Состояние по умолчанию.
 	items[0].onclick();
-	// hsw[0].addEventListener('mousewheel', onwheel);
-	// hsw[0].addEventListener('mouseover', onwheel);
 
 }
 

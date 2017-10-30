@@ -1,14 +1,7 @@
 <?php
-
-/* @var $this \yii\web\View */
-/* @var $content string */
-
+use yii\helpers\Url;
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
-use common\widgets\Alert;
 
 AppAsset::register($this);
 ?>
@@ -27,55 +20,59 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'My Company',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
-
-    <!--<div class="container">-->
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
-    <!--</div>-->
-</div>
-
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+    <div class="header">
+        <img class="logo" src="<?=Url::toRoute('images/logo.png');?>" />
+        <div class="container_inner">
+            <a class="map_link" href="#">Карта</a>
+            <ul class="menu">
+                <?php
+                $menuItems = [
+                    ['label' => 'Закон о реновациях', 'action' => 'law'],
+                    ['label' => 'Карта', 'action' => 'map'],
+                    ['label' => 'Даты реализации', 'action' => 'vote'],
+                    ['label' => 'Герои', 'action' => 'heroes'],
+                    ['label' => 'История реноваций', 'action' => 'history'],
+                    ['label' => 'Хрущевки VS новые дома', 'action' => 'compare'],
+                ];
+                foreach ($menuItems as $item):?>
+                    <li>
+                        <?=Html::a($item['label'], Url::toRoute('site/'.$item['action']), [
+                            'class' => Yii::$app->controller->action->id === $item['action'] ? 'active' : ''
+                        ]);?>
+                    </li>
+                <?php endforeach;?>
+            </ul>
+            <div class="menu-btn">
+                <div class="open-menu-btn show"><span></span><span></span><span></span></div>
+                <div class="close-menu__btn"><span></span><span></span></div>
+            </div>
+        </div>
     </div>
-</footer>
+
+    <?= $content ?>
+
+    <div class="bottom_gallery">
+        <div class="title_bottom_gallery">Социальные обязательства: детские площадки, садики, школы и поликлиники</div>
+        <div class="bottom_gallery_img">
+            <a href="#" class="bottom_gallery_video"><img src="<?=Url::toRoute('images/footer_gallery_img.jpg');?>"/></a>
+            <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="text_wrap">
+            <p>
+                ТАСС информационное агентство(св-во о регистрации СМИ №03247 выдано 02 апреля 1999 г. Государственным комитетом Российской Федерации по печати)<br/>
+                Отдельные публикации могут содержать информацию, не предназначенную для пользователей до 16 лет.
+            </p>
+
+            <p>
+                Подробнее на ТАСС:<br/>
+                http://tass.ru/
+            </p>
+        </div>
+    </div>
+</div>
 
 <?php $this->endBody() ?>
 </body>

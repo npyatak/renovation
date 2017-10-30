@@ -1,20 +1,19 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use kartik\date\DatePicker;
 use mihaildev\ckeditor\CKEditor;
 use mihaildev\elfinder\ElFinder;
 
 use common\models\TimelineSlide;
 ?>
 
-<div class="district-form">
+<div class="slide-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'dateFormatted')->widget(
-        DatePicker::className()
-    );?>
+    <?= $form->field($model, 'date_1')->textInput() ?>
+
+    <?= $form->field($model, 'date_2')->textInput() ?>
 
     <?= $form->field($model, 'number')->textInput() ?>
 

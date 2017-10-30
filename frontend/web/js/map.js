@@ -64,25 +64,17 @@ $(function() {
     app.module('mapOptions', document, function() {
         this.placemarksInfo = {
             H: {
-                iconPath: window.mapsImagesPath + 'map-icons/1.svg',
-                largeIconPath: window.mapsImagesPath + 'map-icons/1-large.svg'
+                iconPath: window.mapsImagesPath + 'map-icons/point_houses.png',
+                largeIconPath: window.mapsImagesPath + 'map-icons/point_houses.png'
             },
             SP: {
-                iconPath: window.mapsImagesPath + 'map-icons/2.svg',
-                largeIconPath: window.mapsImagesPath + 'map-icons/2-large.svg'
+                iconPath: window.mapsImagesPath + 'map-icons/point_places.png',
+                largeIconPath: window.mapsImagesPath + 'map-icons/point_places.png'
             },
-            type3: {
-                iconPath: window.mapsImagesPath + 'map-icons/3.svg',
-                largeIconPath: window.mapsImagesPath + 'map-icons/3-large.svg'
-            },
-            type4: {
-                iconPath: window.mapsImagesPath + 'map-icons/4.svg',
-                largeIconPath: window.mapsImagesPath + 'map-icons/4-large.svg'
-            }
         };
         this.defaultIconOptions = {
-            iconImageSize: [21, 28],
-            iconImageOffset: [-10, -28]
+            iconImageSize: [34, 42],
+            iconImageOffset: [0, 0]
         };
     });
 });

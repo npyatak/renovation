@@ -15,6 +15,7 @@ use common\models\District;
 use common\models\Region;
 use common\models\Compare;
 use common\models\TimelineSlide;
+use common\models\Gallery;
 /**
  * Site controller
  */
@@ -44,7 +45,7 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    public function actionRenovation($type = null) {
+    public function actionMap($type = null) {
         $houses = null;
         $startPlaces = null;
         $page = Page::find()->where(['url' => 'renovation'])->one();
@@ -80,7 +81,7 @@ class SiteController extends Controller
                 ->all();
         }
 
-        return $this->render('renovation', [
+        return $this->render('map', [
             'page' => $page,
             'houses' => $houses,
             'startPlaces' => $startPlaces,
@@ -88,6 +89,7 @@ class SiteController extends Controller
             'dataProvider' => $dataProvider,
             'regionArr' => $regionArr,
             'districtsArr' => $districtsArr,
+            'type' => $type,
         ]);
     }
 
@@ -120,9 +122,20 @@ class SiteController extends Controller
         return $this->render('law');
     }
 
-    public function actionGallery()
+    public function actionGallery($id = 1)
     {
-        return $this->render('gallery');
+        $gallery = Gallery::findOne($id);
+        if($gallery === null) {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+
+        $otherGalleries = Gallery::find()->where(['not', ['id' => $id]])->all();
+
+        return $this->render('gallery', [
+            'gallery' => $gallery,
+            'slides' => $gallery->gallerySlides,
+            'otherGalleries' => $otherGalleries,
+        ]);
     }
 
     public function actionRegions() {

@@ -19,13 +19,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'columns' => [
                 'number',
                 'id',
+                'date_1',
+                'date_2',
                 [
-                    'attribute' => 'dateFormatted',
-                    'value' => function($data) {
-                        return $data->dateFormatted;
-                    }
+                    'attribute' => 'text',
+                    'format' => 'raw',
                 ],
-                'text',
 
                 [
                     'class' => 'yii\grid\ActionColumn',

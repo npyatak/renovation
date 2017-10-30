@@ -4,17 +4,8 @@ use yii\helpers\Url;
 $this->title = $gallery->title;
 ?>
 <div class="gallery">
-	<div class="container_inner top_block">
-		<img class="tass_logo" src="<?=Url::toRoute('images/tass_logo.png');?>"/>
-		<a class="go_front" href="<?=Url::home();?>"><i class="fa fa-angle-left" aria-hidden="true"></i>На главную</a>
-		<div class="social">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-        </div>
-		<div class="clear"></div>
-	</div>
+    <?=$this->render('_top_block');?>
+    
 	<div class="container_inner">
 		<div class="small_title">Галерея</div>
 		<h1><?=$this->title;?></h1>

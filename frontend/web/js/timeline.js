@@ -40,7 +40,7 @@ function workProcessInit() {
 			if (currentdateIndex != 0) {
 				addClass(fls[currentdateIndex], 'active');
 			}
-			if (currentdateIndex != itemsLength) {
+			if (currentdateIndex < frs.length - 1) {
 				addClass(frs[currentdateIndex], 'active');
 			}
 		};
@@ -52,8 +52,6 @@ function workProcessInit() {
 		var rectEl = scrollContainer.getBoundingClientRect();
 		if ((rectEl.top > 0 && rectEl.top < 120) && (ind > -1 && ind < itemsLength)) {
 			var currentdateIndex = ind;
-
-			console.log(currentdateIndex);
 			removeClass(fls[currentdateIndex], 'active');
 			removeClass(frs[currentdateIndex], 'active');
 			if (currentdateIndex > 0) {
@@ -75,10 +73,10 @@ function workProcessInit() {
 				evt.preventDefault();
 				var activeItem = items[ind];
 				addClass(activeItem, 'active');
-				if (ind > 0) {
+				if (ind != 0) {
 					addClass(fls[ind], 'active');
 				}
-				if (ind != itemsLength) {
+				if (ind != itemsLength - 1) {
 					addClass(frs[ind], 'active');
 				}
 			}

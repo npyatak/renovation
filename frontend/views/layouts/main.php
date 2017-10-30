@@ -21,7 +21,7 @@ AppAsset::register($this);
 
 <div class="wrap">
     <div class="header">
-        <img class="logo" src="/frontend/web/images/logo.png" />
+        <img class="logo" src="<?=Url::toRoute('images/logo.png');?>" />
         <div class="container_inner">
             <a class="map_link" href="#">Карта</a>
             <ul class="menu">

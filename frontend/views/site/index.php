@@ -1,17 +1,11 @@
 <?php
+use yii\helpers\Url;
+
 $this->title = 'Главная';
 ?>
 <div class="front">
-    <div class="container_inner top_block">
-        <img class="tass_logo" src="<?=Url::toRoute('images/tass_logo.png');?>"/>
-        <div class="social">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-        </div>
-        <div class="clear"></div>
-    </div>
+    <?=$this->render('_top_block');?>
+    
     <div class="container_inner front_text">
     	<img class="logo_big" src="<?=Url::toRoute('images/logo_big.png');?>"/>
         <h1>Реновации москвы.<br/> История, Герои, география</h1>
@@ -22,14 +16,14 @@ $this->title = 'Главная';
                 <img src="<?=Url::toRoute('images/map_img_front.jpg');?>"/>
                 <div class="text_info">
                     <div class="small">Карта</div>
-                    <a href="#">Стартовые площадки 1 этапа реновации</a>
+                    <a href="<?=Url::toRoute('site/map');?>">Стартовые площадки 1 этапа реновации</a>
                 </div>
             </div>
             <div class="grid_item text1">
                 <div class="block_text">
                     <div class="small">Читать</div>
                     <div class="text">
-                        <a href="#">История реноваций: даты и факты</a>
+                        <a href="<?=Url::toRoute('site/history');?>">История реноваций: даты и факты</a>
                     </div>
                 </div>
             </div>
@@ -37,7 +31,7 @@ $this->title = 'Главная';
                 <img src="<?=Url::toRoute('images/article_img_front.jpg');?>"/>
                 <div class="text_info">
                     <div class="small">Читать</div>
-                    <a href="#">Герои: личные истории</a>
+                    <a href="<?=Url::toRoute('site/heroes');?>">Герои: личные истории</a>
                 </div>
             </div>
             <div class="grid_item text2">
@@ -45,7 +39,7 @@ $this->title = 'Главная';
                     <div class="block_text">
                         <div class="small">Закон</div>
                         <div class="text">
-                            <a href="#">Расшифровка внутри</a>
+                            <a href="<?=Url::toRoute('site/law');?>">Расшифровка внутри</a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +47,7 @@ $this->title = 'Главная';
                     <div class="block_text">
                         <div class="small">Таймлайн</div>
                         <div class="text">
-                            <a href="#">Даты реализации проекта по реновации</a>
+                            <a href="<?=Url::toRoute('site/timeline');?>">Даты реализации проекта по реновации</a>
                         </div>
                     </div>
                 </div>

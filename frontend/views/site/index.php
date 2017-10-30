@@ -4,16 +4,8 @@ use yii\helpers\Url;
 $this->title = 'Главная';
 ?>
 <div class="front">
-    <div class="container_inner top_block">
-        <img class="tass_logo" src="<?=Url::toRoute('images/tass_logo.png');?>"/>
-        <div class="social">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-        </div>
-        <div class="clear"></div>
-    </div>
+    <?=$this->render('_top_block');?>
+    
     <div class="container_inner front_text">
     	<img class="logo_big" src="<?=Url::toRoute('images/logo_big.png');?>"/>
         <h1>Реновации москвы.<br/> История, Герои, география</h1>

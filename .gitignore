@@ -35,3 +35,7 @@ phpunit.phar
 /.vagrant
 
 /webstat
+
+# sass caches and map files are not needed
+.sass-cache
+*.map

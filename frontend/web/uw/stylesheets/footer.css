@@ -1,23 +1,18 @@
-/* line 1, ../sass/footer.scss */
 .footer {
   background: url("../../images/footer_img.jpg") center no-repeat;
-  background-size: cover;
-}
-/* line 4, ../sass/footer.scss */
-.footer .text_wrap {
-  text-align: center;
-  max-width: 684px;
-  margin: 0 auto;
-  padding-top: 36px;
-  line-height: 17px;
-  padding-bottom: 5px;
-}
-/* line 11, ../sass/footer.scss */
-.footer .text_wrap p {
-  font-size: 14px;
-  color: white;
-  font-family: "Proxima Nova";
-  font-weight: 300;
-  margin-bottom: 0px;
-  padding-bottom: 34px;
-}
+  background-size: cover; }
+  .footer .text_wrap {
+    text-align: center;
+    max-width: 684px;
+    margin: 0 auto;
+    padding-top: 36px;
+    line-height: 17px;
+    padding-bottom: 5px; }
+    .footer .text_wrap p {
+      font-size: 14px;
+      color: white;
+      font-family: "Proxima Nova Thin";
+      margin-bottom: 0px;
+      padding-bottom: 34px; }
+
+/*# sourceMappingURL=footer.css.map */

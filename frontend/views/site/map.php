@@ -106,3 +106,17 @@ $this->title = 'Карта';
     $this->registerJs($script, yii\web\View::POS_END);
     ?>
 </div>
+<div class="bottom_select_gallery">
+    <a href="#" class="select_gallery">
+        <img src="/frontend/web/images/gallery/footer_1.jpg"/>
+    </a>
+    <a href="#" class="select_gallery">
+        <img src="/frontend/web/images/gallery/footer_2.jpg"/>
+    </a>
+    <a href="#" class="select_gallery">
+        <img src="/frontend/web/images/gallery/footer_3.jpg"/>
+    </a>
+    <a href="#" class="select_gallery">
+        <img src="/frontend/web/images/gallery/footer_4.jpg"/>
+    </a>
+</div>

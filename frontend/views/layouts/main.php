@@ -29,18 +29,18 @@ AppAsset::register($this);
                 $menuItems = [
                     ['label' => 'Закон о реновациях', 'action' => 'law'],
                     ['label' => 'Карта', 'action' => 'map'],
-                    ['label' => 'Даты реализации', 'action' => 'vote'],
+                    ['label' => 'Даты реализации', 'action' => 'timeline'],
                     ['label' => 'Герои', 'action' => 'heroes'],
                     ['label' => 'История реноваций', 'action' => 'history'],
                     ['label' => 'Хрущевки VS новые дома', 'action' => 'compare'],
                 ];
-                foreach ($menuItems as $item):?>
+                foreach ($menuItems as $item) :?>
                     <li>
                         <?=Html::a($item['label'], Url::toRoute('site/'.$item['action']), [
                             'class' => Yii::$app->controller->action->id === $item['action'] ? 'active' : ''
                         ]);?>
                     </li>
-                <?php endforeach;?>
+                <?php                                                                                                                                                                                                                                                                                                                                                                                                                                 endforeach;?>
             </ul>
             <div class="menu-btn">
                 <div class="open-menu-btn show"><span></span><span></span><span></span></div>

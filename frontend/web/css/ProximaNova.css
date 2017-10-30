@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova Thin";
     src: url("../fonts/ProximaNova/ProximaNova-Thin.eot"); /* IE9 Compat Modes */
     src: url("../fonts/ProximaNova/ProximaNova-Thin.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
          url("../fonts/ProximaNova/ProximaNova-Thin.woff") format("woff"), /* Modern Browsers */
@@ -9,7 +9,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova Light";
     src: url("../fonts/ProximaNova/ProximaNova-Light.eot"); /* IE9 Compat Modes */
     src: url("../fonts/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
          url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), /* Modern Browsers */
@@ -29,7 +29,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova Regular";
     src: url("../fonts/ProximaNova/ProximaNova-Regular.eot"); /* IE9 Compat Modes */
     src: url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
          url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), /* Modern Browsers */

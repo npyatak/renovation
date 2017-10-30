@@ -150,8 +150,21 @@ $this->params['breadcrumbs'][] = $this->title;
     $this->registerJs($script, yii\web\View::POS_END);
     ?>
 </div>
+<div class="bottom_select_gallery">
+    <a href="#" class="select_gallery">
+        <img src="/frontend/web/images/gallery/footer_1.jpg"/>
+    </a>
+    <a href="#" class="select_gallery">
+        <img src="/frontend/web/images/gallery/footer_2.jpg"/>
+    </a>
+    <a href="#" class="select_gallery">
+        <img src="/frontend/web/images/gallery/footer_3.jpg"/>
+    </a>
+    <a href="#" class="select_gallery">
+        <img src="/frontend/web/images/gallery/footer_4.jpg"/>
+    </a>
+</div>
 <div class="bottom_gallery">
-    <div class="title_bottom_gallery">Социальные обязательства: детские площадки, садики, школы и поликлиники</div>
     <div class="bottom_gallery_img">
         <a href="#" class="bottom_gallery_video"><img src="/frontend/web/images/footer_gallery_img.jpg"/></a>
         <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>

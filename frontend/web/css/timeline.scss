@@ -98,14 +98,12 @@ body {
 				display: flex;
     			flex-direction: row;
 				margin-top: 40px;
-				
-				.item {
-					cursor: pointer;
-				    -webkit-transition: margin-left .5s ease-out;
+				 -webkit-transition: margin-left .5s ease-out;
 				       -moz-transition: margin-left .5s ease-out;
 				         -o-transition: margin-left .5s ease-out;
 					        transition: margin-left .5s ease-out;
-					
+				.item {
+					cursor: pointer;
 					.date {
 						padding: 30px 0 0 30px;
 						height: 100px;

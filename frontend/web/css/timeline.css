@@ -76,13 +76,13 @@ body {
     .timeline #section0 .sliderbox {
       display: flex;
       flex-direction: row;
-      margin-top: 40px; }
+      margin-top: 40px;
+      -webkit-transition: margin-left .5s ease-out;
+      -moz-transition: margin-left .5s ease-out;
+      -o-transition: margin-left .5s ease-out;
+      transition: margin-left .5s ease-out; }
       .timeline #section0 .sliderbox .item {
-        cursor: pointer;
-        -webkit-transition: margin-left .5s ease-out;
-        -moz-transition: margin-left .5s ease-out;
-        -o-transition: margin-left .5s ease-out;
-        transition: margin-left .5s ease-out; }
+        cursor: pointer; }
         .timeline #section0 .sliderbox .item .date {
           padding: 30px 0 0 30px;
           height: 100px; }

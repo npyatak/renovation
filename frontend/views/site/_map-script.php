@@ -1,3 +1,8 @@
+window.mapsImagesPath = '/images/';
+window.objectPlacemarks = [
+    <?=implode(',', $pm);?>
+];
+
 app.module('objectMap', '#object-map', function() {
     this.ymapsInit = ymaps.ready(function() {
         this.map = new ymaps.Map('object-map', {

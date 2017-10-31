@@ -23,7 +23,6 @@ class AppAsset extends AssetBundle
         'uw/stylesheets/gallery.css',
         'uw/stylesheets/compare.css',
         'uw/stylesheets/renovation.css',
-        'uw/stylesheets/timeline.css',
         'uw/stylesheets/footer.css',
     ];
     public $js = [

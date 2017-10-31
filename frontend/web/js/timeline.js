@@ -75,9 +75,9 @@ function workProcessInit() {
 
 	var ind = 0;
 
-	document.addEventListener('mousewheel', function (evt) {
+	scrollContainer.addEventListener('mousewheel', function (evt) {
 		var rectEl = scrollContainer.getBoundingClientRect();
-		if ((rectEl.top > 0 && rectEl.top < 120) && (ind > -1 && ind < itemsLength)) {
+		if ((rectEl.top > -50 && rectEl.top < 100) && (ind > -1 && ind < itemsLength)) {
 			var currentdateIndex = ind;
 			removeClass(fls[currentdateIndex], 'active');
 			removeClass(frs[currentdateIndex], 'active');
@@ -110,11 +110,7 @@ function workProcessInit() {
 		} else {
 			ind = 0;
 		}
-		console.log(rectEl);
-		// evt.preventDefault();
 	});
-
-
 }
 
 function hasClass(el, cl) {

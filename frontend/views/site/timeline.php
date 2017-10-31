@@ -29,10 +29,10 @@ $this->registerJsFile(Url::toRoute('js/timeline.js'), ['depends' => [\yii\web\Jq
                     <div class="description">
                         <div class="dot"></div>
                         <?=$slide->text;?>
-                        <div class="circle fl">
+                        <div class="circle fl" data-index="<?=$key;?>">
                             <div class="prev"><</div>
                         </div>
-                        <div class="circle fr <?=$key == 0 ? ' active' : '';?>">
+                        <div class="circle fr<?=$key == 0 ? ' active' : '';?>" data-index="<?=$key;?>">
                             <div class="next">></div>
                         </div>
                     </div>

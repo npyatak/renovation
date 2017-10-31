@@ -46,42 +46,6 @@
         width: 510px;
         height: 500px;
         background: #fff; }
-        .timeline .sliderbox .item .description .circle {
-          display: none; }
-          .timeline .sliderbox .item .description .circle.active {
-            display: unset;
-            top: 75%;
-            position: absolute;
-            border: 2px solid #dbc8ae;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 20px;
-            line-height: 50px;
-            text-align: center;
-            height: 125px;
-            width: 125px; }
-            .timeline .sliderbox .item .description .circle.active.fl {
-              margin-left: -65px; }
-            .timeline .sliderbox .item .description .circle.active.fr {
-              margin-left: 445px; }
-            .timeline .sliderbox .item .description .circle.active .prev {
-              border-radius: 50%;
-              background-color: #dbc8ae;
-              height: 50px;
-              width: 50px;
-              margin: 35px;
-              transition: transform .3s; }
-              .timeline .sliderbox .item .description .circle.active .prev:hover {
-                transform: scale(1.3); }
-            .timeline .sliderbox .item .description .circle.active .next {
-              border-radius: 50%;
-              background-color: #dbc8ae;
-              height: 50px;
-              width: 50px;
-              margin: 35px;
-              transition: transform .3s; }
-              .timeline .sliderbox .item .description .circle.active .next:hover {
-                transform: scale(1.3); }
         .timeline .sliderbox .item .description .dot {
           position: absolute;
           background-color: #fff;
@@ -99,8 +63,39 @@
           line-height: 30px;
           padding: 0 30px;
           margin: 0; }
+        .timeline .sliderbox .item .description .circle {
+          opacity: 0;
+          transition: opacity 2.1s ease-out;
+          pointer-events: none; }
+        .timeline .sliderbox .item .description .active {
+          pointer-events: unset;
+          opacity: 1;
+          display: block;
+          position: absolute;
+          top: 75%;
+          border: 2px solid #dbc8ae;
+          border-radius: 50%;
+          cursor: pointer;
+          font-size: 20px;
+          line-height: 50px;
+          text-align: center;
+          height: 125px;
+          width: 125px; }
+          .timeline .sliderbox .item .description .active.fl {
+            margin-left: -65px; }
+          .timeline .sliderbox .item .description .active.fr {
+            margin-left: 445px; }
+          .timeline .sliderbox .item .description .active .prev, .timeline .sliderbox .item .description .active .next {
+            border-radius: 50%;
+            background-color: #dbc8ae;
+            height: 50px;
+            width: 50px;
+            margin: 35px;
+            transition: transform .5s; }
+          .timeline .sliderbox .item .description .active:hover .prev, .timeline .sliderbox .item .description .active:hover .next {
+            transform: scale(1.3); }
     .timeline .sliderbox .item:first-child {
-      margin-left: 220px; }
+      margin-left: 335px; }
     .timeline .sliderbox .item:last-child .hr {
       width: 510px; }
 

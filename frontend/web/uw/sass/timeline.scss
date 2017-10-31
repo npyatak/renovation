@@ -1,6 +1,7 @@
 .timeline {
 	font-family: "Proxima Nova";
-    color: #010211;
+	color: #010211;
+
 	.top_block {
 		padding-top: 0px;
 	}
@@ -57,51 +58,8 @@
 		    	margin: 0 100px 0 0;
 				width: 510px;
 				height: 500px;
-		    	background: #fff;
-				.circle {
-					display: none;
-					&.active {
-						display: unset;
-						top: 75%;
-						position: absolute;
-						border: 2px solid #dbc8ae;
-						border-radius: 50%;
-						cursor: pointer;
-						font-size: 20px;
-						line-height: 50px;
-						text-align: center;
-						height: 125px;
-						width: 125px;
-						&.fl {
-							margin-left: -65px;
-						}
-						&.fr {
-							margin-left: 445px;
-						}
-						.prev {
-							border-radius: 50%;
-							background-color: #dbc8ae;
-							height: 50px;
-							width: 50px;
-							margin: 35px;
-							transition: transform .3s;
-							&:hover {
-								transform: scale(1.3);
-							}
-						}
-						.next {
-							border-radius: 50%;
-							background-color: #dbc8ae;
-							height: 50px;
-							width: 50px;
-							margin: 35px;
-							transition: transform .3s;							
-							&:hover {
-								transform: scale(1.3);
-							}							
-						}
-					}
-				}
+				background: #fff;
+
 				.dot {
 					position: absolute;
     				background-color: #fff;
@@ -111,10 +69,12 @@
     				width: 26px;
     				margin: -13px 0 0 15px;					
 				}
+
 				.dot + p {
 					padding-top: 40px;
 					padding-bottom: 20px;
 				}
+
 				p {
 				    font-family: "Proxima Nova Light";
 				    font-size: 18px;
@@ -122,11 +82,57 @@
 					padding: 0 30px;
 					margin: 0;
 				}
+
+				.circle {
+					opacity: 0;
+					transition: opacity 2.1s ease-out;					
+					pointer-events: none;
+				}
+
+				.active {
+					pointer-events: unset;
+					opacity: 1;
+					display: block;
+					position: absolute;
+					top: 75%;
+					border: 2px solid #dbc8ae;
+					border-radius: 50%;
+					cursor: pointer;
+					font-size: 20px;
+					line-height: 50px;
+					text-align: center;
+					height: 125px;
+					width: 125px;
+
+					&.fl {
+						margin-left: -65px;
+					}
+
+					&.fr {
+						margin-left: 445px;
+					}
+
+					.prev, .next {
+						border-radius: 50%;
+						background-color: #dbc8ae;
+						height: 50px;
+						width: 50px;
+						margin: 35px;
+						transition: transform .5s;
+					}
+
+					&:hover {
+						.prev, .next {
+							transform: scale(1.3);
+						}
+					}
+				}
+
 			}
-		}	
+		}
 
 		.item:first-child {
-			margin-left: 220px;
+			margin-left: 335px;
 			
 		}
 

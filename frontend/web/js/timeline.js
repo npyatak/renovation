@@ -14,35 +14,62 @@ function workProcessInit() {
 	var items = document.getElementsByClassName('item'),
 		fls = document.getElementsByClassName('fl'),
 		frs = document.getElementsByClassName('fr'),
-		currentdateIndex = 0,
-		prevInd = 0;
-	;
+		currentdateIndex = 0;
+
 	itemsLength = items.length;
 
-	for (var i = 0; i < items.length; i++) {
-		items[i].onclick = function () {
-			if (hasClass(this, 'active')) {
-				return;
-			}
-			for (var j = 0; j < items.length; j++) {
-				removeClass(items[j], 'active');
-			}
-
-			addClass(this, 'active');
-
-			currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
-			prevInd = currentdateIndex;
+	for (var i = 0; i < fls.length; i++) {
+		fls[i].onclick = function () {
 
 			for (var j = 0; j < fls.length; j++) {
 				removeClass(fls[j], 'active');
+			}
+
+			for (var j = 0; j < frs.length; j++) {
 				removeClass(frs[j], 'active');
 			}
-			if (currentdateIndex != 0) {
-				addClass(fls[currentdateIndex], 'active');
+
+			currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
+
+			removeClass(items[currentdateIndex], 'active');
+			addClass(items[currentdateIndex - 1], 'active');
+
+			if (currentdateIndex > 1) {
+				addClass(fls[currentdateIndex - 1], 'active');
 			}
-			if (currentdateIndex < frs.length - 1) {
-				addClass(frs[currentdateIndex], 'active');
+
+			if (currentdateIndex < frs.length) {
+				addClass(frs[currentdateIndex - 1], 'active');
 			}
+
+			scrollContainer.style.marginLeft = ((currentdateIndex - 1) * -items[0].offsetWidth) + 'px';
+		};
+	}
+
+	for (var i = 0; i < frs.length; i++) {
+		frs[i].onclick = function () {
+
+			for (var j = 0; j < frs.length; j++) {
+				removeClass(frs[j], 'active');
+			}
+			for (var j = 0; j < fls.length; j++) {
+				removeClass(fls[j], 'active');
+			}
+
+			currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
+
+			removeClass(items[currentdateIndex], 'active');
+			addClass(items[currentdateIndex + 1], 'active');
+
+			if (currentdateIndex > -1) {
+				addClass(fls[currentdateIndex + 1], 'active');
+			}
+
+			if (currentdateIndex + 2 < frs.length) {
+				addClass(frs[currentdateIndex + 1], 'active');
+			}
+
+			scrollContainer.style.marginLeft = ((currentdateIndex + 1) * -items[0].offsetWidth) + 'px';
 		};
 	}
 
@@ -87,7 +114,6 @@ function workProcessInit() {
 		// evt.preventDefault();
 	});
 
-	items[0].onclick();
 
 }
 

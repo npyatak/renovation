@@ -94,21 +94,6 @@ $this->title = ($type == 'house') ? 'Дома, включенные в прог�
     } ?>
 </div>
 
-<div class="bottom_select_gallery">
-    <a href="<?=Url::toRoute(['site/gallery', 'id' => 1]);?>" class="select_gallery">
-        <img src="<?=Url::toRoute('images/gallery/footer_1.jpg');?>"/>
-    </a>
-    <a href="<?=Url::toRoute(['site/gallery', 'id' => 2]);?>" class="select_gallery">
-        <img src="<?=Url::toRoute('images/gallery/footer_2.jpg');?>"/>
-    </a>
-    <a href="<?=Url::toRoute(['site/gallery', 'id' => 3]);?>" class="select_gallery">
-        <img src="<?=Url::toRoute('images/gallery/footer_3.jpg');?>"/>
-    </a>
-    <a href="<?=Url::toRoute(['site/gallery', 'id' => 4]);?>" class="select_gallery">
-        <img src="<?=Url::toRoute('images/gallery/footer_4.jpg');?>"/>
-    </a>
-</div>
-
 <?php 
 $script = $this->render('_map-script', ['pm' => $pm, 'type' => $houses ? 'houses' : 'places']);
 $this->registerJs($script, yii\web\View::POS_END);

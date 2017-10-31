@@ -3,6 +3,8 @@ use yii\helpers\Url;
 use yii\helpers\Html;
 use frontend\assets\AppAsset;
 
+use common\models\Gallery;
+
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -52,13 +54,25 @@ AppAsset::register($this);
 
     <?= $content ?>
 
+    <?php if(!in_array(Yii::$app->controller->action->id, ['index', 'gallery'])):?>
+        <?php $galleries = Gallery::find()->all();?>
+        <div class="bottom_select_gallery">
+        <?php foreach ($galleries as $gal):?>
+            <a href="<?=Url::toRoute(['site/gallery', 'id' => $gal->id]);?>" class="select_gallery">
+                <img src="<?=$gal->imageUrl;?>"/>
+            </a>
+        <?php endforeach;?>
+        </div>
+    <?php endif;?>
+
+    <?php if(!in_array(Yii::$app->controller->action->id, ['index'])):?>
     <div class="bottom_gallery">
-        <div class="title_bottom_gallery">Социальные обязательства: детские площадки, садики, школы и поликлиники</div>
         <div class="bottom_gallery_img">
             <a href="#" class="bottom_gallery_video"><img src="<?=Url::toRoute('images/footer_gallery_img.jpg');?>"/></a>
             <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
+    <?php endif;?>
 
     <div class="footer">
         <div class="text_wrap">

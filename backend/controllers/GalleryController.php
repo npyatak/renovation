@@ -57,6 +57,36 @@ class GalleryController extends Controller
         ]);
     }
 
+    public function actionUpdate($id)
+    {
+        $model = $this->findGallery($id);
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+
+            if($model->imageFile) {
+                $path = $model->imageSrcPath;
+                if(!file_exists($path)) {
+                    mkdir($path, 0775, true);
+                }
+                if($model->image && file_exists($path.$model->image)) {
+                    unlink($path.$model->image);
+                }
+
+                $model->image = md5(time()).'.'.$model->imageFile->extension;
+                
+                $model->imageFile->saveAs($path.$model->image);
+                $model->save(false, ['image']);
+            }
+
+            return $this->redirect('index');
+        } 
+
+        return $this->render('update', [
+            'model' => $model,
+        ]);
+    }
+
     public function actionCreateSlide($gId)
     {
         $gallery = $this->findGallery($gId);

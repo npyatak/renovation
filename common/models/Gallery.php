@@ -12,6 +12,7 @@ use Yii;
  */
 class Gallery extends \yii\db\ActiveRecord
 {
+    public $imageFile;
     /**
      * @inheritdoc
      */
@@ -28,6 +29,7 @@ class Gallery extends \yii\db\ActiveRecord
         return [
             [['title'], 'required'],
             [['title'], 'string', 'max' => 255],
+            [['imageFile'], 'file', 'extensions'=>'jpg, jpeg, png', 'maxSize'=>1024 * 1024 * 5, 'mimeTypes' => 'image/jpg, image/jpeg, image/png'],
         ];
     }
 
@@ -39,11 +41,20 @@ class Gallery extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'title' => 'Заголовок',
+            'imageFile' => 'Изображение',
         ];
     }
 
     public function getGallerySlides()
     {
         return $this->hasMany(GallerySlide::className(), ['gallery_id' => 'id']);
+    }
+
+    public function getImageSrcPath() {
+        return __DIR__ . '/../../frontend/web/uploads/gallery/';
+    }
+
+    public function getImageUrl() {
+        return Yii::$app->urlManagerFrontEnd->createAbsoluteUrl('/uploads/gallery/'.$this->image);
     }
 }

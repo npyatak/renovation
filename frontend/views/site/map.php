@@ -9,7 +9,7 @@ use kartik\depdrop\DepDrop;
 use common\models\District;
 use common\models\Region;
 
-$this->title = 'Карта';
+$this->title = ($type == 'house') ? 'Дома, включенные в программу' : 'Стартовые площадки'. ' 1 этапа реновации. Карта';
 ?>
 
 <?php $this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;onload=app.objectMap.ymapsInit');?>
@@ -19,7 +19,7 @@ $this->title = 'Карта';
     <?=$this->render('_top_block', ['class' => ' white']);?>
 
     <div class="container_inner white_text">
-        <h1 class="white_text"><?=$type == 'house' ? 'Дома, включенные в программу' : 'Стартовые площадки';?> 1 этапа реновации. Карта</h1>
+        <h1 class="white_text"><?=$this->title;?></h1>
         <div class="top_text">
             <p>
                 <?=$page->text;?>
@@ -31,7 +31,6 @@ $this->title = 'Карта';
             <a class="btn btn-primary <?=$type != 'house' ? 'active' : 'start white_text';?>" href="<?=Url::toRoute(['site/map', 'type' => null])?>">Стартовые площадки</a>
         </div>
     </div>
-
 
     <div id="object-map" style="width: 100%; height: 500px;"></div>
 
@@ -93,30 +92,24 @@ $this->title = 'Карта';
             }";
         }
     } ?>
-
-    <script>
-        window.mapsImagesPath = '/images/';
-        window.objectPlacemarks = [
-            <?=implode(',', $pm);?>
-        ];
-    </script>
-
-    <?php 
-    $script = $this->render('_map-script', ['type' => $houses ? 'houses' : 'places']);
-    $this->registerJs($script, yii\web\View::POS_END);
-    ?>
 </div>
+
 <div class="bottom_select_gallery">
-    <a href="#" class="select_gallery">
-        <img src="/frontend/web/images/gallery/footer_1.jpg"/>
+    <a href="<?=Url::toRoute(['site/gallery', 'id' => 1]);?>" class="select_gallery">
+        <img src="<?=Url::toRoute('images/gallery/footer_1.jpg');?>"/>
     </a>
-    <a href="#" class="select_gallery">
-        <img src="/frontend/web/images/gallery/footer_2.jpg"/>
+    <a href="<?=Url::toRoute(['site/gallery', 'id' => 2]);?>" class="select_gallery">
+        <img src="<?=Url::toRoute('images/gallery/footer_2.jpg');?>"/>
     </a>
-    <a href="#" class="select_gallery">
-        <img src="/frontend/web/images/gallery/footer_3.jpg"/>
+    <a href="<?=Url::toRoute(['site/gallery', 'id' => 3]);?>" class="select_gallery">
+        <img src="<?=Url::toRoute('images/gallery/footer_3.jpg');?>"/>
     </a>
-    <a href="#" class="select_gallery">
-        <img src="/frontend/web/images/gallery/footer_4.jpg"/>
+    <a href="<?=Url::toRoute(['site/gallery', 'id' => 4]);?>" class="select_gallery">
+        <img src="<?=Url::toRoute('images/gallery/footer_4.jpg');?>"/>
     </a>
 </div>
+
+<?php 
+$script = $this->render('_map-script', ['pm' => $pm, 'type' => $houses ? 'houses' : 'places']);
+$this->registerJs($script, yii\web\View::POS_END);
+?>

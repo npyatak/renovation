@@ -4,6 +4,7 @@ use yii\helpers\Url;
 $this->title = 'Даты реализации проекта по реновации. Таймлайн';
 
 $this->registerJsFile(Url::toRoute('js/timeline.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
+$this->registerCssFile(Url::toRoute('uw/stylesheets/timeline.css'));
 ?>
 
 <div class="timeline blue_top_bg">

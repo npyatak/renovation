@@ -56,24 +56,21 @@ $this->title = 'Главная';
                 <a href="#" class="bottom_video"><img src="<?=Url::toRoute('images/video_front_img.jpg');?>"/></a>
                 <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>
             </div>
+            <?php if($galleries):?>
             <div class="grid_item slider_front_item">
                 <div class="slider_front_wrap">
                     <div class="slider_front owl-carousel">
+                    <?php foreach ($galleries as $gal):?>
                         <div class="slider_front_item">
-                            <a href="#"><img src="<?=Url::toRoute('images/slider_front_img.jpg');?>"/></a>
+                            <a href="<?=Url::toRoute(['site/gallery', 'id' => $gal->id]);?>">
+                                <img src="<?=Url::toRoute('images/slider_front_img.jpg');?>"/>
+                            </a>
                         </div>
-                        <div class="slider_front_item">
-                            <a href="#"><img src="<?=Url::toRoute('images/slider_front_img.jpg');?>"/></a>
-                        </div>
-                        <div class="slider_front_item">
-                            <a href="#"><img src="<?=Url::toRoute('images/slider_front_img.jpg');?>"/></a>
-                        </div>
-                        <div class="slider_front_item">
-                            <a href="#"><img src="<?=Url::toRoute('images/slider_front_img.jpg');?>"/></a>
-                        </div>
+                    <?php endforeach;?>
                     </div>
                 </div>
             </div>
+            <?php endif;?>
         </div>
     </div>
 </div>

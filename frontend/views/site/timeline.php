@@ -10,11 +10,11 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/timeline.css'));
 <div class="timeline blue_top_bg">
     <?=$this->render('_top_block', ['class' => ' white']);?>
     	
-    <div class="container_inner white_text">
-        <h1 class="white_text"><?=$this->title;?></h1>
+    <div class="container_inner">
+        <h1><?=$this->title;?></h1>
     </div>
     
-    <div id="sliderbox" class="sliderbox">
+    <div class="container_inner sliderbox" id="sliderbox">
         <?php if ($slides) :?>
             <?php $key = 0;
             foreach ($slides as $key => $slide) :?>

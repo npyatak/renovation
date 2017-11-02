@@ -68,7 +68,7 @@ function workProcessInit() {
 			if (currentdateIndex != itemsLength - 2) {
 				addClass(frs[currentdateIndex + 1], 'active');
 			}
-			
+
 			scrollContainer.style.marginLeft = -items[currentdateIndex + 1].offsetLeft + offset + 'px';
 		}
 	}
@@ -107,6 +107,7 @@ function workProcessInit() {
 			}
 		} else {
 			ind = 0;
+			scrollContainer.style.marginLeft = offset + 'px';
 			addClass(items[ind], 'active');
 			addClass(frs[ind], 'active');
 		}

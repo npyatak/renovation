@@ -119,12 +119,18 @@
 					}
 
 					.prev, .next {
-						border-radius: 50%;
-						background-color: #dbc8ae;
-						height: 50px;
-						width: 50px;
-						margin: 35px;
-						transition: transform .5s;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						transition: transform .5s;	
+					}
+
+					.prev {
+						background: url('../../images/prev_ico.png') center no-repeat;
+					}
+
+					.next {
+						background: url('../../images/next_ico.png') center no-repeat;
 					}
 
 					&:hover {
@@ -190,12 +196,6 @@
 						&.fr {
 							margin-left: 378.25px;
 						}
-
-						.prev, .next {
-							height: 42.5px;
-							width: 42.5px;
-							margin: 29.75px;
-						}
 					}
 				}
 			}
@@ -254,12 +254,6 @@
 
 						&.fr {
 							margin-left: 333.75px;
-						}
-
-						.prev, .next {
-							height: 37.5px;
-							width: 37.5px;
-							margin: 26.25px;
 						}
 					}
 				}
@@ -320,12 +314,6 @@
 
 						&.fr {
 							margin-left: 311.5px;
-						}
-
-						.prev, .next {
-							height: 35px;
-							width: 35px;
-							margin: 24.5px;
 						}
 					}
 				}

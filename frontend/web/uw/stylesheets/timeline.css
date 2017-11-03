@@ -90,12 +90,14 @@
           .timeline .sliderbox .item .description .active.fr {
             margin-left: 445px; }
           .timeline .sliderbox .item .description .active .prev, .timeline .sliderbox .item .description .active .next {
-            border-radius: 50%;
-            background-color: #dbc8ae;
-            height: 50px;
-            width: 50px;
-            margin: 35px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
             transition: transform .5s; }
+          .timeline .sliderbox .item .description .active .prev {
+            background: url("../../images/prev_ico.png") center no-repeat; }
+          .timeline .sliderbox .item .description .active .next {
+            background: url("../../images/next_ico.png") center no-repeat; }
           .timeline .sliderbox .item .description .active:hover .prev, .timeline .sliderbox .item .description .active:hover .next {
             transform: scale(1.3); }
       @media screen and (min-width: 1366px) and (max-width: 1599px) {
@@ -134,11 +136,7 @@
             .timeline .sliderbox .item .description .active.fl {
               margin-left: -55.25px; }
             .timeline .sliderbox .item .description .active.fr {
-              margin-left: 378.25px; }
-            .timeline .sliderbox .item .description .active .prev, .timeline .sliderbox .item .description .active .next {
-              height: 42.5px;
-              width: 42.5px;
-              margin: 29.75px; } }
+              margin-left: 378.25px; } }
       @media screen and (min-width: 1280px) and (max-width: 1365px) {
         .timeline .sliderbox .item .date {
           padding: 22.5px 0 0 22.5px;
@@ -175,11 +173,7 @@
             .timeline .sliderbox .item .description .active.fl {
               margin-left: -48.75px; }
             .timeline .sliderbox .item .description .active.fr {
-              margin-left: 333.75px; }
-            .timeline .sliderbox .item .description .active .prev, .timeline .sliderbox .item .description .active .next {
-              height: 37.5px;
-              width: 37.5px;
-              margin: 26.25px; } }
+              margin-left: 333.75px; } }
       @media screen and (min-width: 768px) and (max-width: 1279px) {
         .timeline .sliderbox .item .date {
           padding: 21px 0 0 21px;
@@ -217,11 +211,7 @@
             .timeline .sliderbox .item .description .active.fl {
               margin-left: -45.5px; }
             .timeline .sliderbox .item .description .active.fr {
-              margin-left: 311.5px; }
-            .timeline .sliderbox .item .description .active .prev, .timeline .sliderbox .item .description .active .next {
-              height: 35px;
-              width: 35px;
-              margin: 24.5px; } }
+              margin-left: 311.5px; } }
     .timeline .sliderbox .item:last-child .hr {
       width: 510px; }
     @media screen and (min-width: 1366px) and (max-width: 1599px) {

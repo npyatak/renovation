@@ -19,6 +19,7 @@ class m171027_113435_create_table_timeline_slide extends Migration
             'date_2' => $this->string(255)->notNull(),
             'number' => $this->integer(),
             'width_preset' => $this->integer(1)->defaultValue(1),
+            'image' => $this->string(255),
         ], $tableOptions);
 
         $this->batchInsert('{{%timeline_slide}}', ['number', 'date_1', 'date_2', 'text'],  [

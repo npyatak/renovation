@@ -17,7 +17,9 @@ return [
     'modules' => [],
     'components' => [
         'request' => [
+            'baseUrl' => '/admin',
             'csrfParam' => '_csrf-backend',
+            'cookieValidationKey' => '2923534000',
         ],
         'session' => [
             // this is the name of the session cookie used for login on the backend
@@ -44,6 +46,7 @@ return [
             'errorAction' => 'site/error',
         ],
         'urlManager' => [
+            'baseUrl' => '/admin',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [

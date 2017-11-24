@@ -16,7 +16,9 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
+            'baseUrl' => '/',
             'csrfParam' => '_csrf-frontend',
+            'cookieValidationKey' => '23465687409',
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -40,6 +42,7 @@ return [
             'errorAction' => 'site/error',
         ],
         'urlManager' => [
+            'baseUrl' => '/',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [

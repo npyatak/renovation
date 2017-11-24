@@ -39,7 +39,7 @@ AppAsset::register($this);
                 foreach ($menuItems as $item):?>
                     <li>
                         <?=Html::a($item['label'], isset($item['action']) ? Url::toRoute('site/'.$item['action']) : $item['url'], [
-                            'class' => isset($item['action']) && Yii::$app->controller->action->id === $item['action'] ? 'active' : '',
+                            'class' => isset($item['action']) && Yii::$app->controller->action->id === $item['action'] ? 'active' : null,
                             'target' => isset($item['action']) ? null : '_blank'
                         ]);?>
                     </li>

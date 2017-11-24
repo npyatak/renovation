@@ -6,6 +6,7 @@ use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 use common\models\TimelineSlide;
 use common\models\search\TimelineSlideSearch;
@@ -40,25 +41,61 @@ class TimelineSlideController extends Controller {
     public function actionCreate() {
         $model = new TimelineSlide();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['index']);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
+        if ($model->load(Yii::$app->request->post())) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+
+            if($model->imageFile) {
+                $path = $model->imageSrcPath;
+                if(!file_exists($path)) {
+                    mkdir($path, 0775, true);
+                }
+
+                $model->image = md5(time()).'.'.$model->imageFile->extension;
+                
+                if($model->save()) {
+                    $model->imageFile->saveAs($path.$model->image);
+                }
+            }
+
+            return $this->redirect('index');
+        } 
+
+        return $this->render('create', [
+            'model' => $model,
+        ]);
     }
 
     public function actionUpdate($id) {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['index']);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
-        }
+        if ($model->load(Yii::$app->request->post())) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+
+            if($model->imageFile) {
+                $path = $model->imageSrcPath;
+                if(!file_exists($path)) {
+                    mkdir($path, 0775, true);
+                }
+                if($model->image && file_exists($path.$model->image)) {
+                    $oldImage = $path.$model->image;
+                }
+
+                $model->image = md5(time()).'.'.$model->imageFile->extension;
+                
+                if($model->save()) {
+                    if(isset($oldImage)) {
+                        unlink($oldImage);
+                    }
+                    $model->imageFile->saveAs($path.$model->image);
+                }
+            }
+
+            return $this->redirect('index');
+        } 
+
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
 
     public function actionDelete($id) {

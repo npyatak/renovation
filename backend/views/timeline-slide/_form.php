@@ -17,6 +17,8 @@ use common\models\TimelineSlide;
 
     <?= $form->field($model, 'number')->textInput() ?>
 
+    <?= $form->field($model, 'imageFile')->fileInput() ?>
+
     <?= $form->field($model, 'text')->widget(CKEditor::className(),[
         'editorOptions' => ElFinder::ckeditorOptions('elfinder',
         [

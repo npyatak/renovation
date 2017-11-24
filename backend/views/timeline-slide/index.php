@@ -22,9 +22,16 @@ $this->params['breadcrumbs'][] = $this->title;
                 'date_1',
                 'date_2',
                 [
-                    'attribute' => 'text',
+                    'attribute' => 'imageFile',
                     'format' => 'raw',
+                    'value' => function($data) {
+                        return Html::img($data->imageUrl, ['width' => '200px']);
+                    },
                 ],
+                // [
+                //     'attribute' => 'text',
+                //     'format' => 'raw',
+                // ],
 
                 [
                     'class' => 'yii\grid\ActionColumn',

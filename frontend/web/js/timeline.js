@@ -12,65 +12,65 @@ if (window.addEventListener) {
 function workProcessInit() {
 	var scrollContainer = document.getElementsByClassName('sliderbox')[0];
 	var items = document.getElementsByClassName('item'),
+		descriptions = document.getElementsByClassName('description'),
 		fls = document.getElementsByClassName('fl'),
 		frs = document.getElementsByClassName('fr'),
 		currentdateIndex = 0;
 
 	itemsLength = items.length;
+	offset = scrollContainer.offsetLeft;
+	scrollContainer.style.marginLeft = offset + 'px';
 
 	for (var i = 0; i < fls.length; i++) {
 		fls[i].onclick = function () {
 
-			for (var j = 0; j < fls.length; j++) {
+			for (var j = 0; j < itemsLength; j++) {
+				removeClass(items[j], 'active');
 				removeClass(fls[j], 'active');
-			}
-
-			for (var j = 0; j < frs.length; j++) {
 				removeClass(frs[j], 'active');
 			}
 
 			currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
-
-			removeClass(items[currentdateIndex], 'active');
 			addClass(items[currentdateIndex - 1], 'active');
 
 			if (currentdateIndex > 1) {
 				addClass(fls[currentdateIndex - 1], 'active');
 			}
 
-			if (currentdateIndex < frs.length) {
+			if (currentdateIndex < itemsLength) {
 				addClass(frs[currentdateIndex - 1], 'active');
 			}
 
-			scrollContainer.style.marginLeft = ((currentdateIndex - 1) * -items[0].offsetWidth) + 'px';
+			if (currentdateIndex == 1) {
+				scrollContainer.style.marginLeft = offset + 'px';
+			} else {
+				scrollContainer.style.marginLeft = -items[currentdateIndex - 1].offsetLeft + offset + 'px';
+			}
 		};
 	}
 
 	for (var i = 0; i < frs.length; i++) {
 		frs[i].onclick = function () {
 
-			for (var j = 0; j < frs.length; j++) {
+			for (var j = 0; j < itemsLength; j++) {
 				removeClass(frs[j], 'active');
-			}
-			for (var j = 0; j < fls.length; j++) {
 				removeClass(fls[j], 'active');
+				removeClass(items[j], 'active');
 			}
 
 			currentdateIndex = parseInt(this.getAttribute('data-index'), 10);
-
-			removeClass(items[currentdateIndex], 'active');
 			addClass(items[currentdateIndex + 1], 'active');
 
 			if (currentdateIndex > -1) {
 				addClass(fls[currentdateIndex + 1], 'active');
 			}
 
-			if (currentdateIndex + 2 < frs.length) {
+			if (currentdateIndex != itemsLength - 2) {
 				addClass(frs[currentdateIndex + 1], 'active');
 			}
 
-			scrollContainer.style.marginLeft = ((currentdateIndex + 1) * -items[0].offsetWidth) + 'px';
-		};
+			scrollContainer.style.marginLeft = -items[currentdateIndex + 1].offsetLeft + offset + 'px';
+		}
 	}
 
 	var ind = 0;
@@ -78,28 +78,26 @@ function workProcessInit() {
 	scrollContainer.addEventListener('mousewheel', function (evt) {
 		var rectEl = scrollContainer.getBoundingClientRect();
 		if ((rectEl.top > -50 && rectEl.top < 100) && (ind > -1 && ind < itemsLength)) {
-			var currentdateIndex = ind;
-			removeClass(fls[currentdateIndex], 'active');
-			removeClass(frs[currentdateIndex], 'active');
-			if (currentdateIndex > 0) {
-				removeClass(items[currentdateIndex], 'active');
+			for (var j = 0; j < itemsLength; j++) {
+				removeClass(fls[j], 'active');
+				removeClass(frs[j], 'active');
+				removeClass(items[j], 'active');
 			}
 			if (evt.deltaY < 0) {
 				ind--;
-				if (ind > -1) {
-					scrollContainer.style.marginLeft = (items.length - ind * items[0].offsetWidth) + 'px';
+				if (ind == 0) {
+					scrollContainer.style.marginLeft = offset + 'px';
+				} else {
+					scrollContainer.style.marginLeft = -items[ind].offsetLeft + offset + 'px';
 				}
 			} else {
 				ind++;
-				if (ind < items.length - 1) {
-					scrollContainer.style.marginLeft = (-ind * items[0].offsetWidth) + 'px';
-				}
+				scrollContainer.style.marginLeft = -items[ind].offsetLeft + offset + 'px';
 			}
 
 			if (ind > -1 && ind < itemsLength) {
 				evt.preventDefault();
-				var activeItem = items[ind];
-				addClass(activeItem, 'active');
+				addClass(items[ind], 'active');
 				if (ind != 0) {
 					addClass(fls[ind], 'active');
 				}
@@ -109,6 +107,9 @@ function workProcessInit() {
 			}
 		} else {
 			ind = 0;
+			scrollContainer.style.marginLeft = offset + 'px';
+			addClass(items[ind], 'active');
+			addClass(frs[ind], 'active');
 		}
 	});
 }

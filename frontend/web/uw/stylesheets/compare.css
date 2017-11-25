@@ -4,15 +4,21 @@
 }
 /* line 4, ../sass/compare.scss */
 .compare h1 {
-  text-align: center;
-  font-family: "Proxima Nova";
-  font-size: 40px;
-  font-weight: bold;
-  color: #010211;
-  text-transform: uppercase;
-  margin-top: 73px;
-  margin-bottom: 19px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  font: 60px "Proxima Nova Regular", sans-serif;
   line-height: 39px;
+  font-weight: bold;
+  color: #3B0F50;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/* line 14, ../sass/compare.scss */
+.compare h1 span {
+  display: block;
+  margin-top: 20px;
+  font-size: 40px;
 }
 @media screen and (max-width: 1000px) {
   /* line 4, ../sass/compare.scss */
@@ -22,45 +28,49 @@
     padding-right: 20px;
   }
 }
-/* line 21, ../sass/compare.scss */
+/* line 26, ../sass/compare.scss */
 .compare .items_wrap .item {
   padding-bottom: 36px;
 }
-/* line 23, ../sass/compare.scss */
+/* line 28, ../sass/compare.scss */
 .compare .items_wrap .item .item_title {
-  font-size: 30px;
-  font-family: "Proxima Nova";
+  font: 30px "Proxima Nova Thin", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
   text-align: center;
 }
 @media screen and (max-width: 1000px) {
-  /* line 23, ../sass/compare.scss */
+  /* line 28, ../sass/compare.scss */
   .compare .items_wrap .item .item_title {
     font-size: 25px;
   }
 }
-/* line 33, ../sass/compare.scss */
+/* line 37, ../sass/compare.scss */
 .compare .items_wrap .item .item_img_logo {
-  padding-top: 12px;
+  padding-top: 15px;
   text-align: center;
   padding-bottom: 26px;
 }
-/* line 38, ../sass/compare.scss */
+/* line 42, ../sass/compare.scss */
 .compare .items_wrap .item .two_part {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 42, ../sass/compare.scss */
+/* line 46, ../sass/compare.scss */
+.compare .items_wrap .item .two_part img {
+  display: block;
+  width: 100%;
+}
+/* line 50, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_img {
   position: relative;
 }
-/* line 44, ../sass/compare.scss */
+/* line 52, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_img.item_img_padding {
   padding-top: 35px;
 }
-/* line 47, ../sass/compare.scss */
+/* line 55, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_img .read_more {
   background: url("../../images/read_more_ico.jpg");
   display: block;
@@ -71,7 +81,7 @@
   right: 18px;
   bottom: 18px;
 }
-/* line 57, ../sass/compare.scss */
+/* line 65, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_img img {
   display: block;
   margin: 0 auto;
@@ -79,31 +89,31 @@
   height: auto;
 }
 @media screen and (max-width: 767px) {
-  /* line 57, ../sass/compare.scss */
+  /* line 65, ../sass/compare.scss */
   .compare .items_wrap .item .two_part .item_img img {
     max-width: inherit;
     width: 100%;
   }
 }
-/* line 68, ../sass/compare.scss */
+/* line 76, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_part {
   width: calc(50% - 21px);
-  border-top: 2px solid #2e3346;
+  border-top: 2px solid #283045;
   padding-bottom: 35px;
   background: white;
 }
 @media screen and (max-width: 767px) {
-  /* line 68, ../sass/compare.scss */
+  /* line 76, ../sass/compare.scss */
   .compare .items_wrap .item .two_part .item_part {
     width: 100%;
     margin-bottom: 20px;
   }
 }
-/* line 77, ../sass/compare.scss */
+/* line 85, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_part p {
   padding: 0px 32px;
   font-size: 18px;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova Light", sans-serif;
   font-weight: 300;
   padding-top: 27px;
   line-height: 30px;
@@ -111,7 +121,7 @@
   margin-bottom: 0px;
 }
 @media screen and (max-width: 767px) {
-  /* line 77, ../sass/compare.scss */
+  /* line 85, ../sass/compare.scss */
   .compare .items_wrap .item .two_part .item_part p {
     padding-left: 20px;
     padding-right: 20px;

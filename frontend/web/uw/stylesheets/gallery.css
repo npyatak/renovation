@@ -192,3 +192,8 @@
 .gallery .gallery_inline:hover:before {
   opacity: 1;
 }
+
+/* line 153, ../sass/gallery.scss */
+.top_block {
+  padding-top: 0;
+}

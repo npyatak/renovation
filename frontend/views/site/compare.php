@@ -8,7 +8,7 @@ $this->title = 'Хрущевки VS новые дома';
     <?=$this->render('_top_block');?>
     
 	<div class="container_inner">
-		<h1>Хрущевка VS Новостройка: 10 отличий</h1>
+		<h1>Хрущёвка VS Новостройка: <span>10 отличий</span></h1>
 	
 		<?php if($compares):?>
 		<div class="items_wrap">

@@ -80,6 +80,12 @@
 	#object-map {
 		margin-top: 19px;
 	}
+	.areas_table.yellow thead th {
+		background: #C09916;
+	}
+	.areas_table.blue thead th {
+		background: #0082A8;
+	}
 	.areas_table {
 		font-family: "Proxima Nova Light", sans-serif;
 		.title_table {
@@ -107,7 +113,6 @@
 					border-right: 1px solid #fff;
 				}
 				th {
-					background: #C09916;
 					color: white;
 					padding: 17px 23px;
 					@media screen and (max-width: 639px) {

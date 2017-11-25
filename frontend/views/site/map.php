@@ -28,13 +28,13 @@ $this->title = ($type == 'house') ? 'Дома, включенные в прог�
         <div class="select_area">
             Отобразить
             <a class="btn btn-warning <?=$type == 'house' ? 'active' : 'start';?>" href="<?=Url::toRoute(['site/map', 'type' => 'house'])?>">Дома, включенные в программу</a>
-            <a class="btn btn-transparent <?=$type != 'house' ? 'active' : 'start';?>" href="<?=Url::toRoute(['site/map', 'type' => null])?>">Стартовые площадки</a>
+            <a class="btn btn-transparent <?=$type != 'house' ? 'active' : '';?>" href="<?=Url::toRoute(['site/map', 'type' => null])?>">Стартовые площадки</a>
         </div>
     </div>
 
-    <div id="object-map" style="width: 100%; height: 500px;"></div>
+    <div id="object-map" style="width: 100%; height: 500px;"></div> Autem debitis doloribus esse nemo neque quaerat sit. Asperiores laborum nostrum tempore! Aut dolorum et facilis impedit labore officiis rem reprehenderit suscipit!
 
-    <div class="container_inner areas_table">
+    <div class="container_inner areas_table <?=$type == 'house' ? 'yellow' : 'blue';?>">
         <div class="title_table"><?=$type == 'house' ? 'Дома' : 'Стартовые площадки';?>, включенные в программу реновации</div>
         <?php Pjax::begin(); ?>    
             <?= GridView::widget([

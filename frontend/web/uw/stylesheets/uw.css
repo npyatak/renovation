@@ -152,7 +152,7 @@ body {
 }
 /* line 123, ../sass/uw.scss */
 .gallery_popup .popup_text {
-  font: 30px "Proxima Nova Light", sans-serif;
+  font: 30px "Proxima Nova Thin", sans-serif;
   font-weight: 300;
   color: #ffffff;
   padding-top: 46px;
@@ -165,8 +165,8 @@ body {
 }
 /* line 133, ../sass/uw.scss */
 .gallery_popup .close img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto;
   display: block;
 }

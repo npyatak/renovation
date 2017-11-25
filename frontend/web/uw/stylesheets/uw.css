@@ -120,46 +120,45 @@ body {
 
 /* line 100, ../sass/uw.scss */
 .grid_wrap {
-  margin-top: 62px;
-  background: white;
+  margin-top: 35px;
   padding-top: 13px;
 }
 
-/* line 106, ../sass/uw.scss */
+/* line 105, ../sass/uw.scss */
 #cboxContent {
   background: none;
 }
 
-/* line 109, ../sass/uw.scss */
+/* line 108, ../sass/uw.scss */
 #cboxLoadedContent {
   background: none;
 }
 
-/* line 112, ../sass/uw.scss */
+/* line 111, ../sass/uw.scss */
 #cboxTitle {
   display: none;
 }
 
-/* line 116, ../sass/uw.scss */
+/* line 115, ../sass/uw.scss */
 .gallery_popup img {
   max-width: 100%;
   height: auto;
 }
-/* line 120, ../sass/uw.scss */
+/* line 119, ../sass/uw.scss */
 .gallery_popup .popup_text {
   font-size: 30px;
   color: #ffffff;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 300;
   padding-top: 46px;
 }
-/* line 127, ../sass/uw.scss */
+/* line 126, ../sass/uw.scss */
 .gallery_popup .close {
   float: none;
   padding-top: 20px;
   opacity: 1;
 }
-/* line 131, ../sass/uw.scss */
+/* line 130, ../sass/uw.scss */
 .gallery_popup .close img {
   width: 150px;
   height: 150px;
@@ -167,18 +166,18 @@ body {
   display: block;
 }
 
-/* line 139, ../sass/uw.scss */
+/* line 138, ../sass/uw.scss */
 #cboxOverlay {
-  background: #2e3346;
+  background: #3B0F50;
   opacity: 0.9;
 }
 
-/* line 143, ../sass/uw.scss */
+/* line 142, ../sass/uw.scss */
 .popups_info {
   display: none;
 }
 
-/* line 149, ../sass/uw.scss */
+/* line 148, ../sass/uw.scss */
 .bottom_gallery .title_bottom_gallery {
   font-size: 15px;
   color: #000108;
@@ -188,21 +187,21 @@ body {
   padding: 0px 10px;
   padding-bottom: 29px;
 }
-/* line 158, ../sass/uw.scss */
+/* line 157, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img {
   position: relative;
 }
-/* line 160, ../sass/uw.scss */
+/* line 159, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video {
   display: block;
 }
-/* line 162, ../sass/uw.scss */
+/* line 161, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video img {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 167, ../sass/uw.scss */
+/* line 166, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video:before {
   content: '';
   position: absolute;
@@ -214,7 +213,7 @@ body {
   background-size: 134px;
   z-index: 1;
 }
-/* line 178, ../sass/uw.scss */
+/* line 177, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video::after {
   content: '';
   position: absolute;
@@ -226,7 +225,7 @@ body {
   background-size: 134px;
   z-index: 0;
 }
-/* line 190, ../sass/uw.scss */
+/* line 189, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img iframe {
   position: absolute;
   top: 0px;
@@ -236,34 +235,34 @@ body {
   display: none;
 }
 
-/* line 201, ../sass/uw.scss */
+/* line 200, ../sass/uw.scss */
 .blue_top_bg {
   position: relative;
 }
 
-/* line 214, ../sass/uw.scss */
+/* line 213, ../sass/uw.scss */
 #object-map {
   position: relative;
   z-index: 1;
 }
 
-/* line 219, ../sass/uw.scss */
+/* line 218, ../sass/uw.scss */
 .white_text {
   color: white !important;
 }
 
-/* line 222, ../sass/uw.scss */
+/* line 221, ../sass/uw.scss */
 .purple_text {
   color: #3B0F50 !important;
 }
 
-/* line 226, ../sass/uw.scss */
+/* line 225, ../sass/uw.scss */
 .bottom_select_gallery {
   padding-top: 122px;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 230, ../sass/uw.scss */
+/* line 229, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery {
   width: 25%;
   position: relative;
@@ -271,12 +270,12 @@ body {
   overflow: hidden;
 }
 @media screen and (max-width: 999px) {
-  /* line 230, ../sass/uw.scss */
+  /* line 229, ../sass/uw.scss */
   .bottom_select_gallery .select_gallery {
     width: 50%;
   }
 }
-/* line 238, ../sass/uw.scss */
+/* line 237, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery:before {
   content: '';
   display: none;
@@ -287,17 +286,17 @@ body {
   height: 100%;
   z-index: 2;
 }
-/* line 249, ../sass/uw.scss */
+/* line 248, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery:hover:before {
   display: block;
 }
-/* line 252, ../sass/uw.scss */
+/* line 251, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery:hover img {
   -webkit-transform: scale(1.4);
   -ms-transform: scale(1.4);
   transform: scale(1.4);
 }
-/* line 258, ../sass/uw.scss */
+/* line 257, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery img {
   display: block;
   width: 100%;

@@ -1,15 +1,16 @@
 .gallery {
 	color: #010211;
-	font-family: "Proxima Nova";
+	font-family: "Proxima Nova", sans-serif;
 	h1 {
-		font-family: "Proxima Nova";
-	    font-size: 40px;
+		max-width: 750px;
+		font-family: "Proxima Nova", sans-serif;
+	    font-size: 55px;
 	    font-weight: bold;
-	    color: #010211;
+	    color: #3B0F50;
 	    text-transform: uppercase;
 	    margin-top: 5px;
-	    margin-bottom: 19px;
-	    line-height: 50px;
+	    margin-bottom: 0;
+	    line-height: 60px;
 	    @media screen and (max-width: 1000px) {
 			font-size: 30px;
 			padding-left: 20px;
@@ -42,8 +43,9 @@
 		}
 	}
 	.slider_gallery_wrap {
-		background: #c01a24;
-		padding: 58px 96px;
+		background: #C59D17;
+		color: #fff;
+		padding: 20px 90px 60px;
 		box-sizing: border-box;
 		height: 473px;
 		@media screen and (max-width: 1000px) {
@@ -53,11 +55,11 @@
 			padding: 50px;
 		}
 		.slider_gallery {
-			padding-top: 36px;
+			padding-top: 60px;
 		}
 		.small {
-			color: #5b0c11;
-			font-size: 18px;
+			color: #fff;
+			font: 18px 'Proxima Nova Light', sans-serif;
 			font-weight: 300;
 		}
 		.slider_gallery_item {
@@ -66,7 +68,7 @@
 				height: auto;
 			}
 			a {
-				font-size: 40px;
+				font: 40px 'Proxima Nova Light', sans-serif;
 				color: white;
 				font-weight: 300;
 				line-height: 50px;
@@ -84,7 +86,7 @@
 				display: inline-block;
 				width: 10px;
 				height: 10px;
-				background: #5b0c11;
+				background: #F3B900;
 				border-radius: 50%;
 				float: left;
 				margin-right: 40px;
@@ -97,19 +99,21 @@
 		}
 	}
 	.gallery_name {
-		background: #2e3346;
+		background: #0090C0;
 		padding: 75px 56px;
 		padding-bottom: 89px;
 		@media screen and (max-width: 1200px) {
 			padding: 50px;
 		}
 		.small {
-			font-size: 18px;
-			color: #a1a4ad;
+			display: block;
+			margin-bottom: 10px;
+			font: 18px 'Proxima Nova Light', sans-serif;
+			color: #86bdd0;
 			font-weight: 300;
 		}
 		.text {
-			font-size: 40px;
+			font: 40px 'Proxima Nova Light', sans-serif;
 			color: white;
 			font-weight: 300;
 			line-height: 40px;
@@ -128,16 +132,19 @@
 		display: block;
 		&:before {
 			content: '';
-			display: none;
-			background: rgba(0, 56, 120, 0.4) url('../../images/open.svg') center no-repeat;
+			display: block;
+			background: rgba(54, 23, 80, .7) url('../../images/open.svg') center no-repeat;
 			background-size: 134px;
+			border: 20px solid #3B0F50;
 			position: absolute;
 			width: 100%;
 			height: 100%;
+			opacity: 0;
+			transition: opacity .2s;
 		}
 		&:hover {
 			&:before {
-				display: block;
+				opacity: 1;
 			}
 		}
 		

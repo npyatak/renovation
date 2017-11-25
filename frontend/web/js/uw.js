@@ -1,4 +1,5 @@
-$(window).load(function(){
+// $(window).load(function(){
+$(document).ready(function(){
 	if ($('.slider_gallery').length > 0) {
 		$(".slider_gallery").owlCarousel({
 			items: 1,
@@ -19,8 +20,8 @@ $(window).load(function(){
 	  itemSelector: '.grid_item',
 	});
 	$(".gallery_inline").colorbox({
-		inline:true, 
-		width:"66%", 
+		inline:true,
+		width:"66%",
 		onOpen: function(){
 			$('#popup .popup_img').html($.colorbox.element().html());
 			$('#popup .popup_text').html($.colorbox.element().parent().find('p').html());

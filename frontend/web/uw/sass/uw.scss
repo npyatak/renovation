@@ -98,8 +98,7 @@ body {
 
 
 .grid_wrap {
-    margin-top: 62px;
-    background: white;
+    margin-top: 35px;
     padding-top: 13px;
 }
 
@@ -120,7 +119,7 @@ body {
 	.popup_text {
 		font-size: 30px;
 		color: #ffffff;
-		font-family: "Proxima Nova";
+		font-family: "Proxima Nova", sans-serif;
 		font-weight: 300;
 		padding-top: 46px;
 	}
@@ -137,7 +136,7 @@ body {
 	}
 }
 #cboxOverlay {
-	background: #2e3346;
+	background: #3B0F50;
 	opacity: 0.9;
 }
 .popups_info {

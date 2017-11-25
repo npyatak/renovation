@@ -9,7 +9,7 @@ use kartik\depdrop\DepDrop;
 use common\models\District;
 use common\models\Region;
 
-$this->title = ($type == 'house') ? 'Дома, включенные в программу' : 'Стартовые площадки'. ' 1 этапа реновации. Карта';
+$this->title = ($type == 'house') ? 'Дома, включенные в программу' : 'Стартовые площадки'. ' 1 этапа реновации.';
 ?>
 
 <?php $this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;onload=app.objectMap.ymapsInit');?>
@@ -18,8 +18,8 @@ $this->title = ($type == 'house') ? 'Дома, включенные в прог�
 <div class="renovation blue_top_bg">
     <?=$this->render('_top_block', ['class' => ' white']);?>
 
-    <div class="container_inner white_text">
-        <h1 class="white_text"><?=$this->title;?></h1>
+    <div class="container_inner">
+        <h1 class="purple_text"><span>Карта</span><?=$this->title;?></h1>
         <div class="top_text">
             <p>
                 <?=$page->text;?>
@@ -27,8 +27,8 @@ $this->title = ($type == 'house') ? 'Дома, включенные в прог�
         </div>
         <div class="select_area">
             Отобразить
-            <a class="btn btn-primary <?=$type == 'house' ? 'active' : 'start white_text';?>" href="<?=Url::toRoute(['site/map', 'type' => 'house'])?>">Дома, включенные в программу</a>
-            <a class="btn btn-primary <?=$type != 'house' ? 'active' : 'start white_text';?>" href="<?=Url::toRoute(['site/map', 'type' => null])?>">Стартовые площадки</a>
+            <a class="btn btn-warning <?=$type == 'house' ? 'active' : 'start white_text';?>" href="<?=Url::toRoute(['site/map', 'type' => 'house'])?>">Дома, включенные в программу</a>
+            <a class="btn btn-transparent <?=$type != 'house' ? 'active' : 'start white_text';?>" href="<?=Url::toRoute(['site/map', 'type' => null])?>">Стартовые площадки</a>
         </div>
     </div>
 

@@ -1,6 +1,7 @@
 .header {
 	background: white;
 	position: relative;
+	box-shadow: 0 5px 43px 0 rgba(10,9,9,.14);
     z-index: 2;
 	@media screen and (max-width: 999px) {
 		height: 66px;
@@ -40,12 +41,12 @@
 			}
 		}
 		a {
-			font-family: "Proxima Nova";
+			font-family: "Proxima Nova Light", sans-serif;
 			color: #010211;
 			font-size: 15px;
 			font-weight: 300;
 			&.active,&:hover {
-				color: #003878;
+				color: #098fbd;
 			}
 		}
 	}

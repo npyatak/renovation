@@ -16,7 +16,7 @@ $this->registerMetaTag(['property' => 'fb:app_id', 'content' => '170494981954616
 ?>
 
 <div class="container_inner top_block<?=isset($class) ? $class : '';?>">
-    <img class="tass_logo" src="<?=Url::to('images/tass_logo_white.png');?>"/>
+    <img class="tass_logo" src="<?=Url::to('images/Logo_TASS.svg');?>"/>
 
     <?php if(Yii::$app->controller->action->id !== 'index'):?>
     <a class="go_front" href="/"><i class="fa fa-angle-left" aria-hidden="true"></i>На главную</a>

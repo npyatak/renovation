@@ -2,6 +2,7 @@
 .header {
   background: white;
   position: relative;
+  box-shadow: 0 5px 43px 0 rgba(10, 9, 9, 0.14);
   z-index: 2;
 }
 @media screen and (max-width: 999px) {
@@ -10,11 +11,11 @@
     height: 66px;
   }
 }
-/* line 8, ../sass/header.scss */
+/* line 9, ../sass/header.scss */
 .header .logo {
   float: left;
 }
-/* line 11, ../sass/header.scss */
+/* line 12, ../sass/header.scss */
 .header ul {
   padding: 0px;
   margin: 0px;
@@ -23,13 +24,13 @@
   justify-content: space-between;
 }
 @media screen and (max-width: 1200px) {
-  /* line 11, ../sass/header.scss */
+  /* line 12, ../sass/header.scss */
   .header ul {
     padding-left: 44px;
   }
 }
 @media screen and (max-width: 999px) {
-  /* line 11, ../sass/header.scss */
+  /* line 12, ../sass/header.scss */
   .header ul {
     position: absolute;
     top: 66px;
@@ -40,17 +41,17 @@
     padding-left: 0px;
     background: white;
   }
-  /* line 29, ../sass/header.scss */
+  /* line 30, ../sass/header.scss */
   .header ul.show {
     display: block;
   }
 }
-/* line 33, ../sass/header.scss */
+/* line 34, ../sass/header.scss */
 .header ul li {
   line-height: 66px;
 }
 @media screen and (max-width: 999px) {
-  /* line 33, ../sass/header.scss */
+  /* line 34, ../sass/header.scss */
   .header ul li {
     line-height: 60px;
     display: block;
@@ -58,18 +59,18 @@
     text-align: center;
   }
 }
-/* line 42, ../sass/header.scss */
+/* line 43, ../sass/header.scss */
 .header ul a {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova Light", sans-serif;
   color: #010211;
   font-size: 15px;
   font-weight: 300;
 }
-/* line 47, ../sass/header.scss */
+/* line 48, ../sass/header.scss */
 .header ul a.active, .header ul a:hover {
-  color: #003878;
+  color: #098fbd;
 }
-/* line 52, ../sass/header.scss */
+/* line 53, ../sass/header.scss */
 .header .map_link {
   display: none;
   position: relative;
@@ -83,17 +84,17 @@
   font-weight: 300;
   text-decoration: none;
 }
-/* line 64, ../sass/header.scss */
+/* line 65, ../sass/header.scss */
 .header .map_link.active, .header .map_link:hover {
   color: #003878;
 }
 @media screen and (max-width: 999px) {
-  /* line 52, ../sass/header.scss */
+  /* line 53, ../sass/header.scss */
   .header .map_link {
     display: block;
   }
 }
-/* line 71, ../sass/header.scss */
+/* line 72, ../sass/header.scss */
 .header .menu-btn {
   display: none;
   position: absolute;
@@ -101,20 +102,20 @@
   top: 21px;
 }
 @media screen and (max-width: 999px) {
-  /* line 71, ../sass/header.scss */
+  /* line 72, ../sass/header.scss */
   .header .menu-btn {
     display: block;
   }
 }
-/* line 79, ../sass/header.scss */
+/* line 80, ../sass/header.scss */
 .header .menu-btn .open-menu-btn {
   display: none;
 }
-/* line 81, ../sass/header.scss */
+/* line 82, ../sass/header.scss */
 .header .menu-btn .open-menu-btn.show {
   display: block;
 }
-/* line 84, ../sass/header.scss */
+/* line 85, ../sass/header.scss */
 .header .menu-btn .open-menu-btn span {
   display: block;
   width: 30px;
@@ -122,7 +123,7 @@
   margin-bottom: 7px;
   background-color: #2e3346;
 }
-/* line 92, ../sass/header.scss */
+/* line 93, ../sass/header.scss */
 .header .menu-btn .close-menu__btn {
   position: relative;
   display: none;
@@ -133,11 +134,11 @@
   right: 2px;
   top: -2px;
 }
-/* line 101, ../sass/header.scss */
+/* line 102, ../sass/header.scss */
 .header .menu-btn .close-menu__btn.show {
   display: inline-block;
 }
-/* line 104, ../sass/header.scss */
+/* line 105, ../sass/header.scss */
 .header .menu-btn .close-menu__btn span {
   display: block;
   position: absolute;
@@ -157,7 +158,7 @@
   -o-transition: .3s ease-in .3s;
   transition: .3s ease-in .3s;
 }
-/* line 126, ../sass/header.scss */
+/* line 127, ../sass/header.scss */
 .header .menu-btn .close-menu__btn.show span:first-child {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
   -moz-transform: translate(-50%, -50%) rotate(45deg);
@@ -165,7 +166,7 @@
   -o-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
 }
-/* line 133, ../sass/header.scss */
+/* line 134, ../sass/header.scss */
 .header .menu-btn .close-menu__btn.show span:last-child {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   -moz-transform: translate(-50%, -50%) rotate(-45deg);

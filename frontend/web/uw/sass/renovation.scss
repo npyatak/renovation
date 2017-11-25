@@ -6,14 +6,14 @@
 	
 	h1 {
 		text-align: center;
-		font-family: "Proxima Nova";
+		font-family: "Proxima Nova Regular", sans-serif;
 		font-size: 40px;
 		font-weight: bold;
-		color: #010211;
 		text-transform: uppercase;
 		margin-top: 73px;
 		margin-bottom: 19px;
 		line-height: 39px;
+		letter-spacing: 1px;
 		@media screen and (max-width: 1000px) {
 			font-size: 30px;
 			padding-left: 20px;
@@ -21,9 +21,14 @@
 			line-height: 40px;
 		}
 	}
+	h1 span {
+		display: block;
+		margin-bottom: 5px;
+		font-size: 1.4em;
+	}
 	.top_text {
 		font-size: 18px;
-		font-family: "Proxima Nova";
+		font-family: "Proxima Nova Light", sans-serif;
 		font-weight: 300;
 		padding-top: 42px;
 		line-height: 30px;
@@ -62,9 +67,9 @@
 				}
 			}
 			&.start {
-				border: 1px solid #c19f63;
-				background: none;
-				color: #010211;
+				border: 1px solid #C09916;
+				background: #C09916;
+				color: #fff;
 				&.active {
 					background:#c19f63;
 				}
@@ -75,9 +80,9 @@
 		margin-top: 19px;
 	}
 	.areas_table {
-		font-family: "Proxima Nova";
+		font-family: "Proxima Nova Light", sans-serif;
 		.title_table {
-			font-family: "Proxima Nova";
+			font-family: "Proxima Nova Light", sans-serif;
 			font-size: 40px;
 			font-weight: 300;
 			padding-top: 58px;
@@ -97,8 +102,11 @@
 		table {
 			border: 1px solid transparent;
 			thead {
+				th:not(:last-child){
+					border-right: 1px solid #fff;
+				}
 				th {
-					background: #003878;
+					background: #C09916;
 					color: white;
 					padding: 17px 23px;
 					@media screen and (max-width: 639px) {
@@ -124,7 +132,7 @@
 				}
 				td {
 					background:#eeeff1;
-					padding: 0px;
+					padding: 5px 0;
 					input {
 						height: 60px;
 						border: 0px;
@@ -135,6 +143,7 @@
 						border: 0px;
 						font-size: 18px;
 						width: 100%;
+						background: #fff;
 					}
 				}
 			}
@@ -145,7 +154,7 @@
 				tr {
 					&:nth-child(2n-1) {
 						td {
-							background: #b29d7e;
+							background: #DADEE3;
 						}
 					}
 					td {
@@ -153,6 +162,9 @@
 
 					}
 				}
+			}
+			td:not(:last-child) {
+				border-right: 1px solid #EEEFF3;
 			}
 			td {
 				border: 1px solid transparent;
@@ -167,15 +179,25 @@
 		.pagination {
 			width: 100%;
 			text-align: center;
+			li.prev a,
+			li.prev span {
+				background: transparent;
+				font-size: 20px;
+			}
+			li.next a,
+			li.next a {
+				background: transparent;
+				font-size: 20px;
+			}
 			li {
 				margin: 0px 4px;
 				display: inline-block;
 				a {
 					font-size: 15px;
 					line-height: 38px;
-					width: 38px;
+					width: 42px;
 					display: inline-block;
-					border: 1px solid #a1a4ad;
+					border: 1px solid #A1A6AF;
 					color: #010211;
 					padding: 0px;
 					text-align: center;
@@ -183,8 +205,8 @@
 				&.active {
 					a {
 						color: white;
-						background: #2e3346;
-						border: 1px solid #2e3346;
+						background: #3B0F50;
+						border: 1px solid #3B0F50;
 					}
 				}
 				&.next,&.prev {

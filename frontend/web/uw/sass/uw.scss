@@ -3,8 +3,13 @@
 }
 body {
 	min-width: 480px;
+	font-family: 'Proxima Nova Light', sans-serif;
 }
-
+.btn-transparent {
+	border-color: #0082A8;
+	box-shadow: none !important;
+	color: #010211;
+}
 .top_block {
 	padding-top: 51px;
 	text-align: center;
@@ -14,7 +19,8 @@ body {
 		float: left;
 		position: absolute;
 		top: 0px;
-		left: 0px;
+		left: -15px;
+		width: 110px;
 	}
 	&.white {
 		.social {
@@ -23,8 +29,8 @@ body {
 			}
 		}
 		.go_front {
-			color: #a1a4ad;
-			border: 1px solid #a1a4ad;
+			color: #3B0F50;
+			border: 1px solid #3B0F50;
 		}
 	}
 	.social {
@@ -85,7 +91,9 @@ body {
 
 }
 .wrap {
-	background: #eeeff1;
+	width: 100%;
+	background: #EEEFF3;
+	overflow: hidden;
 }
 
 
@@ -141,7 +149,7 @@ body {
 	.title_bottom_gallery {
 		font-size: 15px;
 		color: #000108;
-		font-family: "Proxima Nova";
+		font-family: "Proxima Nova", sans-serif;
 		font-weight: 300;
 		text-align: center;
 		padding: 0px 10px;
@@ -159,10 +167,24 @@ body {
 			&:before {
 				content: '';
 				position: absolute;
+				top: 0;
+				left: 0;
 				width: 100%;
 				height: 100%;
-				background: rgba(0, 56, 120, 0.4) url('../../images/video.svg') center no-repeat;
+				background: url('../../images/video.svg') center no-repeat;
 				background-size: 134px;
+				z-index: 1;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(54, 23, 80, 0.8);
+				background-size: 134px;
+				z-index: 0;
 			}
 		}
 		iframe {
@@ -178,15 +200,15 @@ body {
 
 .blue_top_bg {
 	position: relative;
-	&:before {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		display: block;
-		content: '';
-		background: url('../../images/blue_top_bg.png') center top no-repeat;
-		background-size: 100% auto;
-	}
+	//&:before {
+	//	position: absolute;
+	//	width: 100%;
+	//	height: 100%;
+	//	display: block;
+	//	content: '';
+	//	background: url('../../images/blue_top_bg.png') center top no-repeat;
+	//	background-size: 100% auto;
+	//}
 }
 
 #object-map {
@@ -196,6 +218,9 @@ body {
 
 .white_text {
 	color: white!important;
+}
+.purple_text {
+	color: #3B0F50 !important;
 }
 
 .bottom_select_gallery {

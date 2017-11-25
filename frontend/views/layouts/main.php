@@ -23,7 +23,7 @@ AppAsset::register($this);
 
 <div class="wrap">
     <div class="header">
-        <img class="logo" src="<?=Url::toRoute('images/logo.png');?>" />
+        <img class="logo" src="<?=Url::toRoute('images/logo_new.png');?>" />
         <div class="container_inner">
             <a class="map_link" href="#">Карта</a>
             <ul class="menu">
@@ -68,7 +68,7 @@ AppAsset::register($this);
     <?php if(!in_array(Yii::$app->controller->action->id, ['index'])):?>
     <div class="bottom_gallery">
         <div class="bottom_gallery_img">
-            <a href="#" class="bottom_gallery_video"><img src="<?=Url::toRoute('images/footer_gallery_img.jpg');?>"/></a>
+            <a href="#" class="bottom_gallery_video"><img src="<?=Url::toRoute('images/footer_gallery_img_new.jpg');?>"/></a>
             <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>

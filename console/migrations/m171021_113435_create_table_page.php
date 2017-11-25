@@ -16,7 +16,7 @@ class m171021_113435_create_table_page extends Migration
             'id' => $this->primaryKey(),
             'url' => $this->string(255)->notNull(),
             'title' => $this->string(255)->notNull(),
-            'text' => $this->text(),
+            'text' => $this->getDb()->getSchema()->createColumnSchemaBuilder('longtext'),
             'keywords' => $this->text(1000),
             'description' => $this->text(1000),
             'status' => $this->integer(1)->defaultValue(5),
@@ -29,6 +29,10 @@ class m171021_113435_create_table_page extends Migration
         $this->batchInsert('{{%page}}', ['url', 'title', 'is_page', 'text', 'created_at', 'updated_at'],  [
             ['renovation', 'Реновация', 0, 'текст по реновации. в админке /page/update/1', time(), time()],
             ['timeline', 'Даты реализации проекта по реновации. Таймлайн.', 0, 'Какой-то текст. admin - page/2', time(), time()],
+            ['law_1', 'Закон о реновации. Часть 1', 0, '', time(), time()],
+            ['law_2', 'Закон о реновации. Часть 2', 0, '', time(), time()],
+            ['law_3', 'Закон о реновации. Часть 3', 0, '', time(), time()],
+            ['law_4', 'Закон о реновации. Часть 4', 0, '', time(), time()],
         ]);
     }
 

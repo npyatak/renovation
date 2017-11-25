@@ -19,6 +19,8 @@ class m171020_150535_create_table_compare extends Migration
 
             'new_text' => $this->text(),
             'old_text' => $this->text(),
+            'image_old' => $this->string(),
+            'image_new' => $this->string(),
 
             'status' => $this->integer()->notNull()->defaultValue(5),
 

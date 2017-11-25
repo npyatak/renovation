@@ -29,7 +29,7 @@ AppAsset::register($this);
             <ul class="menu">
                 <?php
                 $menuItems = [
-                    ['label' => 'Закон о реновациях', 'action' => 'law'],
+                    ['label' => 'Закон о реновации', 'action' => 'law'],
                     ['label' => 'Карта', 'action' => 'map'],
                     ['label' => 'Даты реализации', 'action' => 'timeline'],
                     ['label' => 'Герои', 'url' => 'http://pyatiehtazhki.tass.ru/'],

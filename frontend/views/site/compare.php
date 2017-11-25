@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Url;
+use yii\helpers\Html;
 
 $this->title = 'Хрущевки VS новые дома';
 ?>
@@ -17,9 +18,15 @@ $this->title = 'Хрущевки VS новые дома';
 				<div class="item_img_logo"><img src="<?=$comp->imageUrl;?>"/></div>
 				<div class="two_part">
 					<div class="item_part">
+						<?php if($comp->image_old) {
+							echo Html::img($comp->imageUrlOld, ['class' => '']);
+						} ?>
 						<?=$comp->old_text;?>
 					</div>
 					<div class="item_part">
+						<?php if($comp->image_new) {
+							echo Html::img($comp->imageUrlNew, ['class' => '']);
+						} ?>
 						<?=$comp->new_text;?>
 					</div>
 				</div>

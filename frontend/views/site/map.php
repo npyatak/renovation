@@ -40,6 +40,9 @@ $this->title = ($type == 'house') ? 'Дома, включенные в прог�
             <?= GridView::widget([
                 'dataProvider' => $dataProvider,
                 'filterModel' => $searchModel,
+                'options' => [
+                    'id' => 'grid_'.$type,
+                ],
                 'columns' => [
                     [
                         'attribute' => 'district_id',

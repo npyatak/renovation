@@ -121,9 +121,30 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionLaw()
+    public function actionLaw($page=null)
     {
-        return $this->render('law');
+        $query = Page::find()->where(['like', 'url', 'law_']);
+
+        $countQuery = clone $query;
+        $pages = new \yii\data\Pagination([
+            'totalCount' => $countQuery->count(),
+            'pageSize' => 1,
+            'pageSizeParam' => false,
+        ]);
+        $models = $query->offset($pages->offset)
+            ->limit(1)
+            ->all();
+
+        return $this->render('law', [
+             'models' => $models,
+             'pages' => $pages,
+        ]);
+    }
+
+    public function actionLawFile() {
+        $completePath = __DIR__.'/../web/uploads/Федеральный_закон_от_1_июля_2017_года_№_141-ФЗ.pdf';
+        $filename = 'Федеральный_закон_от_1_июля_2017_года_№_141-ФЗ.pdf';
+        return Yii::$app->response->sendFile($completePath, $filename, ['inline'=>true]);
     }
 
     public function actionGallery($id = 1)

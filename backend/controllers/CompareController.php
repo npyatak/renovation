@@ -66,19 +66,22 @@ class CompareController extends Controller
     {
         $model = new Compare();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
-                       
-            if($model->imageFile) {
-                $path = $model->imageSrcPath;
-                if(!file_exists($path)) {
-                    mkdir($path, 0775, true);
-                }
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {                     
+            $images = ['imageFile' => 'image', 'imageFileOld' => 'image_old', 'imageFileNew' => 'image_new'];
 
-                $model->image = md5(time()).'.'.$model->imageFile->extension;
-                
-                $model->imageFile->saveAs($path.$model->image);
-                $model->save(false, ['image']);
+            foreach ($images as $file => $attr) {
+                $model->$file = UploadedFile::getInstance($model, $file);
+                if($model->$file) {
+                    $path = $model->imageSrcPath;
+                    if(!file_exists($path)) {
+                        mkdir($path, 0775, true);
+                    }
+
+                    $model->$attr = md5(time()).'.'.$model->$file->extension;
+                    
+                    $model->$file->saveAs($path.$model->$attr);
+                    $model->save(false, [$attr]);
+                }
             }
 
             return $this->redirect(['index']);
@@ -100,21 +103,24 @@ class CompareController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            $images = ['imageFile' => 'image', 'imageFileOld' => 'image_old', 'imageFileNew' => 'image_new'];
+            
+            foreach ($images as $file => $attr) {
+                $model->$file = UploadedFile::getInstance($model, $file);
+                if($model->$file) {
+                    $path = $model->imageSrcPath;
+                    if(!file_exists($path)) {
+                        mkdir($path, 0775, true);
+                    }
+                    if($model->$attr && file_exists($path.$model->$attr)) {
+                        unlink($path.$model->$attr);
+                    }
 
-            if($model->imageFile) {
-                $path = $model->imageSrcPath;
-                if(!file_exists($path)) {
-                    mkdir($path, 0775, true);
+                    $model->$attr = md5(time()).'.'.$model->$file->extension;
+                    
+                    $model->$file->saveAs($path.$model->$attr);
+                    $model->save(false, [$attr]);
                 }
-                if($model->image && file_exists($path.$model->image)) {
-                    unlink($path.$model->image);
-                }
-
-                $model->image = md5(time()).'.'.$model->imageFile->extension;
-                
-                $model->imageFile->saveAs($path.$model->image);
-                $model->save(false, ['image']);
             }
 
             return $this->redirect(['index']);

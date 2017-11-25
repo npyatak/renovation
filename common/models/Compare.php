@@ -23,6 +23,8 @@ class Compare extends \yii\db\ActiveRecord
     const STATUS_INACTIVE = 0;
     
     public $imageFile;
+    public $imageFileOld;
+    public $imageFileNew;
     /**
      * @inheritdoc
      */
@@ -40,8 +42,8 @@ class Compare extends \yii\db\ActiveRecord
             [['number', 'status'], 'required'],
             [['number', 'status', 'created_at', 'updated_at'], 'integer'],
             [['new_text', 'old_text'], 'string'],
-            [['title', 'image'], 'string', 'max' => 255],
-            [['imageFile'], 'file', 'extensions'=>'jpg, jpeg, png', 'maxSize'=>1024 * 1024 * 5, 'mimeTypes' => 'image/jpg, image/jpeg, image/png'],
+            [['title', 'image', 'image_old', 'image_new'], 'string', 'max' => 255],
+            [['imageFile', 'imageFileOld', 'imageFileNew'], 'file', 'extensions'=>'jpg, jpeg, png', 'maxSize'=>1024 * 1024 * 5, 'mimeTypes' => 'image/jpg, image/jpeg, image/png'],
         ];
     }
 
@@ -58,6 +60,14 @@ class Compare extends \yii\db\ActiveRecord
         if(file_exists($path.$this->image) && is_file($path.$this->image)) {
             unlink($path.$this->image);
         }
+        $path = $this->imageSrcPath;
+        if(file_exists($path.$this->image_old) && is_file($path.$this->image_old)) {
+            unlink($path.$this->image_old);
+        }
+        $path = $this->imageSrcPath;
+        if(file_exists($path.$this->image_new) && is_file($path.$this->image_new)) {
+            unlink($path.$this->image_new);
+        }
         return parent::afterDelete();
     }
 
@@ -70,7 +80,9 @@ class Compare extends \yii\db\ActiveRecord
             'id' => 'ID',
             'number' => 'Порядковый номер',
             'title' => 'Заголовок',
-            'image' => 'Изображение',
+            'imageFile' => 'Изображение',
+            'imageFileNew' => 'Изображение новостройки',
+            'imageFileOldld' => 'Изображение хрущевки',
             'new_text' => 'Текст про новостройки',
             'old_text' => 'Текст про хрущевки',
             'status' => 'Статус',
@@ -85,6 +97,14 @@ class Compare extends \yii\db\ActiveRecord
 
     public function getImageUrl() {
         return Yii::$app->urlManagerFrontEnd->createAbsoluteUrl('/uploads/compare/'.$this->image);
+    }
+
+    public function getImageUrlOld() {
+        return Yii::$app->urlManagerFrontEnd->createAbsoluteUrl('/uploads/compare/'.$this->image_old);
+    }
+
+    public function getImageUrlNew() {
+        return Yii::$app->urlManagerFrontEnd->createAbsoluteUrl('/uploads/compare/'.$this->image_new);
     }
 
     public function getStatusArray() {

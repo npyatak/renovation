@@ -7,7 +7,7 @@ use mihaildev\elfinder\ElFinder;
 
 <div class="district-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype'=>'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
@@ -24,6 +24,8 @@ use mihaildev\elfinder\ElFinder;
     ]);
     ?>
 
+    <?= $form->field($model, 'imageFileNew')->fileInput() ?>
+
     <?= $form->field($model, 'old_text')->widget(CKEditor::className(),[
         'editorOptions' => ElFinder::ckeditorOptions('elfinder',
         [
@@ -32,6 +34,8 @@ use mihaildev\elfinder\ElFinder;
         ]),
     ]);
     ?>
+
+    <?= $form->field($model, 'imageFileOld')->fileInput() ?>
 
     <?= $form->field($model, 'status')->dropDownList(get_class($model)::getStatusArray(), ['class'=>'']) ?>
 

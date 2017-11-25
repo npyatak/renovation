@@ -10,6 +10,10 @@ body {
 	box-shadow: none !important;
 	color: #010211;
 }
+.btn-transparent.active {
+	background: #0082A8;
+	color: #fff;
+}
 .top_block {
 	padding-top: 51px;
 	text-align: center;
@@ -117,10 +121,9 @@ body {
 		height: auto;
 	}
 	.popup_text {
-		font-size: 30px;
-		color: #ffffff;
-		font-family: "Proxima Nova", sans-serif;
+		font: 30px "Proxima Nova Light", sans-serif;
 		font-weight: 300;
+		color: #ffffff;
 		padding-top: 46px;
 	}
 	.close {

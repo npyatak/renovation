@@ -95,22 +95,23 @@
 /* line 69, ../sass/renovation.scss */
 .renovation .select_area a.start {
   border: 1px solid #C09916;
-  background: #C09916;
-  color: #fff;
+  background: transparent;
+  color: #010211;
 }
 /* line 73, ../sass/renovation.scss */
 .renovation .select_area a.start.active {
-  background: #c19f63;
+  background: #C09916;
+  color: #fff;
 }
-/* line 79, ../sass/renovation.scss */
+/* line 80, ../sass/renovation.scss */
 .renovation #object-map {
   margin-top: 19px;
 }
-/* line 82, ../sass/renovation.scss */
+/* line 83, ../sass/renovation.scss */
 .renovation .areas_table {
   font-family: "Proxima Nova Light", sans-serif;
 }
-/* line 84, ../sass/renovation.scss */
+/* line 85, ../sass/renovation.scss */
 .renovation .areas_table .title_table {
   font-family: "Proxima Nova Light", sans-serif;
   font-size: 40px;
@@ -119,53 +120,53 @@
   padding-bottom: 23px;
 }
 @media screen and (max-width: 1000px) {
-  /* line 84, ../sass/renovation.scss */
+  /* line 85, ../sass/renovation.scss */
   .renovation .areas_table .title_table {
     padding-left: 20px;
     padding-right: 20px;
     line-height: 40px;
   }
 }
-/* line 96, ../sass/renovation.scss */
+/* line 97, ../sass/renovation.scss */
 .renovation .areas_table .summary {
   display: none;
 }
-/* line 99, ../sass/renovation.scss */
+/* line 100, ../sass/renovation.scss */
 .renovation .areas_table input {
   border-radius: 0px;
 }
-/* line 102, ../sass/renovation.scss */
+/* line 103, ../sass/renovation.scss */
 .renovation .areas_table table {
   border: 1px solid transparent;
 }
-/* line 105, ../sass/renovation.scss */
+/* line 106, ../sass/renovation.scss */
 .renovation .areas_table table thead th:not(:last-child) {
   border-right: 1px solid #fff;
 }
-/* line 108, ../sass/renovation.scss */
+/* line 109, ../sass/renovation.scss */
 .renovation .areas_table table thead th {
   background: #C09916;
   color: white;
   padding: 17px 23px;
 }
 @media screen and (max-width: 639px) {
-  /* line 108, ../sass/renovation.scss */
+  /* line 109, ../sass/renovation.scss */
   .renovation .areas_table table thead th {
     padding: 12px;
   }
 }
-/* line 115, ../sass/renovation.scss */
+/* line 116, ../sass/renovation.scss */
 .renovation .areas_table table thead th:nth-child(2) {
   min-width: 130px;
 }
-/* line 118, ../sass/renovation.scss */
+/* line 119, ../sass/renovation.scss */
 .renovation .areas_table table thead th a {
   color: white;
   font-size: 18px;
   font-weight: 300;
   white-space: nowrap;
 }
-/* line 123, ../sass/renovation.scss */
+/* line 124, ../sass/renovation.scss */
 .renovation .areas_table table thead th a:after {
   background: url("../../images/table_sort.png");
   content: '';
@@ -174,18 +175,18 @@
   height: 8px;
   margin-left: 11px;
 }
-/* line 133, ../sass/renovation.scss */
+/* line 134, ../sass/renovation.scss */
 .renovation .areas_table table thead td {
   background: #eeeff1;
   padding: 5px 0;
 }
-/* line 136, ../sass/renovation.scss */
+/* line 137, ../sass/renovation.scss */
 .renovation .areas_table table thead td input {
   height: 60px;
   border: 0px;
   font-size: 18px;
 }
-/* line 141, ../sass/renovation.scss */
+/* line 142, ../sass/renovation.scss */
 .renovation .areas_table table thead td select {
   height: 60px;
   border: 0px;
@@ -193,23 +194,23 @@
   width: 100%;
   background: #fff;
 }
-/* line 150, ../sass/renovation.scss */
+/* line 151, ../sass/renovation.scss */
 .renovation .areas_table table th {
   border: 1px solid transparent;
 }
-/* line 156, ../sass/renovation.scss */
+/* line 157, ../sass/renovation.scss */
 .renovation .areas_table table tbody tr:nth-child(2n-1) td {
   background: #DADEE3;
 }
-/* line 160, ../sass/renovation.scss */
+/* line 161, ../sass/renovation.scss */
 .renovation .areas_table table tbody tr td {
   font-size: 18px;
 }
-/* line 166, ../sass/renovation.scss */
+/* line 167, ../sass/renovation.scss */
 .renovation .areas_table table td:not(:last-child) {
   border-right: 1px solid #EEEFF3;
 }
-/* line 169, ../sass/renovation.scss */
+/* line 170, ../sass/renovation.scss */
 .renovation .areas_table table td {
   border: 1px solid transparent;
   padding: 17px 23px;
@@ -217,34 +218,34 @@
   background: #eeeff1;
 }
 @media screen and (max-width: 639px) {
-  /* line 169, ../sass/renovation.scss */
+  /* line 170, ../sass/renovation.scss */
   .renovation .areas_table table td {
     padding: 12px;
   }
 }
-/* line 179, ../sass/renovation.scss */
+/* line 180, ../sass/renovation.scss */
 .renovation .areas_table .pagination {
   width: 100%;
   text-align: center;
 }
-/* line 182, ../sass/renovation.scss */
+/* line 183, ../sass/renovation.scss */
 .renovation .areas_table .pagination li.prev a,
 .renovation .areas_table .pagination li.prev span {
   background: transparent;
   font-size: 20px;
 }
-/* line 187, ../sass/renovation.scss */
+/* line 188, ../sass/renovation.scss */
 .renovation .areas_table .pagination li.next a,
 .renovation .areas_table .pagination li.next a {
   background: transparent;
   font-size: 20px;
 }
-/* line 192, ../sass/renovation.scss */
+/* line 193, ../sass/renovation.scss */
 .renovation .areas_table .pagination li {
   margin: 0px 4px;
   display: inline-block;
 }
-/* line 195, ../sass/renovation.scss */
+/* line 196, ../sass/renovation.scss */
 .renovation .areas_table .pagination li a {
   font-size: 15px;
   line-height: 38px;
@@ -255,17 +256,17 @@
   padding: 0px;
   text-align: center;
 }
-/* line 206, ../sass/renovation.scss */
+/* line 207, ../sass/renovation.scss */
 .renovation .areas_table .pagination li.active a {
   color: white;
   background: #3B0F50;
   border: 1px solid #3B0F50;
 }
-/* line 213, ../sass/renovation.scss */
+/* line 214, ../sass/renovation.scss */
 .renovation .areas_table .pagination li.next a, .renovation .areas_table .pagination li.prev a {
   border: 1px solid transparent;
 }
-/* line 216, ../sass/renovation.scss */
+/* line 217, ../sass/renovation.scss */
 .renovation .areas_table .pagination li.next span, .renovation .areas_table .pagination li.prev span {
   border: 1px solid transparent;
   line-height: 38px;

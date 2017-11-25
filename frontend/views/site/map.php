@@ -27,8 +27,8 @@ $this->title = ($type == 'house') ? 'Дома, включенные в прог�
         </div>
         <div class="select_area">
             Отобразить
-            <a class="btn btn-warning <?=$type == 'house' ? 'active' : 'start white_text';?>" href="<?=Url::toRoute(['site/map', 'type' => 'house'])?>">Дома, включенные в программу</a>
-            <a class="btn btn-transparent <?=$type != 'house' ? 'active' : 'start white_text';?>" href="<?=Url::toRoute(['site/map', 'type' => null])?>">Стартовые площадки</a>
+            <a class="btn btn-warning <?=$type == 'house' ? 'active' : 'start';?>" href="<?=Url::toRoute(['site/map', 'type' => 'house'])?>">Дома, включенные в программу</a>
+            <a class="btn btn-transparent <?=$type != 'house' ? 'active' : 'start';?>" href="<?=Url::toRoute(['site/map', 'type' => null])?>">Стартовые площадки</a>
         </div>
     </div>
 

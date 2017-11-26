@@ -24,7 +24,8 @@ class GallerySlide extends \yii\db\ActiveRecord
         return [
             [['title', 'gallery_id'], 'required'],
             [['number', 'gallery_id'], 'integer'],
-            [['title', 'image'], 'string', 'max' => 255],
+            [['image'], 'string', 'max' => 255],
+            [['title'], 'string', 'max' => 1000],
             [['imageFile'], 'file', 'extensions'=>'jpg, jpeg, png', 'maxSize'=>1024 * 1024 * 5, 'mimeTypes' => 'image/jpg, image/jpeg, image/png'],
         ];
     }

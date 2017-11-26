@@ -82,7 +82,7 @@ class Compare extends \yii\db\ActiveRecord
             'title' => 'Заголовок',
             'imageFile' => 'Изображение',
             'imageFileNew' => 'Изображение новостройки',
-            'imageFileOldld' => 'Изображение хрущевки',
+            'imageFileOld' => 'Изображение хрущевки',
             'new_text' => 'Текст про новостройки',
             'old_text' => 'Текст про хрущевки',
             'status' => 'Статус',

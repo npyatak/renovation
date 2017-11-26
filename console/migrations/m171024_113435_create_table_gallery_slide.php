@@ -15,7 +15,7 @@ class m171024_113435_create_table_gallery_slide extends Migration
         $this->createTable('{{%gallery_slide}}', [
             'id' => $this->primaryKey(),
             'gallery_id' => $this->integer()->notNull(),
-            'title' => $this->string(255)->notNull(),
+            'title' => $this->string()->notNull(),
             'image' => $this->string(255),
             'number' => $this->integer(),
         ], $tableOptions);

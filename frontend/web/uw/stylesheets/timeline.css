@@ -1,235 +1,408 @@
+/* line 1, ../sass/timeline.scss */
 .wrap {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
+/* line 5, ../sass/timeline.scss */
 .timeline {
-  font-family: "Proxima Nova";
-  color: #010211; }
-  .timeline .top_block {
-    padding-top: 0px; }
+  color: #010211;
+}
+/* line 8, ../sass/timeline.scss */
+.timeline .top_block {
+  padding-top: 0px;
+}
+/* line 12, ../sass/timeline.scss */
+.timeline h1 {
+  text-align: center;
+  font: 55px 'Proxima Nova Regular', sans-serif;
+  font-weight: bold;
+  color: #3B0F50;
+  text-transform: uppercase;
+  margin-top: 73px;
+  margin-bottom: 50px;
+  line-height: 39px;
+}
+/* line 21, ../sass/timeline.scss */
+.timeline h1 span {
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+}
+@media screen and (max-width: 1000px) {
+  /* line 12, ../sass/timeline.scss */
   .timeline h1 {
-    text-align: center;
-    font-size: 40px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 73px;
-    margin-bottom: 19px;
-    line-height: 39px; }
-    @media screen and (max-width: 1000px) {
-      .timeline h1 {
-        font-size: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-        line-height: 40px; } }
-  .timeline .sliderbox {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    -webkit-transition: margin-left 1s ease-out;
-    -moz-transition: margin-left 1s ease-out;
-    -o-transition: margin-left 1s ease-out;
-    transition: margin-left 1s ease-out; }
-    .timeline .sliderbox .item {
-      cursor: pointer; }
-      .timeline .sliderbox .item .date {
-        padding: 30px 0 0 30px;
-        height: 100px; }
-        .timeline .sliderbox .item .date .date-item {
-          color: #dbc8ae;
-          font-size: 18px;
-          line-height: 24px; }
-      .timeline .sliderbox .item.active > .date {
-        padding-top: 0px; }
-      .timeline .sliderbox .item.active > .date > .date-item {
-        font-size: 40px;
-        line-height: 40px; }
-      .timeline .sliderbox .item .hr {
-        border: 1.6px solid #dbc8ae; }
-      .timeline .sliderbox .item .description {
-        margin: 0 100px 0 0;
-        width: 510px;
-        height: 450px;
-        background: #fff; }
-        .timeline .sliderbox .item .description .dot {
-          position: absolute;
-          background-color: #fff;
-          border: 3px solid #dbc8ae;
-          border-radius: 50%;
-          height: 26px;
-          width: 26px;
-          margin: -13px 0 0 15px; }
-        .timeline .sliderbox .item .description .dot + p {
-          padding-top: 40px;
-          padding-bottom: 20px; }
-        .timeline .sliderbox .item .description p {
-          font-family: "Proxima Nova Light";
-          font-size: 18px;
-          line-height: 30px;
-          padding: 0 30px;
-          margin: 0; }
-        .timeline .sliderbox .item .description .circle {
-          opacity: 0;
-          transition: opacity 2s ease-out;
-          pointer-events: none;
-          width: 0;
-          height: 0; }
-        .timeline .sliderbox .item .description .active {
-          pointer-events: unset;
-          opacity: 1;
-          position: absolute;
-          top: 75%;
-          border: 2px solid #dbc8ae;
-          border-radius: 50%;
-          cursor: pointer;
-          font-size: 20px;
-          line-height: 50px;
-          text-align: center;
-          height: 125px;
-          width: 125px; }
-          .timeline .sliderbox .item .description .active.fl {
-            margin-left: -65px; }
-          .timeline .sliderbox .item .description .active.fr {
-            margin-left: 445px; }
-          .timeline .sliderbox .item .description .active .prev, .timeline .sliderbox .item .description .active .next {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transition: transform .5s; }
-          .timeline .sliderbox .item .description .active .prev {
-            background: url("../../images/prev_ico.png") center no-repeat; }
-          .timeline .sliderbox .item .description .active .next {
-            background: url("../../images/next_ico.png") center no-repeat; }
-          .timeline .sliderbox .item .description .active:hover .prev, .timeline .sliderbox .item .description .active:hover .next {
-            transform: scale(1.3); }
-      @media screen and (min-width: 1366px) and (max-width: 1599px) {
-        .timeline .sliderbox .item .date {
-          padding: 25.5px 0 0 25.5px;
-          height: 85px; }
-          .timeline .sliderbox .item .date .date-item {
-            font-size: 15.3px;
-            line-height: 20.4px; }
-        .timeline .sliderbox .item.active > .date {
-          padding-top: 10px; }
-        .timeline .sliderbox .item.active > .date > .date-item {
-          font-size: 34px;
-          line-height: 34px; }
-        .timeline .sliderbox .item .description {
-          margin: 0 85px 0 0;
-          width: 433.5px;
-          height: 382.5px; }
-          .timeline .sliderbox .item .description .dot {
-            border: 2.55px solid #dbc8ae;
-            height: 22.1px;
-            width: 22.1px;
-            margin: -12px 0 0 12.75px; }
-          .timeline .sliderbox .item .description .dot + p {
-            padding-top: 34px;
-            padding-bottom: 16px; }
-          .timeline .sliderbox .item .description p {
-            font-size: 16px;
-            line-height: 26px;
-            padding: 0 26px; }
-          .timeline .sliderbox .item .description .active {
-            font-size: 18px;
-            line-height: 42px;
-            height: 106.25px;
-            width: 106.25px; }
-            .timeline .sliderbox .item .description .active.fl {
-              margin-left: -55.25px; }
-            .timeline .sliderbox .item .description .active.fr {
-              margin-left: 378.25px; } }
-      @media screen and (min-width: 1280px) and (max-width: 1365px) {
-        .timeline .sliderbox .item .date {
-          padding: 22.5px 0 0 22.5px;
-          height: 75px; }
-          .timeline .sliderbox .item .date .date-item {
-            font-size: 13.5px;
-            line-height: 18px; }
-        .timeline .sliderbox .item.active > .date {
-          padding-top: 5px; }
-        .timeline .sliderbox .item.active > .date > .date-item {
-          font-size: 30px;
-          line-height: 30px; }
-        .timeline .sliderbox .item .description {
-          margin: 0 75px 0 0;
-          width: 382.5px;
-          height: 337.5px; }
-          .timeline .sliderbox .item .description .dot {
-            border: 2.25px solid #dbc8ae;
-            height: 19.5px;
-            width: 19.5px;
-            margin: -11px 0 0 11.25px; }
-          .timeline .sliderbox .item .description .dot + p {
-            padding-top: 30px;
-            padding-bottom: 15px; }
-          .timeline .sliderbox .item .description p {
-            font-size: 13.5px;
-            line-height: 22.5px;
-            padding: 0 22.5px; }
-          .timeline .sliderbox .item .description .active {
-            font-size: 15px;
-            line-height: 37.5px;
-            height: 93.75px;
-            width: 93.75px; }
-            .timeline .sliderbox .item .description .active.fl {
-              margin-left: -48.75px; }
-            .timeline .sliderbox .item .description .active.fr {
-              margin-left: 333.75px; } }
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
-        .timeline .sliderbox .item .date {
-          padding: 21px 0 0 21px;
-          height: 70px; }
-          .timeline .sliderbox .item .date .date-item {
-            font-size: 12.6px;
-            line-height: 16.8px; }
-        .timeline .sliderbox .item.active > .date {
-          padding-top: 2.5px; }
-        .timeline .sliderbox .item.active > .date > .date-item {
-          font-size: 28px;
-          line-height: 28px; }
-        .timeline .sliderbox .item .description {
-          margin: 0 70px 0 0;
-          width: 357px;
-          height: 315px; }
-          .timeline .sliderbox .item .description .dot {
-            border: 2.1px solid #dbc8ae;
-            height: 18.2px;
-            width: 18.2px;
-            margin: -10px 0 0 10.5px; }
-          .timeline .sliderbox .item .description .dot + p {
-            padding-top: 28px;
-            padding-bottom: 14px; }
-          .timeline .sliderbox .item .description p {
-            font-size: 12.6px;
-            line-height: 21px;
-            padding: 0 21px; }
-          .timeline .sliderbox .item .description .active {
-            border: 1.4px solid #dbc8ae;
-            font-size: 14px;
-            line-height: 35px;
-            height: 87.5px;
-            width: 87.5px; }
-            .timeline .sliderbox .item .description .active.fl {
-              margin-left: -45.5px; }
-            .timeline .sliderbox .item .description .active.fr {
-              margin-left: 311.5px; } }
-    .timeline .sliderbox .item:last-child .hr {
-      width: 510px; }
-    @media screen and (min-width: 1366px) and (max-width: 1599px) {
-      .timeline .sliderbox .item:last-child .hr {
-        width: 433.5px; } }
-    @media screen and (min-width: 1280px) and (max-width: 1365px) {
-      .timeline .sliderbox .item:last-child .hr {
-        width: 382.5px; } }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-      .timeline .sliderbox .item:last-child .hr {
-        width: 357px; } }
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 12, ../sass/timeline.scss */
+  .timeline h1 {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 40px;
+  }
+}
+/* line 37, ../sass/timeline.scss */
+.timeline .sliderbox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  -webkit-transition: margin-left 1s ease-out;
+  -moz-transition: margin-left 1s ease-out;
+  -o-transition: margin-left 1s ease-out;
+  transition: margin-left 1s ease-out;
+}
+/* line 45, ../sass/timeline.scss */
+.timeline .sliderbox .item {
+  position: relative;
+  cursor: pointer;
+}
+/* line 48, ../sass/timeline.scss */
+.timeline .sliderbox .item .image img {
+  display: block;
+  width: 100%;
+}
+/* line 52, ../sass/timeline.scss */
+.timeline .sliderbox .item .date {
+  padding: 30px 0 0 30px;
+  height: 120px;
+}
+/* line 55, ../sass/timeline.scss */
+.timeline .sliderbox .item .date .date-item {
+  color: #010211;
+  font-size: 18px;
+  line-height: 24px;
+  transition: .2s;
+}
+/* line 63, ../sass/timeline.scss */
+.timeline .sliderbox .item.active .dot {
+  background-color: #C39C17 !important;
+  border-color: #fff !important;
+}
+/* line 68, ../sass/timeline.scss */
+.timeline .sliderbox .item.active .date .date-item {
+  font: 33px 'Proxima Nova Bl', sans-serif;
+  line-height: 30px;
+  color: #C59D17;
+}
+/* line 74, ../sass/timeline.scss */
+.timeline .sliderbox .item .hr {
+  border: 3px solid #fff;
+}
+/* line 78, ../sass/timeline.scss */
+.timeline .sliderbox .item .description {
+  margin: 0 100px 0 0;
+  padding-bottom: 30px;
+  width: 510px;
+  height: 100%;
+  background: #fff;
+}
+/* line 85, ../sass/timeline.scss */
+.timeline .sliderbox .item .description .dot {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background-color: #fff;
+  border: 3px solid #D9D9D9;
+  border-radius: 50%;
+  height: 26px;
+  width: 26px;
+}
+/* line 96, ../sass/timeline.scss */
+.timeline .sliderbox .item .description .dot + p {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+/* line 101, ../sass/timeline.scss */
+.timeline .sliderbox .item .description p {
+  font-family: "Proxima Nova Light";
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 30px;
+  margin: 0;
+}
+/* line 109, ../sass/timeline.scss */
+.timeline .sliderbox .item .description .circle {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+/* line 117, ../sass/timeline.scss */
+.timeline .sliderbox .item .description .active {
+  pointer-events: unset;
+  opacity: 1;
+  position: absolute;
+  top: 35%;
+  border: 1px solid #3B1050;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  height: 125px;
+  width: 125px;
+}
+/* line 131, ../sass/timeline.scss */
+.timeline .sliderbox .item .description .active.fl {
+  margin-left: -65px;
+}
+/* line 135, ../sass/timeline.scss */
+.timeline .sliderbox .item .description .active.fr {
+  margin-left: 445px;
+}
+/* line 139, ../sass/timeline.scss */
+.timeline .sliderbox .item .description .active .prev, .timeline .sliderbox .item .description .active .next {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: transform .5s;
+}
+/* line 146, ../sass/timeline.scss */
+.timeline .sliderbox .item .description .active .prev::after, .timeline .sliderbox .item .description .active .next::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #3B1050;
+  transform: translate(-50%, -50%);
+  transition: .2s;
+  z-index: 0;
+}
+/* line 162, ../sass/timeline.scss */
+.timeline .sliderbox .item .description .active .prev i, .timeline .sliderbox .item .description .active .next i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+/* line 171, ../sass/timeline.scss */
+.timeline .sliderbox .item .description .active:hover .prev::after, .timeline .sliderbox .item .description .active:hover .next::after {
+  width: 55px;
+  height: 55px;
+}
+@media screen and (min-width: 1366px) and (max-width: 1599px) {
+  /* line 180, ../sass/timeline.scss */
+  .timeline .sliderbox .item .date {
+    padding: 25.5px 0 0 25.5px;
+    height: 120px;
+  }
+  /* line 183, ../sass/timeline.scss */
+  .timeline .sliderbox .item .date .date-item {
+    font-size: 15.3px;
+    line-height: 20.4px;
+  }
+  /* line 189, ../sass/timeline.scss */
+  .timeline .sliderbox .item.active > .date {
+    padding-top: 10px;
+  }
+  /* line 193, ../sass/timeline.scss */
+  .timeline .sliderbox .item.active > .date > .date-item {
+    font-size: 34px;
+    line-height: 34px;
+  }
+  /* line 198, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description {
+    margin: 0 85px 0 0;
+    width: 433.5px;
+    height: 100%;
+  }
+  /* line 203, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .dot {
+    border: 2.55px solid #dbc8ae;
+    height: 22.1px;
+    width: 22.1px;
+    margin: -12px 0 0 12.75px;
+  }
+  /* line 210, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .dot + p {
+    padding-top: 34px;
+    padding-bottom: 16px;
+  }
+  /* line 215, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description p {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0 26px;
+  }
+  /* line 221, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .active {
+    font-size: 18px;
+    line-height: 42px;
+    height: 106.25px;
+    width: 106.25px;
+  }
+  /* line 227, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .active.fl {
+    margin-left: -55.25px;
+  }
+  /* line 231, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .active.fr {
+    margin-left: 378.25px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+  /* line 239, ../sass/timeline.scss */
+  .timeline .sliderbox .item .date {
+    padding: 22.5px 0 0 22.5px;
+    height: 75px;
+  }
+  /* line 242, ../sass/timeline.scss */
+  .timeline .sliderbox .item .date .date-item {
+    font-size: 13.5px;
+    line-height: 18px;
+  }
+  /* line 248, ../sass/timeline.scss */
+  .timeline .sliderbox .item.active > .date {
+    padding-top: 5px;
+  }
+  /* line 252, ../sass/timeline.scss */
+  .timeline .sliderbox .item.active > .date > .date-item {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  /* line 257, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description {
+    margin: 0 75px 0 0;
+    width: 382.5px;
+    height: 337.5px;
+  }
+  /* line 262, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .dot {
+    border: 2.25px solid #dbc8ae;
+    height: 19.5px;
+    width: 19.5px;
+    margin: -11px 0 0 11.25px;
+  }
+  /* line 269, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .dot + p {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  /* line 274, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description p {
+    font-size: 13.5px;
+    line-height: 22.5px;
+    padding: 0 22.5px;
+  }
+  /* line 280, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .active {
+    font-size: 15px;
+    line-height: 37.5px;
+    height: 93.75px;
+    width: 93.75px;
+  }
+  /* line 286, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .active.fl {
+    margin-left: -48.75px;
+  }
+  /* line 290, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .active.fr {
+    margin-left: 333.75px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  /* line 298, ../sass/timeline.scss */
+  .timeline .sliderbox .item .date {
+    padding: 21px 0 0 21px;
+    height: 70px;
+  }
+  /* line 301, ../sass/timeline.scss */
+  .timeline .sliderbox .item .date .date-item {
+    font-size: 12.6px;
+    line-height: 16.8px;
+  }
+  /* line 307, ../sass/timeline.scss */
+  .timeline .sliderbox .item.active > .date {
+    padding-top: 2.5px;
+  }
+  /* line 311, ../sass/timeline.scss */
+  .timeline .sliderbox .item.active > .date > .date-item {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  /* line 316, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description {
+    margin: 0 70px 0 0;
+    width: 357px;
+    height: 315px;
+  }
+  /* line 321, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .dot {
+    border: 2.1px solid #dbc8ae;
+    height: 18.2px;
+    width: 18.2px;
+    margin: -10px 0 0 10.5px;
+  }
+  /* line 328, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .dot + p {
+    padding-top: 28px;
+    padding-bottom: 14px;
+  }
+  /* line 333, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description p {
+    font-size: 12.6px;
+    line-height: 21px;
+    padding: 0 21px;
+  }
+  /* line 339, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .active {
+    border: 1.4px solid #dbc8ae;
+    font-size: 14px;
+    line-height: 35px;
+    height: 87.5px;
+    width: 87.5px;
+  }
+  /* line 346, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .active.fl {
+    margin-left: -45.5px;
+  }
+  /* line 350, ../sass/timeline.scss */
+  .timeline .sliderbox .item .description .active.fr {
+    margin-left: 311.5px;
+  }
+}
+/* line 359, ../sass/timeline.scss */
+.timeline .sliderbox .item:last-child .hr {
+  width: 510px;
+}
+@media screen and (min-width: 1366px) and (max-width: 1599px) {
+  /* line 363, ../sass/timeline.scss */
+  .timeline .sliderbox .item:last-child .hr {
+    width: 433.5px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+  /* line 368, ../sass/timeline.scss */
+  .timeline .sliderbox .item:last-child .hr {
+    width: 382.5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  /* line 373, ../sass/timeline.scss */
+  .timeline .sliderbox .item:last-child .hr {
+    width: 357px;
+  }
+}
 
+/* line 384, ../sass/timeline.scss */
 ::-webkit-scrollbar {
   width: 0px;
-  height: 0px; }
+  height: 0px;
+}
 
+/* line 389, ../sass/timeline.scss */
 ::-webkit-scrollbar-button {
   width: 0px;
-  height: 0px; }
-
-/*# sourceMappingURL=timeline.css.map */
+  height: 0px;
+}

@@ -1,0 +1,157 @@
+.law {
+  .top_block.white .go_front {
+    border-color: #A1A6AF;
+    color: #A1A6AF;
+  }
+  .law-header {
+    margin-top: -133px;
+    background: url('../../images/law.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 270px;
+    h1 {
+      text-align: center;
+      font: 55px 'Proxima Nova Regular', sans-serif;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 39px;
+      letter-spacing: 1px;
+    }
+    h1::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 6px;
+      background: #C59D17;
+      margin: 50px auto;
+    }
+    p {
+      color: #fff;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .btn-wrap {
+      padding: 80px 0;
+    }
+    .btn-down {
+      position: relative;
+      display: block;
+      width: 28px;
+      height: 44px;
+      margin: 0 auto;
+      border-radius: 15px;
+      border: 3px solid #C59D17;
+      color: #C59D17;
+      font-size: 17px;
+      cursor: pointer;
+      i {
+        position: absolute;
+        bottom: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .law-content {
+    padding-top: 80px;
+    .urls {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li:not(:last-child) {
+        margin-bottom: 5px;
+      }
+      a {
+        color: #00A2D6;
+      }
+    }
+    .urls::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 6px;
+      background: #C59D17;
+      margin: 30px 0;
+    }
+    .facts {
+      padding: 0;
+      margin: 0 0 30px;
+      list-style: none;
+      li:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+    .btn-wrap .btn {
+      font-size: 15px;
+      border-radius: 0px;
+      line-height: 39px;
+      padding: 0px 18px;
+      border-color: #C59D17;
+      background: #C59D17;
+    }
+    .pagination {
+      width: 100%;
+      margin-top: 100px;
+      text-align: center;
+      li.prev a,
+      li.prev span {
+        background: transparent;
+        font-size: 20px;
+      }
+      li.next a,
+      li.next a {
+        background: transparent;
+        font-size: 20px;
+      }
+      li {
+        margin: 0px 4px;
+        display: inline-block;
+        a {
+          font-size: 15px;
+          line-height: 38px;
+          width: 42px;
+          display: inline-block;
+          border: 1px solid #A1A6AF;
+          color: #010211;
+          padding: 0px;
+          text-align: center;
+        }
+        &.active {
+          a {
+            color: white;
+            background: #3B0F50;
+            border: 1px solid #3B0F50;
+          }
+        }
+        &.next,&.prev {
+          a {
+            border:1px solid transparent;
+          }
+          span {
+            border:1px solid transparent;
+            line-height: 38px;
+            width: 38px;
+            text-align: center;
+            display: inline-block;
+            padding: 0px;
+          }
+        }
+      }
+    }
+    .law-text {
+      margin-top: 70px;
+      h2 {
+        margin-bottom: 30px;
+        font: 35px 'Proxima Nova Regular';
+        font-weight: bold;
+        color: #00A2D6;
+        letter-spacing: 1px;
+      }
+      p {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Url;
 
-$this->title = 'Даты реализации проекта по реновации. Таймлайн';
+$this->title = 'Реновация в датах:';
 
 $this->registerJsFile(Url::toRoute('js/timeline.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile(Url::toRoute('uw/stylesheets/timeline.css'));
@@ -11,7 +11,7 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/timeline.css'));
     <?=$this->render('_top_block', ['class' => ' white']);?>
     	
     <div class="container_inner">
-        <h1><?=$this->title;?></h1>
+        <h1><?=$this->title;?> <span>от предложения проекта до его реализации</span></h1>
     </div>
     
     <div class="container_inner sliderbox" id="sliderbox">
@@ -19,22 +19,25 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/timeline.css'));
             <?php $key = 0;
             foreach ($slides as $key => $slide) :?>
                 <div class="item<?=$key == 0 ? ' active' : '';?> width_<?=$slide->width_preset;?>" data-index="<?=$key;?>">
-                    <div class="date">
-                        <span class="date-item">
-                            <?=$slide->date_1;?>
-                            <br>
-                            <?=$slide->date_2;?>
-                        </span>
-                    </div>
                     <div class="hr"></div>
                     <div class="description">
                         <div class="dot"></div>
+                        <div class="image">
+                            <img src="<?=$slide->imageUrl;?>" alt="">
+                        </div>
+                        <div class="date">
+                            <span class="date-item">
+                                <?=$slide->date_1;?>
+                                <br>
+                                <?=$slide->date_2;?>
+                            </span>
+                        </div>
                         <?=$slide->text;?>
                         <div class="circle fl" data-index="<?=$key;?>">
-                            <div class="prev"></div>
+                            <div class="prev"><i class="fa fa-angle-left"></i></div>
                         </div>
                         <div class="circle fr<?=$key == 0 ? ' active' : '';?>" data-index="<?=$key;?>">
-                            <div class="next"></div>
+                            <div class="next"><i class="fa fa-angle-right"></i></div>
                         </div>
                     </div>
                 </div>

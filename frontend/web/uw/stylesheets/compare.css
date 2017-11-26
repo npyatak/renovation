@@ -52,25 +52,30 @@
   padding-bottom: 26px;
 }
 /* line 42, ../sass/compare.scss */
+.compare .items_wrap .item img {
+  display: inline-block;
+  width: 80px;
+}
+/* line 46, ../sass/compare.scss */
 .compare .items_wrap .item .two_part {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 46, ../sass/compare.scss */
+/* line 50, ../sass/compare.scss */
 .compare .items_wrap .item .two_part img {
   display: block;
   width: 100%;
 }
-/* line 50, ../sass/compare.scss */
+/* line 54, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_img {
   position: relative;
 }
-/* line 52, ../sass/compare.scss */
+/* line 56, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_img.item_img_padding {
   padding-top: 35px;
 }
-/* line 55, ../sass/compare.scss */
+/* line 59, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_img .read_more {
   background: url("../../images/read_more_ico.jpg");
   display: block;
@@ -81,7 +86,7 @@
   right: 18px;
   bottom: 18px;
 }
-/* line 65, ../sass/compare.scss */
+/* line 69, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_img img {
   display: block;
   margin: 0 auto;
@@ -89,13 +94,13 @@
   height: auto;
 }
 @media screen and (max-width: 767px) {
-  /* line 65, ../sass/compare.scss */
+  /* line 69, ../sass/compare.scss */
   .compare .items_wrap .item .two_part .item_img img {
     max-width: inherit;
     width: 100%;
   }
 }
-/* line 76, ../sass/compare.scss */
+/* line 80, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_part {
   width: calc(50% - 21px);
   border-top: 2px solid #283045;
@@ -103,13 +108,13 @@
   background: white;
 }
 @media screen and (max-width: 767px) {
-  /* line 76, ../sass/compare.scss */
+  /* line 80, ../sass/compare.scss */
   .compare .items_wrap .item .two_part .item_part {
     width: 100%;
     margin-bottom: 20px;
   }
 }
-/* line 85, ../sass/compare.scss */
+/* line 89, ../sass/compare.scss */
 .compare .items_wrap .item .two_part .item_part p {
   padding: 0px 32px;
   font-size: 18px;
@@ -121,7 +126,7 @@
   margin-bottom: 0px;
 }
 @media screen and (max-width: 767px) {
-  /* line 85, ../sass/compare.scss */
+  /* line 89, ../sass/compare.scss */
   .compare .items_wrap .item .two_part .item_part p {
     padding-left: 20px;
     padding-right: 20px;

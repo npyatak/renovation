@@ -180,7 +180,9 @@ class SiteController extends Controller
         return json_encode(['output'=>'', 'selected'=>'']);
     }
 
-    public function actionHistory() {
-        return $this->render('history');
+    public function actionHistory($page = 1) {
+        return $this->render('history', [
+            'page' => $page,
+        ]);
     }
 }

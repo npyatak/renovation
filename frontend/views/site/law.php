@@ -26,8 +26,8 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 			<ul class="urls">
 				<li><?=Html::a('Закон. Статья 1. Первая часть', Url::toRoute(['site/law']));?></li>
 				<li><?=Html::a('Закон. Статья 1. Вторая часть', Url::toRoute(['site/law', 'page' => 2]));?></li>
-				<li><?=Html::a('Закон. Статья 2.', Url::toRoute(['site/law', 'page' => 3]));?></li>
-				<li><?=Html::a('Народное обсуждение закона о реновации.', Url::toRoute(['site/law', 'page' => 4]));?></li>
+				<li><?=Html::a('Закон. Статья 2', Url::toRoute(['site/law', 'page' => 3]));?></li>
+				<li><?=Html::a('Народное обсуждение закона о реновации', Url::toRoute(['site/law', 'page' => 4]));?></li>
 			</ul>
 			<div class="facts">
 				<li>14 июня 2017 г. принят Государственной Думой</li>
@@ -37,7 +37,7 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 				<li>1 июля 2017 г. вступил в силу</li>
 			</div>
 			<div class="btn-wrap">
-				<a class="btn btn-warning" href="<?=Url::toRoute(['site/law-file']);?>">Скачать текст закон</a>
+				<a class="btn btn-warning" href="<?=Url::toRoute(['site/law-file']);?>">Скачать текст закона</a>
 			</div>
 			<div class="law-text">
 				<?php foreach ($models as $model):?>

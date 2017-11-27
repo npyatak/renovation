@@ -57,6 +57,10 @@
   }
   .history-content {
     padding-top: 80px;
+    img {
+      display: block;
+      width: 100%;
+    }
     .urls {
       padding: 0;
       margin: 0;
@@ -84,20 +88,198 @@
       border-color: #C59D17;
       background: #C59D17;
     }
-    .history-text {
+    .history-block {
       h2 {
+        margin-top: 50px;
         margin-bottom: 30px;
-        font: 35px 'Proxima Nova Regular';
+        font: 38px 'Proxima Nova Regular';
         font-weight: bold;
         color: #00A2D6;
         letter-spacing: 1px;
       }
       p {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         font: 18px 'Proxima Nova Regular', sans-serif;
+        line-height: 25px;
         strong {
           font-family: 'Proxima Nova Bl', sans-serif;
         }
+      }
+    }
+    .h-t_with-imgR {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      >div:nth-child(1) {
+        width: 42%;
+      }
+      >div:nth-child(2) {
+        width: calc(55% + 50px);
+        margin-right: -50px;
+      }
+    }
+    .h-t_with-imgL {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      >div:nth-child(1) {
+        width: 50%;
+      }
+      >div:nth-child(2) {
+        width: 48%;
+      }
+    }
+    .h-t_caption {
+      display: block;
+      max-width: 60%;
+      margin-top: 20px;
+      font-family: 'Proxima Nova Light', sans-serif;
+      font-style: italic;
+    }
+    .with-btn {
+      position: relative;
+      .btn {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+      }
+      .btn.btn-warning {
+        background: transparent;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border-color: #F3BA00;
+        color: #F3BA00;
+        i {
+          margin-left: 10px;
+        }
+      }
+    }
+    .purple-wrap {
+      margin: 30px 0;
+      .purple-block {
+        position: relative;
+        float: right;
+        width: 70%;
+        padding: 20px 80px 20px 140px;
+        margin-right: -50px;
+        border: 5px solid #3B1050;
+        ::before {
+          content: 'i';
+          display: block;
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          width: 40px;
+          height: 40px;
+          font-size: 24px;
+          line-height: 40px;
+          border: 2px solid #3B1050;
+          text-align: center;
+        }
+        p {
+          margin-bottom: 0;
+          font-weight: bold;
+          font-style: italic;
+          font-size: 15px;
+          line-height: 30px;
+        }
+      }
+    }
+    .purple-wrap::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .only-img {
+      margin: 30px -50px;
+      .btn {
+        left: 50px;
+      }
+      .h-t_caption {
+        margin-left: 50px;
+        max-width: 55%;
+      }
+    }
+    .full-img {
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      margin-bottom: 50px;
+      .full-img_caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+      }
+    }
+    .full-img::before {
+      content: '';
+      float: left;
+      padding-top: 40%;
+    }
+    .slider_history {
+      margin-bottom: 30px;
+      .h-t_caption {
+        max-width: 95%;
+      }
+      .owl-dots {
+        position: absolute;
+        top: 82%;
+        right: 30px;
+      }
+      .owl-dot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+        background: #F3B900;
+        margin-right: 15px;
+      }
+      .owl-dot:last-child {
+        margin-right: 0;
+      }
+      .owl-dot.active {
+        background: #00A2D6;
+      }
+    }
+    .gallery-block2 {
+      margin-bottom: 30px;
+      .owl-dots {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+      }
+      .owl-dot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+        background: #F3B900;
+        margin-right: 15px;
+      }
+      .owl-dot:last-child {
+        margin-right: 0;
+      }
+      .owl-dot.active {
+        background: #00A2D6;
       }
     }
   }

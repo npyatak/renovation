@@ -1,5 +1,5 @@
-$(window).load(function(){
-// $(document).ready(function(){
+// $(window).load(function(){
+$(document).ready(function(){
 	if ($('.slider_gallery').length > 0) {
 		$(".slider_gallery").owlCarousel({
 			items: 1,
@@ -55,6 +55,24 @@ $(window).load(function(){
 		$('.header ul').css('height',($(window).height()-$('.header').height()))
 	} else {
 		$('.header ul').css('height','initial');
+	}
+	if ($('.slider_history .item').length > 0) {
+		$(".slider_history").owlCarousel({
+			items: 1,
+			loop: false,
+			nav: false,
+			dots: true
+		});
+	}
+	if ($('.slider_history2 .item').length > 0) {
+		$(".slider_history2").owlCarousel({
+			loop: false,
+			nav: false,
+			dots: true,
+			responsive: {
+				0:{items:2}
+			}
+		});
 	}
 });
 $(window).resize(function(){

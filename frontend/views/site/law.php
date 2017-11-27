@@ -41,7 +41,6 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 			</div>
 			<div class="law-text">
 				<?php foreach ($models as $model):?>
-					<?=$model->title;?>
 					<?=$model->text;?>
 				<?php endforeach;?>
 			</div>

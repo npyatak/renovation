@@ -35,9 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => function($data) {
                     return $data->getStatusArray()[$data->status];
                 },
-                'filter' => function($model) {
-                    Html::activeDropDownList($searchModel, 'status', $model->statusArray, ['prompt'=>'']);
-                }
+                'filter' => Html::activeDropDownList($searchModel, 'status', Page::getStatusArray(), ['prompt'=>''])
             ], 
             [
                 'attribute' => 'is_page',
@@ -45,9 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => function($data) {
                     return $data->getIsPageArray()[$data->is_page];
                 },
-                'filter' => function($model) {
-                    Html::activeDropDownList($searchModel, 'is_page', $model->isPageArray, ['prompt'=>'']);
-                }
+                'filter' => Html::activeDropDownList($searchModel, 'is_page', Page::getIsPageArray(), ['prompt'=>''])
             ],
 
             [

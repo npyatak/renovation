@@ -40,8 +40,8 @@ use mihaildev\elfinder\ElFinder;
 
     <?= $form->field($model, 'status')->dropDownList($model->statusArray, ['class'=>'']) ?>
 
-    <div class="add-form-buttons">
-        <?= Html::submitButton(Yii::t('app', 'Сохранить'), ['class' => 'btn green-btn save-btn']) ?>
+    <div class="form-group">
+        <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

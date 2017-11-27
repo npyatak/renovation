@@ -123,7 +123,7 @@ class SiteController extends Controller
 
     public function actionLaw($page=null)
     {
-        $query = Page::find()->where(['like', 'url', 'law_']);
+        $query = Page::find()->where(['like', 'url', 'law_'])->orderBy('id');
 
         $countQuery = clone $query;
         $pages = new \yii\data\Pagination([

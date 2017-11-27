@@ -62,6 +62,7 @@ class Page extends \yii\db\ActiveRecord {
             'is_page' => 'Отдельная страница',
             'created_at' => 'Дата/Время создания',
             'updated_at' => 'Время последнего изменения',
+            'status' => 'Статус',
         ];
     }
 

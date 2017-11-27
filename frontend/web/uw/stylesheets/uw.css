@@ -145,12 +145,18 @@ body {
   display: none;
 }
 
-/* line 119, ../sass/uw.scss */
+/* line 118, ../sass/uw.scss */
+.map-title {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-weight: bold;
+}
+
+/* line 123, ../sass/uw.scss */
 .gallery_popup img {
   max-width: 100%;
   height: auto;
 }
-/* line 123, ../sass/uw.scss */
+/* line 127, ../sass/uw.scss */
 .gallery_popup .popup_text {
   font: 30px "Proxima Nova Thin", sans-serif;
   font-weight: 300;
@@ -158,13 +164,13 @@ body {
   padding-top: 46px;
   text-align: center;
 }
-/* line 130, ../sass/uw.scss */
+/* line 134, ../sass/uw.scss */
 .gallery_popup .close {
   float: none;
   padding-top: 20px;
   opacity: 1;
 }
-/* line 134, ../sass/uw.scss */
+/* line 138, ../sass/uw.scss */
 .gallery_popup .close img {
   width: 120px;
   height: 120px;
@@ -172,18 +178,18 @@ body {
   display: block;
 }
 
-/* line 142, ../sass/uw.scss */
+/* line 146, ../sass/uw.scss */
 #cboxOverlay {
   background: #3B0F50;
   opacity: 0.9;
 }
 
-/* line 146, ../sass/uw.scss */
+/* line 150, ../sass/uw.scss */
 .popups_info {
   display: none;
 }
 
-/* line 152, ../sass/uw.scss */
+/* line 156, ../sass/uw.scss */
 .bottom_gallery .title_bottom_gallery {
   font-size: 15px;
   color: #000108;
@@ -193,21 +199,21 @@ body {
   padding: 0px 10px;
   padding-bottom: 29px;
 }
-/* line 161, ../sass/uw.scss */
+/* line 165, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img {
   position: relative;
 }
-/* line 163, ../sass/uw.scss */
+/* line 167, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video {
   display: block;
 }
-/* line 165, ../sass/uw.scss */
+/* line 169, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video img {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 170, ../sass/uw.scss */
+/* line 174, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video:before {
   content: '';
   position: absolute;
@@ -219,7 +225,7 @@ body {
   background-size: 134px;
   z-index: 1;
 }
-/* line 181, ../sass/uw.scss */
+/* line 185, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video::after {
   content: '';
   position: absolute;
@@ -231,7 +237,7 @@ body {
   background-size: 134px;
   z-index: 0;
 }
-/* line 193, ../sass/uw.scss */
+/* line 197, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img iframe {
   position: absolute;
   top: 0px;
@@ -241,34 +247,34 @@ body {
   display: none;
 }
 
-/* line 204, ../sass/uw.scss */
+/* line 208, ../sass/uw.scss */
 .blue_top_bg {
   position: relative;
 }
 
-/* line 217, ../sass/uw.scss */
+/* line 221, ../sass/uw.scss */
 #object-map {
   position: relative;
   z-index: 1;
 }
 
-/* line 222, ../sass/uw.scss */
+/* line 226, ../sass/uw.scss */
 .white_text {
   color: white !important;
 }
 
-/* line 225, ../sass/uw.scss */
+/* line 229, ../sass/uw.scss */
 .purple_text {
   color: #3B0F50 !important;
 }
 
-/* line 229, ../sass/uw.scss */
+/* line 233, ../sass/uw.scss */
 .bottom_select_gallery {
   padding-top: 122px;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 233, ../sass/uw.scss */
+/* line 237, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery {
   width: 25%;
   position: relative;
@@ -276,12 +282,12 @@ body {
   overflow: hidden;
 }
 @media screen and (max-width: 999px) {
-  /* line 233, ../sass/uw.scss */
+  /* line 237, ../sass/uw.scss */
   .bottom_select_gallery .select_gallery {
     width: 50%;
   }
 }
-/* line 241, ../sass/uw.scss */
+/* line 245, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery:before {
   content: '';
   display: none;
@@ -292,17 +298,17 @@ body {
   height: 100%;
   z-index: 2;
 }
-/* line 252, ../sass/uw.scss */
+/* line 256, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery:hover:before {
   display: block;
 }
-/* line 255, ../sass/uw.scss */
+/* line 259, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery:hover img {
   -webkit-transform: scale(1.4);
   -ms-transform: scale(1.4);
   transform: scale(1.4);
 }
-/* line 261, ../sass/uw.scss */
+/* line 265, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery img {
   display: block;
   width: 100%;

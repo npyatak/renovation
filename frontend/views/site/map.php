@@ -33,9 +33,6 @@ $this->title = ($type == 'house') ? 'Дома, включенные в прог�
     </div>
 
     <div id="object-map" style="width: 100%; height: 500px;"></div>
-    <div class="map-title">
-        <span>Autem debitis doloribus esse nemo neque quaerat sit. Asperiores laborum nostrum tempore! Aut dolorum et facilis impedit labore officiis rem reprehenderit suscipit!</span>
-    </div>
 
     <div class="container_inner areas_table <?=$type == 'house' ? 'yellow' : 'blue';?>">
         <div class="title_table"><?=$type == 'house' ? 'Дома' : 'Стартовые площадки';?>, включенные в программу реновации</div>

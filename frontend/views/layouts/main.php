@@ -51,7 +51,7 @@ AppAsset::register($this);
                         ['label' => 'Закон о реновации', 'action' => 'law'],
                         ['label' => 'Карта', 'action' => 'map'],
                         ['label' => 'Даты реализации', 'action' => 'timeline'],
-                        ['label' => 'Герои', 'url' => 'http://pyatiehtazhki.tass.ru/'],
+                        ['label' => 'Герои', 'url' => 'http://pyatiehtazhki.tass.ru/?_ga=2.127206541.1082805625.1511712625-56336648.1505299740'],
                         ['label' => 'История вопроса', 'action' => 'history'],
                         ['label' => 'Хрущевки VS новые дома', 'action' => 'compare'],
                     ];

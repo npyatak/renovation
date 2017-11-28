@@ -27,11 +27,6 @@ body {
 		width: 110px;
 	}
 	&.white {
-		.social {
-			a {
-				color: white;
-			}
-		}
 		.go_front {
 			color: #3B0F50;
 			border: 1px solid #3B0F50;
@@ -44,14 +39,14 @@ body {
     	top: 36px;
 		a {
 			margin-left: 38px;
-			color: #003878;
+			color: #361750;
 			font-size: 17px;
 			transition: all 0.3s linear;
 			&:nth-child(1) {
 				margin-left: 0px;
 			}
 			&:hover {
-				color: #E1C6A9;
+				color: #b99c2d;
 			}
 		}
 		@media screen and (max-width: 999px) {
@@ -267,6 +262,25 @@ body {
 			width: 100%;
 			height: auto;
 			transition: .5s;
+		}
+	}
+}
+.site-error {
+	text-align: center;
+	h1 {
+		margin-bottom: 20px;
+		font: 200px 'Proxima Nova', sans-serif;
+		color: #C59D17;
+		line-height: 130px;
+	}
+	p {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 410px){
+	.site-error {
+		h1 {
+			font-size: 150px;
 		}
 	}
 }

@@ -57,7 +57,7 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/history.css'));
     </div>
 
     <ul class="pagination">
-        <li <?=$page == 1 ? 'class="active"' : '';?>><a href="<?=Url::toRoute(['site/history', 'page' => 1]);?>"></a></li>
-        <li <?=$page == 2 ? 'class="active"' : '';?>><a href="<?=Url::toRoute(['site/history', 'page' => 2]);?>"></a></li>
+        <li <?=$page == 1 ? 'class="active"' : '';?>><a href="<?=Url::toRoute(['site/history', 'page' => 1]);?>">1</a></li>
+        <li <?=$page == 2 ? 'class="active"' : '';?>><a href="<?=Url::toRoute(['site/history', 'page' => 2]);?>">2</a></li>
     </ul>
 </div>

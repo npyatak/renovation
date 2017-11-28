@@ -7,9 +7,9 @@ use yii\helpers\Html;
     <ul class="urls">
         <li><a href="#crisis">Кризис на рынке жилья</a></li>
         <li><a href="#hrushevki">Хрущевки</a></li>
-        <li><a href="#">"Брежневки"</a></li>
-        <li><a href="#">Лужковская программа</a></li>
-        <li><a href="#">Конец первой волны</a></li>
+        <li><a href="<?=Url::toRoute(['site/history', 'page' => 2]);?>#brejnevki">"Брежневки"</a></li>
+        <li><a href="<?=Url::toRoute(['site/history', 'page' => 2]);?>#lujkov">Лужковская программа</a></li>
+        <li><a href="<?=Url::toRoute(['site/history', 'page' => 2]);?>#theEnd">Конец первой волны</a></li>
     </ul>
 </div>
 <div class="history-1">

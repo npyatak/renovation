@@ -72,7 +72,7 @@ AppAsset::register($this);
                 </div>
             </div>
             <div class="logo_tass">
-                <a href="https://tass.ru/"><img class="tass_logo" src="<?=Url::to('images/Logo_TASS.svg');?>"/></a>
+                <a href="https://tass.ru/" target="_blank"><img class="tass_logo" src="<?=Url::to('images/Logo_TASS.svg');?>"/></a>
             </div>
         </div>
 

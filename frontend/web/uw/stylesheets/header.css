@@ -17,6 +17,13 @@
   float: left;
 }
 /* line 13, ../sass/header.scss */
+.header .logo_tass {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 86px;
+}
+/* line 19, ../sass/header.scss */
 .header ul {
   padding: 0px;
   margin: 0px;
@@ -25,13 +32,13 @@
   justify-content: space-between;
 }
 @media screen and (max-width: 1200px) {
-  /* line 13, ../sass/header.scss */
+  /* line 19, ../sass/header.scss */
   .header ul {
     padding-left: 44px;
   }
 }
 @media screen and (max-width: 999px) {
-  /* line 13, ../sass/header.scss */
+  /* line 19, ../sass/header.scss */
   .header ul {
     position: absolute;
     top: 66px;
@@ -42,17 +49,17 @@
     padding-left: 0px;
     background: white;
   }
-  /* line 31, ../sass/header.scss */
+  /* line 37, ../sass/header.scss */
   .header ul.show {
     display: block;
   }
 }
-/* line 35, ../sass/header.scss */
+/* line 41, ../sass/header.scss */
 .header ul li {
   line-height: 66px;
 }
 @media screen and (max-width: 999px) {
-  /* line 35, ../sass/header.scss */
+  /* line 41, ../sass/header.scss */
   .header ul li {
     line-height: 60px;
     display: block;
@@ -60,18 +67,18 @@
     text-align: center;
   }
 }
-/* line 44, ../sass/header.scss */
+/* line 50, ../sass/header.scss */
 .header ul a {
   font-family: "Proxima Nova Light", sans-serif;
   color: #010211;
   font-size: 15px;
   font-weight: 300;
 }
-/* line 49, ../sass/header.scss */
+/* line 55, ../sass/header.scss */
 .header ul a.active, .header ul a:hover {
   color: #098fbd;
 }
-/* line 54, ../sass/header.scss */
+/* line 60, ../sass/header.scss */
 .header .map_link {
   display: none;
   position: relative;
@@ -85,17 +92,17 @@
   font-weight: 300;
   text-decoration: none;
 }
-/* line 66, ../sass/header.scss */
+/* line 72, ../sass/header.scss */
 .header .map_link.active, .header .map_link:hover {
   color: #003878;
 }
 @media screen and (max-width: 999px) {
-  /* line 54, ../sass/header.scss */
+  /* line 60, ../sass/header.scss */
   .header .map_link {
     display: block;
   }
 }
-/* line 73, ../sass/header.scss */
+/* line 79, ../sass/header.scss */
 .header .menu-btn {
   display: none;
   position: absolute;
@@ -103,20 +110,20 @@
   top: 21px;
 }
 @media screen and (max-width: 999px) {
-  /* line 73, ../sass/header.scss */
+  /* line 79, ../sass/header.scss */
   .header .menu-btn {
     display: block;
   }
 }
-/* line 81, ../sass/header.scss */
+/* line 87, ../sass/header.scss */
 .header .menu-btn .open-menu-btn {
   display: none;
 }
-/* line 83, ../sass/header.scss */
+/* line 89, ../sass/header.scss */
 .header .menu-btn .open-menu-btn.show {
   display: block;
 }
-/* line 86, ../sass/header.scss */
+/* line 92, ../sass/header.scss */
 .header .menu-btn .open-menu-btn span {
   display: block;
   width: 30px;
@@ -124,7 +131,7 @@
   margin-bottom: 7px;
   background-color: #2e3346;
 }
-/* line 94, ../sass/header.scss */
+/* line 100, ../sass/header.scss */
 .header .menu-btn .close-menu__btn {
   position: relative;
   display: none;
@@ -135,11 +142,11 @@
   right: 2px;
   top: -2px;
 }
-/* line 103, ../sass/header.scss */
+/* line 109, ../sass/header.scss */
 .header .menu-btn .close-menu__btn.show {
   display: inline-block;
 }
-/* line 106, ../sass/header.scss */
+/* line 112, ../sass/header.scss */
 .header .menu-btn .close-menu__btn span {
   display: block;
   position: absolute;
@@ -159,7 +166,7 @@
   -o-transition: .3s ease-in .3s;
   transition: .3s ease-in .3s;
 }
-/* line 128, ../sass/header.scss */
+/* line 134, ../sass/header.scss */
 .header .menu-btn .close-menu__btn.show span:first-child {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
   -moz-transform: translate(-50%, -50%) rotate(45deg);
@@ -167,11 +174,35 @@
   -o-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
 }
-/* line 135, ../sass/header.scss */
+/* line 141, ../sass/header.scss */
 .header .menu-btn .close-menu__btn.show span:last-child {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   -moz-transform: translate(-50%, -50%) rotate(-45deg);
   -ms-transform: translate(-50%, -50%) rotate(-45deg);
   -o-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 154, ../sass/header.scss */
+  .header .container_inner {
+    width: calc(100% - 170px);
+    max-width: 850px;
+  }
+  /* line 157, ../sass/header.scss */
+  .header .container_inner ul {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 999px) {
+  /* line 163, ../sass/header.scss */
+  .header .container_inner {
+    width: 100%;
+    max-width: inherit;
+  }
+
+  /* line 167, ../sass/header.scss */
+  .logo_tass {
+    display: none;
+  }
 }

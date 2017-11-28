@@ -4,6 +4,11 @@ use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\widgets\LinkPager;
 
+$url = Url::canonical();
+$imageUrl = Url::toRoute(['images/items/share.png'], true);
+$title = 'Nokia 8: покажи свою историю с обеих сторон';
+$desc = 'Создай свое бози и выиграй Nokia 8 #fridaybothie #бозинапятнице #bothie';
+
 $this->title = 'Закон о реновациях';
 
 $this->registerJsFile(Url::toRoute('js/law.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
@@ -18,6 +23,32 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 			<p>Федеральный закон от 1 июля 2017 года № 141-ФЗ "О внесении изменений в Закон Российской Федерации "О статусе столицы Российской Федерации" и отдельные законодательные акты Российской Федерации в части установления особенностей регулирования отдельных правоотношений в целях реновации жилищного фонда в субъекте Российской Федерации - городе федерального значения Москве"</p>
 			<div class="btn-wrap">
 				<span class="btn-down"><i class="fa fa-angle-down"></i></span>
+			</div>
+			<div class="social-wrap">
+				<?=Html::a('<i class="fa fa-facebook"></i>', '', [
+					'data-type' => 'fb',
+					'data-url' => $url,
+					'data-title' => $title,
+					'data-image' => $imageUrl,
+					'data-desc' => $desc,
+				]);?>
+				<?=Html::a('<i class="fa fa-vk"></i>', '', [
+					'data-type' => 'vk',
+					'data-url' => $url,
+					'data-title' => $title,
+					'data-image' => $imageUrl,
+					'data-desc' => $desc,
+				]);?>
+				<?=Html::a('<i class="fa fa-twitter"></i>', '', [
+					'data-type' => 'tw',
+					'data-url' => $url,
+					'data-title' => $title,
+				]);?>
+				<?=Html::a('<i class="fa fa-odnoklassniki"></i>', '', [
+					'data-type' => 'ok',
+					'data-url' => $url,
+					'data-desc' => $desc,
+				]);?>
 			</div>
 		</div>
 	</div>

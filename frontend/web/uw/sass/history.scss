@@ -9,6 +9,41 @@
     -webkit-background-size: cover;
     background-size: cover;
     padding-top: 220px;
+    .container_inner {
+      position: relative;
+      .social-wrap {
+        position: absolute;
+        top: calc(100% + 40px);
+        right: calc(100% + 40px);
+        a {
+          position: relative;
+          display: block;
+          width: 45px;
+          height: 45px;
+          background: #361750;
+          margin-bottom: 1px;
+          color: #fff;
+          -webkit-transition: .2s;
+          -moz-transition: .2s;
+          -ms-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s;
+          i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+          }
+        }
+        a:hover {
+          background: #b99c2d;
+        }
+      }
+    }
     h1 {
       text-align: center;
       font: 60px 'Proxima Nova Regular', sans-serif;
@@ -283,4 +318,8 @@
       }
     }
   }
+  .top_block .social {
+      display: none;
+  }
+
 }

@@ -10,6 +10,12 @@
 	.logo {
 		float: left;
 	}
+	.logo_tass {
+		position: absolute;
+		top: 0;
+		right: -10px;
+		width: 86px;
+	}
 	ul {
 		padding: 0px;
 		margin: 0px;
@@ -142,5 +148,23 @@
 				}
 			}
 		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	.header .container_inner {
+		width: calc(100% - 170px);
+		max-width: 850px;
+		ul {
+			padding-left: 0;
+		}
+	}
+}
+@media screen and (max-width: 999px) {
+	.header .container_inner {
+		width: 100%;
+		max-width: inherit;
+	}
+	.logo_tass {
+		display: none;
 	}
 }

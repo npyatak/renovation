@@ -42,7 +42,7 @@ AppAsset::register($this);
 
     <div class="wrap">
         <div class="header">
-            <img class="logo" src="<?=Url::toRoute('images/logo_new.png');?>" />
+            <a href="/"><img class="logo" src="<?=Url::toRoute('images/logo_new.png');?>" /></a>
             <div class="container_inner">
                 <a class="map_link" href="#">Карта</a>
                 <ul class="menu">
@@ -68,6 +68,9 @@ AppAsset::register($this);
                     <div class="open-menu-btn show"><span></span><span></span><span></span></div>
                     <div class="close-menu__btn"><span></span><span></span></div>
                 </div>
+            </div>
+            <div class="logo_tass">
+                <a href="https://tass.ru/"><img class="tass_logo" src="<?=Url::to('images/Logo_TASS.svg');?>"/></a>
             </div>
         </div>
 

@@ -75,43 +75,43 @@ function workProcessInit() {
 
 	var ind = 0;
 
-	scrollContainer.addEventListener('mousewheel', function (evt) {
-		var rectEl = scrollContainer.getBoundingClientRect();
-		if ((rectEl.top > -50 && rectEl.top < 100) && (ind > -1 && ind < itemsLength)) {
-			for (var j = 0; j < itemsLength; j++) {
-				removeClass(fls[j], 'active');
-				removeClass(frs[j], 'active');
-				removeClass(items[j], 'active');
-			}
-			if (evt.deltaY < 0) {
-				ind--;
-				if (ind == 0) {
-					scrollContainer.style.marginLeft = offset + 'px';
-				} else {
-					scrollContainer.style.marginLeft = -items[ind].offsetLeft + offset + 'px';
-				}
-			} else {
-				ind++;
-				scrollContainer.style.marginLeft = -items[ind].offsetLeft + offset + 'px';
-			}
-
-			if (ind > -1 && ind < itemsLength) {
-				evt.preventDefault();
-				addClass(items[ind], 'active');
-				if (ind != 0) {
-					addClass(fls[ind], 'active');
-				}
-				if (ind != itemsLength - 1) {
-					addClass(frs[ind], 'active');
-				}
-			}
-		} else {
-			ind = 0;
-			scrollContainer.style.marginLeft = offset + 'px';
-			addClass(items[ind], 'active');
-			addClass(frs[ind], 'active');
-		}
-	});
+	// scrollContainer.addEventListener('mousewheel', function (evt) {
+	// 	var rectEl = scrollContainer.getBoundingClientRect();
+	// 	if ((rectEl.top > -50 && rectEl.top < 100) && (ind > -1 && ind < itemsLength)) {
+	// 		for (var j = 0; j < itemsLength; j++) {
+	// 			removeClass(fls[j], 'active');
+	// 			removeClass(frs[j], 'active');
+	// 			removeClass(items[j], 'active');
+	// 		}
+	// 		if (evt.deltaY < 0) {
+	// 			ind--;
+	// 			if (ind == 0) {
+	// 				scrollContainer.style.marginLeft = offset + 'px';
+	// 			} else {
+	// 				scrollContainer.style.marginLeft = -items[ind].offsetLeft + offset + 'px';
+	// 			}
+	// 		} else {
+	// 			ind++;
+	// 			scrollContainer.style.marginLeft = -items[ind].offsetLeft + offset + 'px';
+	// 		}
+    //
+	// 		if (ind > -1 && ind < itemsLength) {
+	// 			evt.preventDefault();
+	// 			addClass(items[ind], 'active');
+	// 			if (ind != 0) {
+	// 				addClass(fls[ind], 'active');
+	// 			}
+	// 			if (ind != itemsLength - 1) {
+	// 				addClass(frs[ind], 'active');
+	// 			}
+	// 		}
+	// 	} else {
+	// 		ind = 0;
+	// 		scrollContainer.style.marginLeft = offset + 'px';
+	// 		addClass(items[ind], 'active');
+	// 		addClass(frs[ind], 'active');
+	// 	}
+	// });
 }
 
 function hasClass(el, cl) {

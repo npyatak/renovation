@@ -333,3 +333,15 @@ body {
     font-size: 150px;
   }
 }
+/* line 287, ../sass/uw.scss */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: #eeeff1 url("../../images/preloader/preloader_01_blue.gif") no-repeat center;
+  -webkit-background-size: 200px;
+  background-size: 200px;
+}

@@ -17,7 +17,7 @@
     background: linear-gradient(to bottom, white, black);
 }.np-section{
     position: relative;
-    font-family: 'Proxima Nova Rg';
+    font-family: 'Proxima Nova Regular';
     color: #fff;
     text-align: center;
     font-size: 23.91px;
@@ -44,7 +44,7 @@
 .np-section p{
     position: relative;
     margin: 0;
-    font-family: 'Proxima Nova Rg';
+    font-family: 'Proxima Nova Regular';
 }
 
 .np-section a{

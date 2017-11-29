@@ -27,6 +27,7 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/masonry.pkgd.min.js',
+        'js/wow.min.js',
         'js/player/jwplayer.js',
         'js/owl.carousel.min.js',
         'js/jquery.colorbox-min.js',

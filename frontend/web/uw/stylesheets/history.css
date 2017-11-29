@@ -364,8 +364,8 @@
 /* line 316, ../sass/history.scss */
 .history .history-content .slider_history .owl-dots {
   position: absolute;
-  top: 82%;
   right: 30px;
+  bottom: 58px;
 }
 /* line 321, ../sass/history.scss */
 .history .history-content .slider_history .owl-dot {

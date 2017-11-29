@@ -64,7 +64,7 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 </div>
 <div class="np-section np-section_2">
 	<div class="np-wrap np-wrap_flex">
-		<h2 class="np-section__el">Московские пятиэтажки:<br>история вопроса</h2>
+		<h2 class="np-section__el wow">Московские пятиэтажки:<br>история вопроса</h2>
 		<div class="np-text-content np-text-content_i np-section__el">
 			<p>Зачем Советскому Союзу нужны были «хрущевки», какие серии строились в разные периоды «индустриального домостроения», чем они отличались друг от друга. </p>
 		</div>
@@ -109,7 +109,7 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 </div>
 <div class="np-section np-section_4 np-section_4_0">
 	<div class="np-wrap np-wrap_flex">
-		<h2 class="np-section__el">Реновация в датах</h2>
+		<h2 class="np-section__el wow">Реновация в датах</h2>
 		<div class="np-text-content np-text-content_i np-section__el">
 			<p>От предложения проекта до его реализации</p>
 		</div>
@@ -123,7 +123,7 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 </div>
 <div class="np-section np-section_5" style="background-image: url('images/5.jpg');">
 	<div class="np-wrap np-wrap_flex">
-		<h2 class="np-section__el">Пионеры<br>реновации</h2>
+		<h2 class="np-section__el wow">Пионеры<br>реновации</h2>
 		<div class="np-text-content np-text-content_i np-section__el">
 			<p>Запуск программы реновации жилья в Москве вызвал огромный резонанс и общественную дискуссию. Между тем, сносить панельные пятиэтажки в столице начали еще в конце 1990-х годов. С того момента городские власти расселили более полутора тысяч домов. Москвичам, которые в них жили, есть что вспомнить о том, как проходит переезд, каким было их впечатление от новых квартир и довольны ли они переменами. В специальном проекте ТАСС одни москвичи рассказывают о том, как сменили хрущевки на новостройки, а другие – почему хотят это сделать.</p>
 			<a href="http://pyatiehtazhki.tass.ru/?_ga=2.127206541.1082805625.1511712625-56336648.1505299740" target="_blank" class="np-button np-button_orange">Читать</a>
@@ -132,7 +132,7 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 </div>
 <div class="np-section np-section_4 np-section_4_1">
 	<div class="np-wrap np-wrap_flex">
-		<h2 class="np-section__el">Пятиэтажки VS<br>новостройки</h2>
+		<h2 class="np-section__el wow">Пятиэтажки VS<br>новостройки</h2>
 		<div class="np-text-content np-text-content_i np-section__el">
 			<p>Чем старое жилье будет отличаться от нового – в деталях, цифрах и чертежах</p>
 			<a href="<?=Url::toRoute(['site/compare']);?>" class="np-button np-button_blue">Читать</a>
@@ -146,7 +146,7 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 </div>
 <div class="np-section np-section_5 np-section_5_1" style="background-image: url('images/7.jpg');">
 	<div class="np-wrap np-wrap_flex">	
-		<h2 class="np-section__el">Новости о реновации</h2>
+		<h2 class="np-section__el wow">Новости о реновации</h2>
 
 		<div class="np-text-content np-text-content_i np-section__el">
 			<p>Самая свежая информация - здесь</p>
@@ -158,7 +158,7 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 <?php if($galleries):?>
 <div class="np-section np-section_4 np-section_4_2">
 	<div class="np-wrap np-wrap_flex">			
-		<h2 class="np-section__el">Галереи</h2>
+		<h2 class="np-section__el wow">Галереи</h2>
 		<div class="np-text-content np-section__el">
 	        <?php foreach ($galleries as $gal):?>
 	            <p>

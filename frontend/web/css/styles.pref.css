@@ -78,6 +78,7 @@
     text-align: left;
     padding: 0 0 74px;
     margin: 0 0 63px;
+    visibility: visible !important;
 }
 
 .np-section h2:before{
@@ -85,11 +86,18 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 86px;
+    width: 0;
     height: 7px;
     background: #b99c2d;
+    -webkit-transition: .5s .1s;
+    -moz-transition: .5s .1s;
+    -ms-transition: .5s .1s;
+    -o-transition: .5s .1s;
+    transition: .5s .1s;
 }
-
+.np-section h2.wow_vis:before {
+    width: 86px;
+}
 
 
 .np-section img{
@@ -840,7 +848,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background: #544b5b;
+    background: #361750;
     margin: 0 0 2px;
     -webkit-transition: .5s;
     -o-transition: .5s;
@@ -848,7 +856,7 @@
 }
 
 .np-social li:hover{
-    background: #534261;
+    background: #b99c2d;
 }
 
 .np-social li a{

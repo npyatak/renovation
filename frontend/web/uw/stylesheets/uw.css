@@ -342,9 +342,9 @@ body {
   right: 0;
   bottom: 0;
   z-index: 999;
-  background: #eeeff1 url("../../images/preloader/preloader_01_blue.gif") no-repeat center;
-  -webkit-background-size: 200px;
-  background-size: 200px;
+  background: #eeeff1 url("../../images/preloader/preloader.gif") no-repeat center;
+  -webkit-background-size: 100px;
+  background-size: 100px;
 }
 
 /* line 299, ../sass/uw.scss */

@@ -26,7 +26,7 @@ $this->registerJsFile(Url::toRoute('js/player_setup.js'), ['depends' => [\yii\we
                 <div>
                     <div class="with-btn">
                         <img src="<?=Url::to('images/history/history_2-1.jpg');?>" alt="History picture">
-                        <a href="" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                        <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
                     </div>
                     <div>
                         <span class="h-t_caption">По мере того, как жилищный кризис был решен, в конце 60-х  начали появляться дома улучшенной модицификации. Сейчас их называют «брежневками»</span>
@@ -42,7 +42,7 @@ $this->registerJsFile(Url::toRoute('js/player_setup.js'), ['depends' => [\yii\we
         <div class="only-img">
             <div class="with-btn">
                 <img src="<?=Url::to('images/history/history_2-2.jpg');?>" alt="History picture">
-                <a href="" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
             </div>
             <div>
                 <span class="h-t_caption">Самая распространенная серия домов Брежневской эпохи, построенная в Москве и Подмосковье - II-18/12Б, их насчитывается более 1,2 тысяч объектов.</span>
@@ -56,7 +56,7 @@ $this->registerJsFile(Url::toRoute('js/player_setup.js'), ['depends' => [\yii\we
                     <div>
                         <div class="with-btn">
                             <img src="<?=Url::to('images/history/history_2-3.jpg');?>" alt="History picture">
-                            <a href="" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                            <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div>
                             <span class="h-t_caption">Команда архитектора Натана Остермана <br>Фотохроника ТАСС</span>
@@ -79,7 +79,7 @@ $this->registerJsFile(Url::toRoute('js/player_setup.js'), ['depends' => [\yii\we
             <div class="only-img" style="margin-left:0;margin-right:0;">
                 <div class="with-btn">
                     <img src="<?=Url::to('images/history/history_2-4.jpg');?>" alt="History picture">
-                    <a href="" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                    <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
                 </div>
                 <div>
                     <span class="h-t_caption" style="margin-left:0">Дома серии 1МГ-601 <br>Фотоархив ТАСС</span>

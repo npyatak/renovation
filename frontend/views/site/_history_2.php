@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Url;
 use yii\helpers\Html;
+$this->registerJsFile(Url::toRoute('js/player_setup.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 
 <div class="container_inner">
@@ -134,7 +135,7 @@ use yii\helpers\Html;
             <p>Жильцов снесенных домов чаще всего переселяли в новостройки серий И-155, ИП46, П-3, П-44, П-46, П-55, ГМС-2001 и их модификации. Стоит отметить, что самой распространенной серией, построенной для переселенцев, является серия П44-Т. Количество муниципальных домов такого типа, выделенных под социальные нужды в Москве, составляет 50%.</p>
         </div>
         <div class="video-block">
-            <iframe width="100%" height="550" src="https://www.youtube.com/embed/k2qgadSvNyU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <div id="history-video"></div>
         </div>
     </div>
 </div>

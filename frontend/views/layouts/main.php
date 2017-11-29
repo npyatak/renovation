@@ -90,12 +90,13 @@ AppAsset::register($this);
         <?php endif;?>
 
         <?php if(!in_array(Yii::$app->controller->action->id, ['index'])):?>
-        <div class="bottom_gallery">
-            <div class="bottom_gallery_img">
-                <a href="#" class="bottom_gallery_video"><img src="<?=Url::toRoute('images/footer_gallery_img_new.jpg');?>"/></a>
-                <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
+<!--        <div class="bottom_gallery">-->
+<!--            <div class="bottom_gallery_img">-->
+<!--                <a href="#" class="bottom_gallery_video"><img src="--><?//=Url::toRoute('images/footer_gallery_img_new.jpg');?><!--"/></a>-->
+<!--                <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div id="footer-video"></div>
         <?php endif;?>
 
         <div class="footer">

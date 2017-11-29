@@ -345,3 +345,34 @@ body {
   -webkit-background-size: 200px;
   background-size: 200px;
 }
+
+/* line 298, ../sass/uw.scss */
+.jw-display-icon-container {
+  background: transparent !important;
+  width: 130px !important;
+  height: 130px !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #E1C6A9 !important;
+}
+/* line 306, ../sass/uw.scss */
+.jw-display-icon-container .jw-icon {
+  display: block !important;
+  width: 60px !important;
+  height: 60px !important;
+  line-height: 60px !important;
+  font-size: 14px !important;
+  margin: 33px !important;
+  background: #E1C6A9 !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #361750 !important;
+}
+
+/* line 320, ../sass/uw.scss */
+.jw-preview {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+}

@@ -1,7 +1,6 @@
 $(window).load(function(){
 // $(document).ready(function(){
 	$('#preloader').fadeOut(1000);
-
 	if ($('.slider_gallery').length > 0) {
 		$(".slider_gallery").owlCarousel({
 			items: 1,

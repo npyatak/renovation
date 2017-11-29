@@ -204,10 +204,10 @@ $this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [
         </div>
     </div>
 </div>
-<div class="history-4">
-    <div class="container_inner">
-        <div class="history-block">
-            <h2>План застройки Москвы по типам хрущёвок</h2>
-        </div>
-    </div>
-</div>
+<!--<div class="history-4">-->
+<!--    <div class="container_inner">-->
+<!--        <div class="history-block">-->
+<!--            <h2>План застройки Москвы по типам хрущёвок</h2>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->

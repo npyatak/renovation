@@ -97,6 +97,12 @@
       background: #C59D17;
       margin: 50px auto;
     }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
     p {
       color: #fff;
       font-size: 22px;
@@ -184,6 +190,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-bottom: 30px;
       >div:nth-child(1) {
         width: 42%;
       }
@@ -356,5 +363,75 @@
   .top_block .social {
       display: none;
   }
-
+}
+@media screen and (max-width:1150px){
+  .history .history-header .container_inner .social-wrap {
+    top: calc(100% + 20px);
+    right: auto;
+    left: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    a {
+      margin-right: 1px;
+    }
+  }
+}
+@media screen and (max-width:1050px){
+  .history .history-content .purple-wrap .purple-block {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width:1000px){
+  .container_inner {
+    padding: 0 20px;
+  }
+  .history .history-content .only-img .h-t_caption {
+    padding: 0 20px;
+  }
+  .history .history-header .container_inner .social-wrap {
+    left: 20px;
+  }
+  .gallery-block {
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+    .h-t_caption {
+      padding: 0 20px;
+    }
+  }
+  .history .history-content .slider_history .owl-dots {
+    top: 30px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+}
+@media screen and (max-width:768px){
+  .history .history-content .h-t_with-imgR > div:nth-child(1),
+  .history .history-content .h-t_with-imgR > div:nth-child(2),
+  .history .history-content .h-t_with-imgL > div:nth-child(1),
+  .history .history-content .h-t_with-imgL > div:nth-child(2) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .history .history-content .h-t_with-imgR > div:nth-child(2),
+  .history .history-content .h-t_with-imgL > div:nth-child(1) {
+    margin-right: -20px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+    .h-t_caption {
+      padding: 0 20px;
+    }
+  }
+  .history .history-content .purple-wrap .purple-block {
+    padding: 20px 20px 20px 75px;
+  }
 }

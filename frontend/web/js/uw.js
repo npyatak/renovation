@@ -7,9 +7,7 @@ $(window).load(function(){
 			loop: true
 		});
 	}
-	$('.grid').masonry({
-	  itemSelector: '.grid_item',
-	});
+
 	if ($('.slider_front').length > 0) {
 		$(".slider_front").owlCarousel({
 			items: 1,
@@ -17,9 +15,19 @@ $(window).load(function(){
 			nav: true
 		});
 	}
+
 	$('.grid_front').masonry({
-	  itemSelector: '.grid_item',
+		itemSelector: '.grid_item'
 	});
+	
+	$(window).resize(function () {
+		if($(this).width() > 1000){
+			$('.grid').masonry({
+				itemSelector: '.grid_item',
+			});
+		}
+	});
+	$(window).trigger('resize');
 	$(".gallery_inline").colorbox({
 		inline:true,
 		width:"66%",

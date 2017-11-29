@@ -60,11 +60,22 @@
       background: #C59D17;
       margin: 50px auto;
     }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
     p {
       color: #fff;
       font-size: 22px;
       font-style: italic;
       font-weight: bold;
+    }
+    @media screen and (max-width: 768px) {
+      p {
+        padding: 0 20px;
+      }
     }
     .btn-wrap {
       padding: 80px 0;
@@ -194,5 +205,29 @@
 .law {
   .top_block .social {
     display: none;
+  }
+}
+@media screen and (max-width:1150px){
+  .law .law-header .container_inner .social-wrap {
+    top: calc(100% + 20px);
+    right: auto;
+    left: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    a {
+      margin-right: 1px;
+    }
+  }
+}
+@media screen and (max-width:1000px){
+  .container_inner {
+    padding: 0 20px;
+  }
+  .law .law-header .container_inner .social-wrap {
+    left: 20px;
   }
 }

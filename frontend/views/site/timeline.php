@@ -20,7 +20,6 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/timeline.css'));
             <?php $key = 0;
             foreach ($slides as $key => $slide) :?>
                 <div class="item<?=$key == 0 ? ' active' : '';?> width_<?=$slide->width_preset;?>" data-index="<?=$key;?>">
-                    <div class="hr"></div>
                     <div class="description">
                         <div class="dot"></div>
                         <div class="image">

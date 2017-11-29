@@ -45,7 +45,6 @@ AppAsset::register($this);
         <div class="header">
             <a href="/"><img class="logo" src="<?=Url::toRoute('images/logo_new.png');?>" /></a>
             <div class="container_inner">
-                <a class="map_link" href="#">Карта</a>
                 <ul class="menu">
                     <?php
                     $menuItems = [

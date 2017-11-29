@@ -1,11 +1,56 @@
 <?php 
 use yii\helpers\Url;
+use yii\helpers\Html;
 use frontend\assets\HomePageAsset;
 
 HomePageAsset::register($this);
+
+$url = Url::canonical();
+$imageUrl = Url::toRoute([Yii::$app->params['shareImage']], true);
+$title = Yii::$app->params['shareTitle'];
+$desc = Yii::$app->params['shareText'];
+
+$this->registerMetaTag(['property' => 'og:description', 'content' => $desc], 'og:description');
+$this->registerMetaTag(['property' => 'og:title', 'content' => $title], 'og:title');
+$this->registerMetaTag(['property' => 'og:image', 'content' => $imageUrl], 'og:image');
+$this->registerMetaTag(['property' => 'og:url', 'content' => $url], 'og:url');
+$this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:type'); 
 ?>
 
-<?=$this->render('_top_block', ['class' => ' white']);?>
+<ul class="np-social">
+	<li class="np-social_fb">
+		<?=Html::a('', '', [
+            'data-type' => 'fb',
+            'data-url' => $url,
+            'data-title' => $title,
+            'data-image' => $imageUrl,
+            'data-desc' => $desc,
+        ]);?>
+    </li>
+	<li class="np-social_vk">
+		<?=Html::a('', '', [
+            'data-type' => 'vk',
+            'data-url' => $url,
+            'data-title' => $title,
+            'data-image' => $imageUrl,
+            'data-desc' => $desc,
+        ]);?>
+	</li>
+	<li class="np-social_ok">
+        <?=Html::a('', '', [
+            'data-type' => 'ok',
+            'data-url' => $url,
+            'data-desc' => $desc,
+        ]);?>
+	</li>
+	<li class="np-social_tw">
+        <?=Html::a('', '', [
+            'data-type' => 'tw',
+            'data-url' => $url,
+            'data-title' => $title,
+        ]);?>
+	</li>
+</ul>
 
 <div class="np-section np-section_full_first np-section_full np-section_1">
     <div class="np-wrap np-wrap_flex np-wrap_absolute">
@@ -27,7 +72,6 @@ HomePageAsset::register($this);
 
 <div class="np-section np-section_2">
 	<div class="np-wrap np-wrap_flex">
-
 		<h2 class="np-section__el">Московские пятиэтажки:<br>история вопроса</h2>
 
 		<div class="np-text-content np-text-content_i np-section__el">
@@ -36,11 +80,15 @@ HomePageAsset::register($this);
 
 		<div class="np-section_2__image-outer np-section__el">
 			<p class="np-section_2_image-description">
-				Кризис на рынке жилья 
-				<br>Хрущевки
-				<br>"Брежневки"
-				<br>Лужковская программа 
-				<br>Конец первой волны
+				<a href="<?=Url::toRoute(['site/history', '#' => 'crisis']);?>">Кризис на рынке жилья</a>
+				<br>
+				<a href="<?=Url::toRoute(['site/history', '#' => 'hrushevki']);?>">Хрущевки</a>
+				<br>
+				<a href="<?=Url::toRoute(['site/history', 'page' => 2, '#' => 'brejnevki']);?>">"Брежневки"</a>
+				<br>
+				<a href="<?=Url::toRoute(['site/history', 'page' => 2, '#' => 'lujkov']);?>">Лужковская программа </a>
+				<br>
+				<a href="<?=Url::toRoute(['site/history', 'page' => 2, '#' => 'theEnd']);?>">Конец первой волны</a>
 			</p>
 			<div class="np-section_2__image">
 				<div class="np-bg-image">
@@ -50,14 +98,16 @@ HomePageAsset::register($this);
 				<p>Жилищное строительство в микрорайоне Ясенево, 1976 год<br>Фотоархив ТАСС</p>
 			</div>
 		</div>
-
 	</div>
 </div>
 
 <div class="np-section np-section_3">
 	<div class="np-wrap np-wrap_flex">
 		<div class="np-section_3__image">
-			<div class="np-bg-image"><a href="" class="np-button np-button_play">Смотреть <span></span></a><img src="images/2-2.jpg" alt=""></div>
+			<div class="np-bg-image">
+				<a href="<?=Url::toRoute(['site/history', 'page' => 2, '#' => 'theEnd']);?>" class="np-button np-button_play">Смотреть <span></span></a>
+				<img src="images/2-2.jpg" alt="">
+			</div>
 		</div>
 		<div class="np-section_3__wrap">
 			<div class="np-text-content">

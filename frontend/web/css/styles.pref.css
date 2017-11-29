@@ -1,4 +1,21 @@
-.np-section{
+/* Put your CSS code in the left column, instead of example, to put or remove unnecessary prefixes. */
+
+.example {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -webkit-linear-gradient(top, white, black);
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}.np-section{
     position: relative;
     font-family: 'Proxima Nova Rg';
     color: #fff;
@@ -1113,7 +1130,7 @@
     }
 
     .np-section_full_first {
-        min-height: 470px;
+        min-height: 500px;
     }
 
     .np-section__back {

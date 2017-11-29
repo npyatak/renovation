@@ -10,6 +10,7 @@ class HomePageAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/home_page.css',
+        'css/styles.pref.css',
     ];
     public $js = [
         'js/home_page.js',

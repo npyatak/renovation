@@ -11,8 +11,8 @@ $(document).ready(function () {
             'playlist': [{
                 'image': '/frontend/web/images/footer_gallery_img_new.jpg',
                 'sources': [
-                    {file: "https://ecomon-vod.tass.ru/ecomon-vod/smil:ecomon01.smil/jwplayer.smil"},
-                    {file: "https://ecomon-vod.tass.ru/ecomon-vod/smil:ecomon01.smil/playlist.m3u8"},
+                    {file: "https://renovation-vod.tass.ru/renovation-vod/smil:infographic1.smil/jwplayer.smil"},
+                    {file: "https://renovation-vod.tass.ru/renovation-vod/smil:infographic1.smil/playlist.m3u8"},
                 ]
             }]
         });

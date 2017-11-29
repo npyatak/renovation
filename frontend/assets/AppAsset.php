@@ -16,7 +16,7 @@ class AppAsset extends AssetBundle
         'css/ProximaNova.css',
         'css/owl.carousel.min.css',
         'css/colorbox.css',
-        //'css/font-awesome.min.css',
+        'css/font-awesome.min.css',
         'uw/stylesheets/header.css',
         'uw/stylesheets/uw.css',
         'uw/stylesheets/front.css',

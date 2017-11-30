@@ -2,7 +2,7 @@
 use yii\helpers\Url;
 
 $this->title = $gallery->title;
-$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
+//$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 <div class="gallery">
     <?=$this->render('_top_block');?>

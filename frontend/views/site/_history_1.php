@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Url;
 use yii\helpers\Html;
-$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
+//$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 
 <div class="container_inner">

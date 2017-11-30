@@ -4,7 +4,7 @@ use yii\helpers\Url;
 $this->title = 'Реновация в датах:';
 
 $this->registerJsFile(Url::toRoute('js/timeline.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
+//$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile(Url::toRoute('uw/stylesheets/timeline.css'));
 ?>
 

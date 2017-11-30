@@ -12,7 +12,7 @@ $desc = 'Создай свое бози и выиграй Nokia 8 #fridaybothie 
 $this->title = 'Закон о реновациях';
 
 $this->registerJsFile(Url::toRoute('js/law.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
+//$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 ?>
 

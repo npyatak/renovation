@@ -9,7 +9,9 @@ use kartik\depdrop\DepDrop;
 use common\models\District;
 use common\models\Region;
 
-$this->title = 'Реновация';
+//$this->title = 'Реновация';
+$this->title = 'Москва без пятиэтажек';
+
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 

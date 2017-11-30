@@ -9,7 +9,8 @@ $imageUrl = Url::toRoute(['images/sharing_renovation.jpg'], true);
 $title = 'Москва без пятиэтажек';
 $desc = 'Все о проекте реновации в одном спецпроекте: история, перспективы, новости, личный опыт, нормативные документы.';
 
-$this->title = 'Закон о реновациях';
+//$this->title = 'Закон о реновациях';
+$this->title = 'Москва без пятиэтажек';
 
 $this->registerJsFile(Url::toRoute('js/law.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 //$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);

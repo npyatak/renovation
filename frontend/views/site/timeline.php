@@ -1,7 +1,8 @@
 <?php
 use yii\helpers\Url;
 
-$this->title = 'Реновация в датах:';
+//$this->title = 'Реновация в датах:';
+$this->title = 'Москва без пятиэтажек';
 
 $this->registerJsFile(Url::toRoute('js/timeline.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 //$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);

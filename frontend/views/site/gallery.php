@@ -1,7 +1,8 @@
 <?php
 use yii\helpers\Url;
 
-$this->title = $gallery->title;
+//$this->title = $gallery->title;
+$this->title = 'Москва без пятиэтажек';
 //$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 <div class="gallery">

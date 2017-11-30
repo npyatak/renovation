@@ -9,7 +9,8 @@ use kartik\depdrop\DepDrop;
 use common\models\District;
 use common\models\Region;
 
-$this->title = ($type == 'house') ? 'Дома, включенные в программу' : 'Стартовые площадки'. ' 1 этапа реновации.';
+//$this->title = ($type == 'house') ? 'Дома, включенные в программу' : 'Стартовые площадки'. ' 1 этапа реновации.';
+$this->title = 'Москва без пятиэтажек';
 ?>
 
 <?php $this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;onload=app.objectMap.ymapsInit');?>

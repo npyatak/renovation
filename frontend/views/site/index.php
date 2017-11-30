@@ -10,6 +10,8 @@ $imageUrl = Url::toRoute([Yii::$app->params['shareImage']], true);
 $title = Yii::$app->params['shareTitle'];
 $desc = Yii::$app->params['shareText'];
 
+$this->title = 'Москва без пятиэтажек';
+
 $this->registerMetaTag(['property' => 'og:description', 'content' => $desc], 'og:description');
 $this->registerMetaTag(['property' => 'og:title', 'content' => $title], 'og:title');
 $this->registerMetaTag(['property' => 'og:image', 'content' => $imageUrl], 'og:image');

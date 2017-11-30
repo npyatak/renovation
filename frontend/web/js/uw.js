@@ -108,7 +108,7 @@ $(window).resize(function(){
 	}
 });
 
-$('.social a, .social-wrap a, .np-social_fb a').click(function(e) {
+$('.social a, .social-wrap a, .np-social a').click(function(e) {
     url = getShareUrl($(this));
 
     window.open(url,'','toolbar=0,status=0,width=626,height=436');

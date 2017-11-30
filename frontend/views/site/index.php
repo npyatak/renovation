@@ -17,6 +17,41 @@ $this->registerMetaTag(['property' => 'og:url', 'content' => $url], 'og:url');
 $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:type'); 
 ?>
 
+<ul class="np-social">
+	<li class="np-social_fb">
+		<?=Html::a('', '', [
+            'data-type' => 'fb',
+            'data-url' => $url,
+            'data-title' => $title,
+            'data-image' => $imageUrl,
+            'data-desc' => $desc,
+        ]);?>
+    </li>
+	<li class="np-social_vk">
+		<?=Html::a('', '', [
+            'data-type' => 'vk',
+            'data-url' => $url,
+            'data-title' => $title,
+            'data-image' => $imageUrl,
+            'data-desc' => $desc,
+        ]);?>
+	</li>
+	<li class="np-social_ok">
+        <?=Html::a('', '', [
+            'data-type' => 'ok',
+            'data-url' => $url,
+            'data-desc' => $desc,
+        ]);?>
+	</li>
+	<li class="np-social_tw">
+        <?=Html::a('', '', [
+            'data-type' => 'tw',
+            'data-url' => $url,
+            'data-title' => $title,
+        ]);?>
+	</li>
+</ul>
+
 <div class="np-section np-section_full_first np-section_full np-section_1" style="margin-top: 0">
     <div class="np-wrap np-wrap_flex np-wrap_absolute">
 		<h1 class="np-section__el">Москва<br>без пятиэтажек</h1>

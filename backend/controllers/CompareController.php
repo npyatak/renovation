@@ -5,7 +5,6 @@ namespace backend\controllers;
 use Yii;
 use common\models\Compare;
 use common\models\search\CompareSearch;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
@@ -13,22 +12,8 @@ use yii\web\UploadedFile;
 /**
  * CompareController implements the CRUD actions for Compare model.
  */
-class CompareController extends Controller
+class CompareController extends CController
 {
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all Compare models.

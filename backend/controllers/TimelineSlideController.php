@@ -3,7 +3,6 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
@@ -11,22 +10,7 @@ use yii\web\UploadedFile;
 use common\models\TimelineSlide;
 use common\models\search\TimelineSlideSearch;
 
-class TimelineSlideController extends Controller {
-
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+class TimelineSlideController extends CController {
 
     public function actionIndex() {
         $searchModel = new TimelineSlideSearch();

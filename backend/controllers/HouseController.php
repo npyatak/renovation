@@ -3,7 +3,6 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use vitalik74\geocode\Geocode;
@@ -16,22 +15,8 @@ use common\models\Region;
 /**
  * HouseController implements the CRUD actions for House model.
  */
-class HouseController extends Controller
+class HouseController extends CController
 {
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all House models.

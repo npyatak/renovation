@@ -3,29 +3,13 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 use common\models\Page;
 use common\models\search\PageSearch;
 
-class PageController extends Controller {
-
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+class PageController extends CController {
 
     public function actionIndex() {
         $searchModel = new PageSearch();

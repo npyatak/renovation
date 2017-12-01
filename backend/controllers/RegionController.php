@@ -5,29 +5,14 @@ namespace backend\controllers;
 use Yii;
 use common\models\Region;
 use common\models\search\RegionSearch;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
  * RegionController implements the CRUD actions for Region model.
  */
-class RegionController extends Controller
+class RegionController extends CController
 {
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all Region models.

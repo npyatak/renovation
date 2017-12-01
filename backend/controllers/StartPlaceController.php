@@ -3,7 +3,6 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use vitalik74\geocode\Geocode;
@@ -16,22 +15,8 @@ use common\models\Region;
 /**
  * StartPlaceController implements the CRUD actions for StartPlace model.
  */
-class StartPlaceController extends Controller
+class StartPlaceController extends CController
 {
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all StartPlace models.

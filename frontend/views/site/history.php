@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\LinkPager;
 
 $url = Url::canonical();
-$imageUrl = Url::toRoute(['images/items/share.png'], true);
-$title = 'Nokia 8: покажи свою историю с обеих сторон';
-$desc = 'Создай свое бози и выиграй Nokia 8 #fridaybothie #бозинапятнице #bothie';
+$imageUrl = Url::toRoute(['images/sharing_renovation.jpg'], true);
+$title = 'Москва без пятиэтажек';
+$desc = 'Все о проекте реновации в одном спецпроекте: история, перспективы, новости, личный опыт, нормативные документы.';
 
-$this->title = 'Закон о реновациях';
+$this->title = 'Москва без пятиэтажек';
 
 $this->registerJsFile(Url::toRoute('js/history.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile(Url::toRoute('uw/stylesheets/history.css'));

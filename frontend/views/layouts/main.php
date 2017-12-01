@@ -16,7 +16,6 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-    <link rel="stylesheet" href="../../web/css/font-awesome.min.css">
     <?php $this->head() ?>
 
     <?php if($_SERVER['HTTP_HOST'] !== 'renovation.local'):?>
@@ -46,7 +45,6 @@ AppAsset::register($this);
         <div class="header">
             <a href="/"><img class="logo" src="<?=Url::toRoute('images/logo_new.png');?>" /></a>
             <div class="container_inner">
-                <a class="map_link" href="#">Карта</a>
                 <ul class="menu">
                     <?php
                     $menuItems = [
@@ -90,12 +88,7 @@ AppAsset::register($this);
         <?php endif;?>
 
         <?php if(!in_array(Yii::$app->controller->action->id, ['index'])):?>
-        <div class="bottom_gallery">
-            <div class="bottom_gallery_img">
-                <a href="#" class="bottom_gallery_video"><img src="<?=Url::toRoute('images/footer_gallery_img_new.jpg');?>"/></a>
-                <iframe width="100%" height="790" src="https://www.youtube.com/embed/ZStqzGWEBGw" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
+<!--        <div id="footer-video"></div>-->
         <?php endif;?>
 
         <div class="footer">

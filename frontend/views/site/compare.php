@@ -2,7 +2,9 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 
-$this->title = 'Хрущевки VS новые дома';
+//$this->title = 'Хрущевки VS новые дома';
+$this->title = 'Москва без пятиэтажек';
+//$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 <div class="compare">
     <?=$this->render('_top_block');?>

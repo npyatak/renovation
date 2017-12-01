@@ -9,11 +9,14 @@ use kartik\depdrop\DepDrop;
 use common\models\District;
 use common\models\Region;
 
-$this->title = ($type == 'house') ? 'Дома, включенные в программу' : 'Стартовые площадки'. ' 1 этапа реновации.';
+//$this->title = ($type == 'house') ? 'Дома, включенные в программу' : 'Стартовые площадки'. ' 1 этапа реновации.';
+$this->title = 'Москва без пятиэтажек';
 ?>
 
 <?php $this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;onload=app.objectMap.ymapsInit');?>
 <?php $this->registerJsFile(Url::toRoute('js/map.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);?>
+<?php //$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);?>
+
 
 <div class="renovation blue_top_bg">
     <?=$this->render('_top_block', ['class' => ' white']);?>

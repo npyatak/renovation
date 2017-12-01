@@ -1,9 +1,11 @@
 <?php
 use yii\helpers\Url;
 
-$this->title = 'Реновация в датах:';
+//$this->title = 'Реновация в датах:';
+$this->title = 'Москва без пятиэтажек';
 
 $this->registerJsFile(Url::toRoute('js/timeline.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
+//$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile(Url::toRoute('uw/stylesheets/timeline.css'));
 ?>
 
@@ -19,7 +21,6 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/timeline.css'));
             <?php $key = 0;
             foreach ($slides as $key => $slide) :?>
                 <div class="item<?=$key == 0 ? ' active' : '';?> width_<?=$slide->width_preset;?>" data-index="<?=$key;?>">
-                    <div class="hr"></div>
                     <div class="description">
                         <div class="dot"></div>
                         <div class="image">

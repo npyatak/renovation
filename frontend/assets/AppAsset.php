@@ -16,7 +16,7 @@ class AppAsset extends AssetBundle
         'css/ProximaNova.css',
         'css/owl.carousel.min.css',
         'css/colorbox.css',
-        //'css/font-awesome.min.css',
+        'css/font-awesome.min.css',
         'uw/stylesheets/header.css',
         'uw/stylesheets/uw.css',
         'uw/stylesheets/front.css',
@@ -27,6 +27,8 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/masonry.pkgd.min.js',
+        'js/wow.min.js',
+        'js/player/jwplayer.js',
         'js/owl.carousel.min.js',
         'js/jquery.colorbox-min.js',
         'js/uw.js',

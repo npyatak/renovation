@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Url;
 use yii\helpers\Html;
+//$this->registerJsFile(Url::toRoute('js/player_setup.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 
 <div class="container_inner">
@@ -25,7 +26,7 @@ use yii\helpers\Html;
                 <div>
                     <div class="with-btn">
                         <img src="<?=Url::to('images/history/history_2-1.jpg');?>" alt="History picture">
-                        <a href="" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                        <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
                     </div>
                     <div>
                         <span class="h-t_caption">По мере того, как жилищный кризис был решен, в конце 60-х  начали появляться дома улучшенной модицификации. Сейчас их называют «брежневками»</span>
@@ -41,7 +42,7 @@ use yii\helpers\Html;
         <div class="only-img">
             <div class="with-btn">
                 <img src="<?=Url::to('images/history/history_2-2.jpg');?>" alt="History picture">
-                <a href="" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
             </div>
             <div>
                 <span class="h-t_caption">Самая распространенная серия домов Брежневской эпохи, построенная в Москве и Подмосковье - II-18/12Б, их насчитывается более 1,2 тысяч объектов.</span>
@@ -55,7 +56,7 @@ use yii\helpers\Html;
                     <div>
                         <div class="with-btn">
                             <img src="<?=Url::to('images/history/history_2-3.jpg');?>" alt="History picture">
-                            <a href="" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                            <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div>
                             <span class="h-t_caption">Команда архитектора Натана Остермана <br>Фотохроника ТАСС</span>
@@ -78,7 +79,7 @@ use yii\helpers\Html;
             <div class="only-img" style="margin-left:0;margin-right:0;">
                 <div class="with-btn">
                     <img src="<?=Url::to('images/history/history_2-4.jpg');?>" alt="History picture">
-                    <a href="" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                    <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
                 </div>
                 <div>
                     <span class="h-t_caption" style="margin-left:0">Дома серии 1МГ-601 <br>Фотоархив ТАСС</span>
@@ -133,8 +134,8 @@ use yii\helpers\Html;
             <p>К февралю 2017 года входящие в программу пятиэтажные дома были полностью снесены в ЦАО, ЮАО, ЮВАО, САО и Зеленограде. До 2018 года планировалось снести оставшиеся 19 домов серии К-7 и два дома серии 1605-А в СВАО, два дома серии II-32 в ВАО, пять домов серии 1605-АМ в ЮЗАО, четыре дома серии II-32, один дом серии К-7 и 34 дома серии 1605-АМ в ЗАО, четыре дома серии К-7 в СЗАО. 42 дома планировалось снести за счет города, остальные – за счет инвесторов.</p>
             <p>Жильцов снесенных домов чаще всего переселяли в новостройки серий И-155, ИП46, П-3, П-44, П-46, П-55, ГМС-2001 и их модификации. Стоит отметить, что самой распространенной серией, построенной для переселенцев, является серия П44-Т. Количество муниципальных домов такого типа, выделенных под социальные нужды в Москве, составляет 50%.</p>
         </div>
-        <div class="video-block">
-            <iframe width="100%" height="550" src="https://www.youtube.com/embed/k2qgadSvNyU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-        </div>
+<!--        <div class="video-block">-->
+<!--            <div id="history-video"></div>-->
+<!--        </div>-->
     </div>
 </div>

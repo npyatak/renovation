@@ -1,16 +1,13 @@
 $(window).load(function(){
 // $(document).ready(function(){
 	$('#preloader').fadeOut(1000);
-
 	if ($('.slider_gallery').length > 0) {
 		$(".slider_gallery").owlCarousel({
 			items: 1,
 			loop: true
 		});
 	}
-	$('.grid').masonry({
-	  itemSelector: '.grid_item',
-	});
+
 	if ($('.slider_front').length > 0) {
 		$(".slider_front").owlCarousel({
 			items: 1,
@@ -18,9 +15,19 @@ $(window).load(function(){
 			nav: true
 		});
 	}
+
 	$('.grid_front').masonry({
-	  itemSelector: '.grid_item',
+		itemSelector: '.grid_item'
 	});
+	
+	$(window).resize(function () {
+		if($(this).width() > 1000){
+			$('.grid').masonry({
+				itemSelector: '.grid_item',
+			});
+		}
+	});
+	$(window).trigger('resize');
 	$(".gallery_inline").colorbox({
 		inline:true,
 		width:"66%",
@@ -72,10 +79,26 @@ $(window).load(function(){
 			nav: false,
 			dots: true,
 			responsive: {
-				0:{items:2}
+				0:{items:1}
 			}
 		});
 	}
+
+	var wow = new WOW(
+		{
+			boxClass: 'wow',      // animated element css class (default is wow)
+			animateClass: 'animated', // animation css class (default is animated)
+			offset: 300,          // distance to the element when triggering the animation (default is 0)
+			mobile: false,       // trigger animations on mobile devices (default is true)
+			live: true,       // act on asynchronously loaded content (default is true)
+			callback: function (box) {
+				$(box).addClass('wow_vis');
+			},
+			scrollContainer: null // optional scroll container selector, otherwise use window
+		}
+	);
+	wow.init();
+
 });
 $(window).resize(function(){
 	if ($(window).width() < 999) {
@@ -85,7 +108,7 @@ $(window).resize(function(){
 	}
 });
 
-$('.social a, .social-wrap a').click(function(e) {
+$('.social a, .social-wrap a, .np-social a').click(function(e) {
     url = getShareUrl($(this));
 
     window.open(url,'','toolbar=0,status=0,width=626,height=436');

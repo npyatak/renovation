@@ -1,4 +1,4 @@
-$(window).load(function(){
+$(window).on('load', function(){
 // $(document).ready(function(){
 	$('#preloader').fadeOut(1000);
 	if ($('.slider_gallery').length > 0) {

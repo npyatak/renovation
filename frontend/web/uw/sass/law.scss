@@ -198,6 +198,18 @@
         margin-bottom: 25px;
         font-size: 18px;
         line-height: 25px;
+        text-align: justify;
+      }
+      ul, ol {
+        margin: 0;
+        padding: 0 0 0 25px;
+        list-style: decimal;
+        li {
+          margin-bottom: 25px;
+          p {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }

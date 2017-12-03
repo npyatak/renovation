@@ -99,8 +99,7 @@ $this->title = 'Москва без пятиэтажек';
         }
     } ?>
 </div>
-
-<?php 
+<?php
 $script = $this->render('_map-script', ['pm' => $pm, 'type' => $houses ? 'houses' : 'places']);
 $this->registerJs($script, yii\web\View::POS_END);
 ?>

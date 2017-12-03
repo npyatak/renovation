@@ -109,10 +109,8 @@ $(window).resize(function(){
 });
 
 $('.social a, .social-wrap a, .np-social a').click(function(e) {
-    url = getShareUrl($(this));
-
+    var url = getShareUrl($(this));
     window.open(url,'','toolbar=0,status=0,width=626,height=436');
-
     return false;
 });
 

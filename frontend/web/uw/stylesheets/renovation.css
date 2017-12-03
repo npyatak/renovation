@@ -4,7 +4,7 @@
 }
 /* line 3, ../sass/renovation.scss */
 .renovation .top_block {
-  padding-top: 0px;
+  padding-top: 0;
 }
 /* line 7, ../sass/renovation.scss */
 .renovation h1 {
@@ -48,77 +48,84 @@
   }
 }
 /* line 39, ../sass/renovation.scss */
+.renovation select:focus {
+  outline: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+/* line 45, ../sass/renovation.scss */
 .renovation .select_area {
   font-size: 15px;
   padding-top: 51px;
 }
 @media screen and (max-width: 1000px) {
-  /* line 39, ../sass/renovation.scss */
+  /* line 45, ../sass/renovation.scss */
   .renovation .select_area {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media screen and (max-width: 639px) {
-  /* line 39, ../sass/renovation.scss */
+  /* line 45, ../sass/renovation.scss */
   .renovation .select_area {
     text-align: center;
   }
 }
-/* line 49, ../sass/renovation.scss */
+/* line 55, ../sass/renovation.scss */
 .renovation .select_area a {
   font-size: 15px;
-  border-radius: 0px;
+  border-radius: 0;
   line-height: 39px;
-  padding: 0px 18px;
+  padding: 0 18px;
   margin-left: 16px;
 }
 @media screen and (max-width: 639px) {
-  /* line 49, ../sass/renovation.scss */
+  /* line 55, ../sass/renovation.scss */
   .renovation .select_area a {
     display: block;
     margin-bottom: 5px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
-/* line 60, ../sass/renovation.scss */
+/* line 66, ../sass/renovation.scss */
 .renovation .select_area a.include {
   color: white;
   background: none;
   border: 1px solid #003878;
 }
-/* line 64, ../sass/renovation.scss */
+/* line 70, ../sass/renovation.scss */
 .renovation .select_area a.include.active {
   background: #003878;
 }
-/* line 68, ../sass/renovation.scss */
+/* line 74, ../sass/renovation.scss */
 .renovation .select_area a.start {
   border: 1px solid #C09916;
   background: transparent;
   color: #010211;
 }
-/* line 72, ../sass/renovation.scss */
+/* line 78, ../sass/renovation.scss */
 .renovation .select_area a.start.active {
   background: #C09916;
   color: #fff;
 }
-/* line 79, ../sass/renovation.scss */
+/* line 85, ../sass/renovation.scss */
 .renovation #object-map {
   margin-top: 19px;
 }
-/* line 82, ../sass/renovation.scss */
+/* line 88, ../sass/renovation.scss */
 .renovation .areas_table.yellow thead th {
   background: #C09916;
 }
-/* line 85, ../sass/renovation.scss */
+/* line 91, ../sass/renovation.scss */
 .renovation .areas_table.blue thead th {
   background: #0082A8;
 }
-/* line 88, ../sass/renovation.scss */
+/* line 94, ../sass/renovation.scss */
 .renovation .areas_table {
   font-family: "Proxima Nova Light", sans-serif;
 }
-/* line 90, ../sass/renovation.scss */
+/* line 96, ../sass/renovation.scss */
 .renovation .areas_table .title_table {
   font-family: "Proxima Nova Light", sans-serif;
   font-size: 40px;
@@ -127,52 +134,52 @@
   padding-bottom: 23px;
 }
 @media screen and (max-width: 1000px) {
-  /* line 90, ../sass/renovation.scss */
+  /* line 96, ../sass/renovation.scss */
   .renovation .areas_table .title_table {
     padding-left: 20px;
     padding-right: 20px;
     line-height: 40px;
   }
 }
-/* line 102, ../sass/renovation.scss */
+/* line 108, ../sass/renovation.scss */
 .renovation .areas_table .summary {
   display: none;
 }
-/* line 105, ../sass/renovation.scss */
+/* line 111, ../sass/renovation.scss */
 .renovation .areas_table input {
-  border-radius: 0px;
+  border-radius: 0;
 }
-/* line 108, ../sass/renovation.scss */
+/* line 114, ../sass/renovation.scss */
 .renovation .areas_table table {
   border: 1px solid transparent;
 }
-/* line 111, ../sass/renovation.scss */
+/* line 117, ../sass/renovation.scss */
 .renovation .areas_table table thead th:not(:last-child) {
   border-right: 1px solid #fff;
 }
-/* line 114, ../sass/renovation.scss */
+/* line 120, ../sass/renovation.scss */
 .renovation .areas_table table thead th {
   color: white;
   padding: 17px 23px;
 }
 @media screen and (max-width: 639px) {
-  /* line 114, ../sass/renovation.scss */
+  /* line 120, ../sass/renovation.scss */
   .renovation .areas_table table thead th {
     padding: 12px;
   }
 }
-/* line 120, ../sass/renovation.scss */
+/* line 126, ../sass/renovation.scss */
 .renovation .areas_table table thead th:nth-child(2) {
   min-width: 130px;
 }
-/* line 123, ../sass/renovation.scss */
+/* line 129, ../sass/renovation.scss */
 .renovation .areas_table table thead th a {
   color: white;
   font-size: 18px;
   font-weight: 300;
   white-space: nowrap;
 }
-/* line 128, ../sass/renovation.scss */
+/* line 134, ../sass/renovation.scss */
 .renovation .areas_table table thead th a:after {
   background: url("../../images/table_sort.png");
   content: '';
@@ -181,18 +188,18 @@
   height: 8px;
   margin-left: 11px;
 }
-/* line 138, ../sass/renovation.scss */
+/* line 144, ../sass/renovation.scss */
 .renovation .areas_table table thead td {
   background: #eeeff1;
   padding: 5px 0;
 }
-/* line 141, ../sass/renovation.scss */
+/* line 147, ../sass/renovation.scss */
 .renovation .areas_table table thead td input {
   height: 60px;
   border: 0px;
   font-size: 18px;
 }
-/* line 146, ../sass/renovation.scss */
+/* line 152, ../sass/renovation.scss */
 .renovation .areas_table table thead td select {
   height: 60px;
   border: 0px;
@@ -200,23 +207,35 @@
   width: 100%;
   background: #fff;
 }
-/* line 155, ../sass/renovation.scss */
+/* line 161, ../sass/renovation.scss */
 .renovation .areas_table table th {
   border: 1px solid transparent;
 }
-/* line 161, ../sass/renovation.scss */
+/* line 164, ../sass/renovation.scss */
+.renovation .areas_table table th:nth-child(1) {
+  width: 131px;
+}
+/* line 167, ../sass/renovation.scss */
+.renovation .areas_table table th:nth-child(2) {
+  width: 191px;
+}
+/* line 170, ../sass/renovation.scss */
+.renovation .areas_table table th:nth-child(3) {
+  width: 621px;
+}
+/* line 176, ../sass/renovation.scss */
 .renovation .areas_table table tbody tr:nth-child(2n-1) td {
   background: #DADEE3;
 }
-/* line 165, ../sass/renovation.scss */
+/* line 180, ../sass/renovation.scss */
 .renovation .areas_table table tbody tr td {
   font-size: 18px;
 }
-/* line 171, ../sass/renovation.scss */
+/* line 186, ../sass/renovation.scss */
 .renovation .areas_table table td:not(:last-child) {
   border-right: 1px solid #EEEFF3;
 }
-/* line 174, ../sass/renovation.scss */
+/* line 189, ../sass/renovation.scss */
 .renovation .areas_table table td {
   border: 1px solid transparent;
   padding: 17px 23px;
@@ -224,34 +243,34 @@
   background: #eeeff1;
 }
 @media screen and (max-width: 639px) {
-  /* line 174, ../sass/renovation.scss */
+  /* line 189, ../sass/renovation.scss */
   .renovation .areas_table table td {
     padding: 12px;
   }
 }
-/* line 184, ../sass/renovation.scss */
+/* line 199, ../sass/renovation.scss */
 .renovation .areas_table .pagination {
   width: 100%;
   text-align: center;
 }
-/* line 187, ../sass/renovation.scss */
+/* line 202, ../sass/renovation.scss */
 .renovation .areas_table .pagination li.prev a,
 .renovation .areas_table .pagination li.prev span {
   background: transparent;
   font-size: 20px;
 }
-/* line 192, ../sass/renovation.scss */
+/* line 207, ../sass/renovation.scss */
 .renovation .areas_table .pagination li.next a,
 .renovation .areas_table .pagination li.next a {
   background: transparent;
   font-size: 20px;
 }
-/* line 197, ../sass/renovation.scss */
+/* line 212, ../sass/renovation.scss */
 .renovation .areas_table .pagination li {
-  margin: 0px 4px;
+  margin: 0 4px;
   display: inline-block;
 }
-/* line 200, ../sass/renovation.scss */
+/* line 215, ../sass/renovation.scss */
 .renovation .areas_table .pagination li a {
   font-size: 15px;
   line-height: 38px;
@@ -259,20 +278,20 @@
   display: inline-block;
   border: 1px solid #A1A6AF;
   color: #010211;
-  padding: 0px;
+  padding: 0;
   text-align: center;
 }
-/* line 211, ../sass/renovation.scss */
+/* line 226, ../sass/renovation.scss */
 .renovation .areas_table .pagination li.active a {
   color: white;
   background: #3B0F50;
   border: 1px solid #3B0F50;
 }
-/* line 218, ../sass/renovation.scss */
+/* line 233, ../sass/renovation.scss */
 .renovation .areas_table .pagination li.next a, .renovation .areas_table .pagination li.prev a {
   border: 1px solid transparent;
 }
-/* line 221, ../sass/renovation.scss */
+/* line 236, ../sass/renovation.scss */
 .renovation .areas_table .pagination li.next span, .renovation .areas_table .pagination li.prev span {
   border: 1px solid transparent;
   line-height: 38px;
@@ -280,4 +299,26 @@
   text-align: center;
   display: inline-block;
   padding: 0px;
+}
+
+/* line 249, ../sass/renovation.scss */
+.asc::after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+@media (max-width: 767px) {
+  /* line 257, ../sass/renovation.scss */
+  #p0 {
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  /* line 261, ../sass/renovation.scss */
+  #grid_ {
+    width: 767px;
+  }
 }

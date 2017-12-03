@@ -68,7 +68,7 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 	<div class="np-wrap np-wrap_flex">
 		<h2 class="np-section__el wow">Московские пятиэтажки:<br>история вопроса</h2>
 		<div class="np-text-content np-text-content_i np-section__el">
-			<p>Зачем Советскому Союзу нужны были «хрущевки», какие серии строились в разные периоды «индустриального домостроения», чем они отличались друг от друга. </p>
+			<p>Зачем Советскому Союзу нужны были хрущевки, какие серии строились в разные периоды индустриального домостроения, чем они отличались друг от друга. </p>
 		</div>
 		<div class="np-section_2__image-outer np-section__el">
 			<p class="np-section_2_image-description">
@@ -102,7 +102,7 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 		</div>
 		<div class="np-section_3__wrap">
 			<div class="np-text-content">
-				<div class="np-text-content__title">Видео-галерея</div>
+				<div class="np-text-content__title">Видеогалерея</div>
 				<p>Чудовищный кризис на рынке жилья – только одна из проблем, с которыми столкнулся Советский Союз после окончания Великой Отечественной.</p>
 			</div>
 		</div>

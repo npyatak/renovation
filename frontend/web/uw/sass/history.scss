@@ -176,7 +176,7 @@
       p {
         margin-bottom: 30px;
         font: 18px 'Proxima Nova Regular', sans-serif;
-        line-height: 25px;
+        line-height: 30px;
         strong {
           font-family: 'Proxima Nova Bl', sans-serif;
         }
@@ -265,6 +265,7 @@
         }
         p {
           margin-bottom: 0;
+          font-family: 'Proxima Nova', sans-serif;
           font-weight: bold;
           font-style: italic;
           font-size: 15px;
@@ -428,10 +429,15 @@
     margin-left: -20px;
     width: calc(100% + 40px);
     .h-t_caption {
+      width: 100% !important;
+      max-width: inherit;
       padding: 0 20px;
     }
   }
   .history .history-content .purple-wrap .purple-block {
     padding: 20px 20px 20px 75px;
+  }
+  .history .history-content .history-block h2 {
+    font-size: 28px;
   }
 }

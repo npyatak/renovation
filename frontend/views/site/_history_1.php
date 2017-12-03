@@ -27,7 +27,7 @@ use yii\helpers\Html;
                 <div>
                     <div class="with-btn">
                         <img src="<?=Url::to('images/history/history_1.jpg');?>" alt="History picture">
-                        <a href="" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                        <a href="<?=Url::toRoute(['site/gallery', 'page' => 2]);?>" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
                     </div>
                     <div>
                         <span class="h-t_caption">Жилищное строительство в микрорайоне Ясенево, 1976 год Фотоархив ТАСС</span>
@@ -54,10 +54,10 @@ use yii\helpers\Html;
         <div class="only-img">
             <div class="with-btn">
                 <img src="<?=Url::to('images/history/history_2.jpg');?>" alt="History picture">
-                <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                <a href="<?=Url::toRoute(['site/gallery', 'page' => 2]);?>" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
             </div>
             <div>
-                <span class="h-t_caption">СССР. 1 июля 1958 г. Погрузка готов плит. Фотохроника ТАСС</span>
+                <span class="h-t_caption">СССР. 1 июля 1958 г. Погрузка готовых плит. Фотохроника ТАСС</span>
             </div>
         </div>
         <div class="history-block">
@@ -66,7 +66,7 @@ use yii\helpers\Html;
         <div class="only-img">
             <div class="with-btn">
                 <img src="<?=Url::to('images/history/history_3.jpg');?>" alt="History picture">
-                <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                <a href="<?=Url::toRoute(['site/gallery', 'page' => 2]);?>" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
             </div>
             <div>
                 <span class="h-t_caption">Домостроительный комбинат № 1. Завод железобетонных изделий. Кошевой Виктор Фотоархив ТАСС</span>
@@ -96,7 +96,7 @@ use yii\helpers\Html;
                 <div>
                     <div class="with-btn">
                         <img src="<?=Url::to('images/history/history_5.jpg');?>" alt="History picture">
-                        <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                        <a href="<?=Url::toRoute(['site/gallery', 'page' => 2]);?>" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
                     </div>
                     <div>
                         <span class="h-t_caption">Команда архитектора Натана Остермана <br>Фотохроника ТАСС</span>
@@ -119,7 +119,7 @@ use yii\helpers\Html;
                 <div class="item">
                     <div class="item-img with-btn">
                         <img src="<?=Url::to('images/history/history_6.jpg');?>" alt="History Picture">
-                        <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                        <a href="<?=Url::toRoute(['site/gallery', 'page' => 2]);?>" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
                     </div>
                     <div class="item-caption">
                         <span class="h-t_caption">Фотоархив ТАСС</span>
@@ -128,7 +128,7 @@ use yii\helpers\Html;
                 <div class="item">
                     <div class="item-img with-btn">
                         <img src="<?=Url::to('images/history/1_111.jpg');?>" alt="History Picture">
-                        <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                        <a href="<?=Url::toRoute(['site/gallery', 'page' => 2]);?>" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
                     </div>
                     <div class="item-caption">
                         <span class="h-t_caption">Фотоархив ТАСС</span>
@@ -144,7 +144,7 @@ use yii\helpers\Html;
         <div class="only-img">
             <div class="with-btn">
                 <img src="<?=Url::to('images/history/history_7.jpg');?>" alt="History picture">
-                <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                <a href="<?=Url::toRoute(['site/gallery', 'page' => 2]);?>" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
             </div>
             <div>
                 <span class="h-t_caption">В 1959 году появилась еще одна экспериментальная серия - II-35, строительство которой продолжалось до 1962 года. На ней отрабатывались методы расчета теплозащиты наружных панелей. <br>Фото ИТАР-ТАСС</span>
@@ -169,7 +169,7 @@ use yii\helpers\Html;
                 </div>
             </div>
             <div class="slider_history2_caption">
-                <span class="h-t_caption" style="max-width: 100%">Фотоархив ТАСС</span>
+                <span class="h-t_caption" style="max-width: 100%">С начала 1959 года в Москве начали строиться дома серии II-32. Дома этой серии были оснащены балконами, которые держались на подпорках, идуших от фундамента до последнего этажа.<br>Фотоархив ТАСС</span>
             </div>
         </div>
         <div class="purple-wrap">
@@ -183,7 +183,7 @@ use yii\helpers\Html;
         <div class="only-img">
             <div class="with-btn">
                 <img src="<?=Url::to('images/history/history_10.jpg');?>" alt="History picture">
-                <a href="http://renovation.carvertising.ru/gallery?id=2" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
+                <a href="<?=Url::toRoute(['site/gallery', 'page' => 2]);?>" class="btn btn-warning">В галерею <i class="fa fa-angle-right"></i></a>
             </div>
             <div>
                 <span class="h-t_caption" style="max-width: 85%">С начала 1959 года в Москве начали строиться дома серии II-32. Дома этой серии были оснащены балконами, которые держались на подпорках, идущих от фундамента до последнего этажа. <br>Фотоархив ТАСС</span>

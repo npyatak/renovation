@@ -22,13 +22,18 @@ body {
 }
 
 /* line 17, ../sass/uw.scss */
+.btn.active {
+  box-shadow: none !important;
+}
+
+/* line 20, ../sass/uw.scss */
 .top_block {
   padding-top: 51px;
   text-align: center;
   position: relative;
   min-height: 113px;
 }
-/* line 22, ../sass/uw.scss */
+/* line 25, ../sass/uw.scss */
 .top_block .tass_logo {
   float: left;
   position: absolute;
@@ -36,35 +41,39 @@ body {
   left: -15px;
   width: 110px;
 }
-/* line 30, ../sass/uw.scss */
+/* line 33, ../sass/uw.scss */
 .top_block.white .go_front {
   color: #3B0F50;
   border: 1px solid #3B0F50;
 }
-/* line 35, ../sass/uw.scss */
+/* line 38, ../sass/uw.scss */
 .top_block .social {
   float: right;
   position: absolute;
   right: 2px;
   top: 36px;
 }
-/* line 40, ../sass/uw.scss */
+/* line 43, ../sass/uw.scss */
 .top_block .social a {
   margin-left: 38px;
   color: #361750;
   font-size: 17px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-/* line 45, ../sass/uw.scss */
+/* line 52, ../sass/uw.scss */
 .top_block .social a:nth-child(1) {
   margin-left: 0px;
 }
-/* line 48, ../sass/uw.scss */
+/* line 55, ../sass/uw.scss */
 .top_block .social a:hover {
   color: #b99c2d;
 }
 @media screen and (max-width: 999px) {
-  /* line 35, ../sass/uw.scss */
+  /* line 38, ../sass/uw.scss */
   .top_block .social {
     float: none;
     position: relative;
@@ -74,13 +83,13 @@ body {
     width: 100%;
     top: 48px;
   }
-  /* line 60, ../sass/uw.scss */
+  /* line 67, ../sass/uw.scss */
   .top_block .social a {
     display: inline-block;
     margin-bottom: 27px;
   }
 }
-/* line 66, ../sass/uw.scss */
+/* line 73, ../sass/uw.scss */
 .top_block .go_front {
   border: 1px solid #a1a4ad;
   color: #010211;
@@ -88,10 +97,9 @@ body {
   top: 29px;
   line-height: 38px;
   display: inline-block;
-  padding: 0px 42px;
-  position: relative;
+  padding: 0 42px;
 }
-/* line 75, ../sass/uw.scss */
+/* line 81, ../sass/uw.scss */
 .top_block .go_front i {
   margin-right: 10px;
   position: relative;
@@ -99,7 +107,7 @@ body {
   font-size: 22px;
 }
 
-/* line 83, ../sass/uw.scss */
+/* line 89, ../sass/uw.scss */
 .container_inner {
   width: 934px;
   margin: 0 auto;
@@ -107,52 +115,52 @@ body {
   z-index: 1;
 }
 @media screen and (max-width: 933px) {
-  /* line 83, ../sass/uw.scss */
+  /* line 89, ../sass/uw.scss */
   .container_inner {
     width: 100%;
   }
 }
 
-/* line 93, ../sass/uw.scss */
+/* line 99, ../sass/uw.scss */
 .wrap {
   width: 100%;
   background: #EEEFF3;
   overflow: hidden;
 }
 
-/* line 100, ../sass/uw.scss */
+/* line 106, ../sass/uw.scss */
 .grid_wrap {
   margin-top: 35px;
   padding-top: 13px;
 }
 
-/* line 105, ../sass/uw.scss */
+/* line 111, ../sass/uw.scss */
 #cboxContent {
   background: none;
 }
 
-/* line 108, ../sass/uw.scss */
+/* line 114, ../sass/uw.scss */
 #cboxLoadedContent {
   background: none;
 }
 
-/* line 111, ../sass/uw.scss */
+/* line 117, ../sass/uw.scss */
 #cboxTitle {
   display: none;
 }
 
-/* line 114, ../sass/uw.scss */
+/* line 120, ../sass/uw.scss */
 .map-title {
   font-family: "Proxima Nova Regular", sans-serif;
   font-weight: bold;
 }
 
-/* line 119, ../sass/uw.scss */
+/* line 125, ../sass/uw.scss */
 .gallery_popup img {
   max-width: 100%;
   height: auto;
 }
-/* line 123, ../sass/uw.scss */
+/* line 129, ../sass/uw.scss */
 .gallery_popup .popup_text {
   font: 30px "Proxima Nova Thin", sans-serif;
   font-weight: 300;
@@ -160,13 +168,13 @@ body {
   padding-top: 46px;
   text-align: center;
 }
-/* line 130, ../sass/uw.scss */
+/* line 136, ../sass/uw.scss */
 .gallery_popup .close {
   float: none;
   padding-top: 20px;
   opacity: 1;
 }
-/* line 134, ../sass/uw.scss */
+/* line 140, ../sass/uw.scss */
 .gallery_popup .close img {
   width: 120px;
   height: 120px;
@@ -174,42 +182,42 @@ body {
   display: block;
 }
 
-/* line 142, ../sass/uw.scss */
+/* line 148, ../sass/uw.scss */
 #cboxOverlay {
   background: #3B0F50;
   opacity: 0.9;
 }
 
-/* line 146, ../sass/uw.scss */
+/* line 152, ../sass/uw.scss */
 .popups_info {
   display: none;
 }
 
-/* line 152, ../sass/uw.scss */
+/* line 158, ../sass/uw.scss */
 .bottom_gallery .title_bottom_gallery {
   font-size: 15px;
   color: #000108;
   font-family: "Proxima Nova", sans-serif;
   font-weight: 300;
   text-align: center;
-  padding: 0px 10px;
+  padding: 0 10px;
   padding-bottom: 29px;
 }
-/* line 161, ../sass/uw.scss */
+/* line 167, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img {
   position: relative;
 }
-/* line 163, ../sass/uw.scss */
+/* line 169, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video {
   display: block;
 }
-/* line 165, ../sass/uw.scss */
+/* line 171, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video img {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 170, ../sass/uw.scss */
+/* line 176, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video:before {
   content: '';
   position: absolute;
@@ -221,7 +229,7 @@ body {
   background-size: 134px;
   z-index: 1;
 }
-/* line 181, ../sass/uw.scss */
+/* line 187, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img .bottom_gallery_video::after {
   content: '';
   position: absolute;
@@ -233,44 +241,44 @@ body {
   background-size: 134px;
   z-index: 0;
 }
-/* line 193, ../sass/uw.scss */
+/* line 199, ../sass/uw.scss */
 .bottom_gallery .bottom_gallery_img iframe {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: none;
 }
 
-/* line 204, ../sass/uw.scss */
+/* line 210, ../sass/uw.scss */
 .blue_top_bg {
   position: relative;
 }
 
-/* line 217, ../sass/uw.scss */
+/* line 223, ../sass/uw.scss */
 #object-map {
   position: relative;
   z-index: 1;
 }
 
-/* line 222, ../sass/uw.scss */
+/* line 228, ../sass/uw.scss */
 .white_text {
   color: white !important;
 }
 
-/* line 225, ../sass/uw.scss */
+/* line 231, ../sass/uw.scss */
 .purple_text {
   color: #3B0F50 !important;
 }
 
-/* line 229, ../sass/uw.scss */
+/* line 235, ../sass/uw.scss */
 .bottom_select_gallery {
   padding-top: 122px;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 233, ../sass/uw.scss */
+/* line 239, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery {
   width: 25%;
   position: relative;
@@ -278,12 +286,12 @@ body {
   overflow: hidden;
 }
 @media screen and (max-width: 999px) {
-  /* line 233, ../sass/uw.scss */
+  /* line 239, ../sass/uw.scss */
   .bottom_select_gallery .select_gallery {
     width: 50%;
   }
 }
-/* line 241, ../sass/uw.scss */
+/* line 247, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery:before {
   content: '';
   display: none;
@@ -294,47 +302,53 @@ body {
   height: 100%;
   z-index: 2;
 }
-/* line 252, ../sass/uw.scss */
+/* line 258, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery:hover:before {
   display: block;
 }
-/* line 255, ../sass/uw.scss */
+/* line 261, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery:hover img {
   -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
   -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
   transform: scale(1.4);
 }
-/* line 261, ../sass/uw.scss */
+/* line 269, ../sass/uw.scss */
 .bottom_select_gallery .select_gallery img {
   display: block;
   width: 100%;
   height: auto;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
-/* line 269, ../sass/uw.scss */
+/* line 281, ../sass/uw.scss */
 .site-error {
   text-align: center;
 }
-/* line 271, ../sass/uw.scss */
+/* line 283, ../sass/uw.scss */
 .site-error h1 {
   margin-bottom: 20px;
   font: 200px 'Proxima Nova', sans-serif;
   color: #C59D17;
   line-height: 130px;
 }
-/* line 277, ../sass/uw.scss */
+/* line 289, ../sass/uw.scss */
 .site-error p {
   font-size: 18px;
 }
 
 @media screen and (max-width: 410px) {
-  /* line 283, ../sass/uw.scss */
+  /* line 295, ../sass/uw.scss */
   .site-error h1 {
     font-size: 150px;
   }
 }
-/* line 288, ../sass/uw.scss */
+/* line 300, ../sass/uw.scss */
 #preloader {
   position: fixed;
   top: 0;
@@ -347,7 +361,7 @@ body {
   background-size: 100px;
 }
 
-/* line 299, ../sass/uw.scss */
+/* line 311, ../sass/uw.scss */
 .jw-display-icon-container {
   position: absolute !important;
   top: 50% !important;
@@ -366,7 +380,7 @@ body {
   border-radius: 50%;
   border: 2px solid #E1C6A9 !important;
 }
-/* line 316, ../sass/uw.scss */
+/* line 328, ../sass/uw.scss */
 .jw-display-icon-container .jw-icon {
   display: block !important;
   width: 60px !important;
@@ -381,7 +395,7 @@ body {
   color: #361750 !important;
 }
 
-/* line 330, ../sass/uw.scss */
+/* line 342, ../sass/uw.scss */
 .jw-preview {
   -webkit-background-size: cover !important;
   background-size: cover !important;

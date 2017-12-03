@@ -718,7 +718,6 @@
 
 .np-section_4{
     background: transparent;
-    z-index: 0;
     color: #361750;
     z-index: 1;
 }
@@ -805,18 +804,22 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transform: translate(-140px, 0);
-        -ms-transform: translate(-140px, 0);
-            transform: translate(-140px, 0);
+    -webkit-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+    transform: translateX(-200px);
 }
 
 .np-social.show{
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
 }
 
 @media (max-width: 1599px){

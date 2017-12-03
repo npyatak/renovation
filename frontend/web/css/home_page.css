@@ -1,6 +1,6 @@
 .np-section{
     position: relative;
-    font-family: 'Proxima Nova Rg';
+    font-family: 'Proxima Nova Rg', sans-serif;
     color: #fff;
     text-align: center;
     font-size: 23.91px;
@@ -27,7 +27,7 @@
 .np-section p{
     position: relative;
     margin: 0;
-    font-family: 'Proxima Nova Rg';
+    font-family: 'Proxima Nova Rg', sans-serif;
 }
 
 .np-section a{

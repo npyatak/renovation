@@ -229,15 +229,30 @@
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 25px;
+  text-align: justify;
+}
+/* line 203, ../sass/law.scss */
+.law .law-content .law-text ul, .law .law-content .law-text ol {
+  margin: 0;
+  padding: 0 0 0 25px;
+  list-style: decimal;
+}
+/* line 207, ../sass/law.scss */
+.law .law-content .law-text ul li, .law .law-content .law-text ol li {
+  margin-bottom: 25px;
+}
+/* line 209, ../sass/law.scss */
+.law .law-content .law-text ul li p, .law .law-content .law-text ol li p {
+  margin-bottom: 0;
 }
 
-/* line 206, ../sass/law.scss */
+/* line 218, ../sass/law.scss */
 .law .top_block .social {
   display: none;
 }
 
 @media screen and (max-width: 1150px) {
-  /* line 211, ../sass/law.scss */
+  /* line 223, ../sass/law.scss */
   .law .law-header .container_inner .social-wrap {
     top: calc(100% + 20px);
     right: auto;
@@ -249,18 +264,18 @@
     display: flex;
     flex-wrap: nowrap;
   }
-  /* line 221, ../sass/law.scss */
+  /* line 233, ../sass/law.scss */
   .law .law-header .container_inner .social-wrap a {
     margin-right: 1px;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 227, ../sass/law.scss */
+  /* line 239, ../sass/law.scss */
   .container_inner {
     padding: 0 20px;
   }
 
-  /* line 230, ../sass/law.scss */
+  /* line 242, ../sass/law.scss */
   .law .law-header .container_inner .social-wrap {
     left: 20px;
   }

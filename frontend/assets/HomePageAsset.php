@@ -9,7 +9,7 @@ class HomePageAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/home_page.css',
+//        'css/home_page.css',
         'css/styles.pref.css',
     ];
     public $js = [

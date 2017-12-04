@@ -13,19 +13,21 @@
 }
 /* line 11, ../sass/timeline.scss */
 .timeline h1 {
-  text-align: center;
-  font: 55px 'Proxima Nova', sans-serif;
-  color: #3B0F50;
-  text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 50px;
+  font: 60px "Proxima Nova Regular", sans-serif;
   line-height: 39px;
+  font-weight: bold;
+  color: #3B0F50;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
 }
-/* line 19, ../sass/timeline.scss */
+/* line 21, ../sass/timeline.scss */
 .timeline h1 span {
   display: block;
-  margin-top: 10px;
-  font-size: 0.6em;
+  margin-top: 20px;
+  font-size: 40px;
 }
 @media screen and (max-width: 1000px) {
   /* line 11, ../sass/timeline.scss */
@@ -42,7 +44,7 @@
     line-height: 40px;
   }
 }
-/* line 35, ../sass/timeline.scss */
+/* line 37, ../sass/timeline.scss */
 .timeline .sliderbox {
   position: relative;
   display: flex;
@@ -52,41 +54,41 @@
   -o-transition: margin-left 1s ease-out;
   transition: margin-left 1s ease-out;
 }
-/* line 43, ../sass/timeline.scss */
+/* line 45, ../sass/timeline.scss */
 .timeline .sliderbox .item {
   position: relative;
   cursor: pointer;
 }
-/* line 46, ../sass/timeline.scss */
+/* line 48, ../sass/timeline.scss */
 .timeline .sliderbox .item .image img {
   display: block;
   width: 100%;
 }
-/* line 50, ../sass/timeline.scss */
+/* line 52, ../sass/timeline.scss */
 .timeline .sliderbox .item .date {
   padding: 30px 0 0 30px;
   height: 120px;
 }
-/* line 53, ../sass/timeline.scss */
+/* line 55, ../sass/timeline.scss */
 .timeline .sliderbox .item .date .date-item {
   color: #010211;
   font-size: 18px;
   line-height: 24px;
   transition: .2s;
 }
-/* line 61, ../sass/timeline.scss */
+/* line 63, ../sass/timeline.scss */
 .timeline .sliderbox .item.active .dot {
   background-color: #C39C17 !important;
   border-color: #fff !important;
 }
-/* line 66, ../sass/timeline.scss */
+/* line 68, ../sass/timeline.scss */
 .timeline .sliderbox .item.active .date .date-item {
   font: 33px 'Proxima Nova Bl', sans-serif;
   font-weight: bold;
   line-height: 30px;
   color: #C59D17;
 }
-/* line 74, ../sass/timeline.scss */
+/* line 76, ../sass/timeline.scss */
 .timeline .sliderbox .item .description {
   margin: 0 100px 0 0;
   padding-bottom: 30px;
@@ -94,7 +96,7 @@
   height: 100%;
   background: #fff;
 }
-/* line 80, ../sass/timeline.scss */
+/* line 82, ../sass/timeline.scss */
 .timeline .sliderbox .item .description .dot {
   position: absolute;
   top: 1px;
@@ -105,12 +107,12 @@
   height: 26px;
   width: 26px;
 }
-/* line 91, ../sass/timeline.scss */
+/* line 93, ../sass/timeline.scss */
 .timeline .sliderbox .item .description .dot + p {
   padding-top: 40px;
   padding-bottom: 20px;
 }
-/* line 96, ../sass/timeline.scss */
+/* line 98, ../sass/timeline.scss */
 .timeline .sliderbox .item .description p {
   font-family: "Proxima Nova Light";
   font-size: 18px;
@@ -118,7 +120,7 @@
   padding: 0 30px;
   margin: 0;
 }
-/* line 104, ../sass/timeline.scss */
+/* line 106, ../sass/timeline.scss */
 .timeline .sliderbox .item .description .circle {
   opacity: 0;
   transition: opacity 1s ease-out;
@@ -126,7 +128,7 @@
   width: 0;
   height: 0;
 }
-/* line 112, ../sass/timeline.scss */
+/* line 114, ../sass/timeline.scss */
 .timeline .sliderbox .item .description .active {
   pointer-events: unset;
   opacity: 1;
@@ -141,15 +143,15 @@
   height: 125px;
   width: 125px;
 }
-/* line 126, ../sass/timeline.scss */
+/* line 128, ../sass/timeline.scss */
 .timeline .sliderbox .item .description .active.fl {
   margin-left: -65px;
 }
-/* line 130, ../sass/timeline.scss */
+/* line 132, ../sass/timeline.scss */
 .timeline .sliderbox .item .description .active.fr {
   margin-left: 445px;
 }
-/* line 134, ../sass/timeline.scss */
+/* line 136, ../sass/timeline.scss */
 .timeline .sliderbox .item .description .active .prev, .timeline .sliderbox .item .description .active .next {
   position: absolute;
   width: 100%;
@@ -157,7 +159,7 @@
   color: #fff;
   transition: transform .5s;
 }
-/* line 141, ../sass/timeline.scss */
+/* line 143, ../sass/timeline.scss */
 .timeline .sliderbox .item .description .active .prev::after, .timeline .sliderbox .item .description .active .next::after {
   content: '';
   display: block;
@@ -174,7 +176,7 @@
   transition: .2s;
   z-index: 0;
 }
-/* line 157, ../sass/timeline.scss */
+/* line 159, ../sass/timeline.scss */
 .timeline .sliderbox .item .description .active .prev i, .timeline .sliderbox .item .description .active .next i {
   position: absolute;
   top: 50%;
@@ -182,188 +184,188 @@
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-/* line 166, ../sass/timeline.scss */
+/* line 168, ../sass/timeline.scss */
 .timeline .sliderbox .item .description .active:hover .prev::after, .timeline .sliderbox .item .description .active:hover .next::after {
   width: 55px;
   height: 55px;
 }
 @media screen and (min-width: 1366px) {
-  /* line 175, ../sass/timeline.scss */
+  /* line 177, ../sass/timeline.scss */
   .timeline .sliderbox .item .date {
     padding: 25.5px 0 0 25.5px;
     height: 120px;
   }
-  /* line 178, ../sass/timeline.scss */
+  /* line 180, ../sass/timeline.scss */
   .timeline .sliderbox .item .date .date-item {
     font-size: 15.3px;
     line-height: 20.4px;
   }
-  /* line 184, ../sass/timeline.scss */
+  /* line 186, ../sass/timeline.scss */
   .timeline .sliderbox .item.active > .date {
     padding-top: 10px;
   }
-  /* line 188, ../sass/timeline.scss */
+  /* line 190, ../sass/timeline.scss */
   .timeline .sliderbox .item.active > .date > .date-item {
     font-size: 34px;
     line-height: 34px;
   }
-  /* line 193, ../sass/timeline.scss */
+  /* line 195, ../sass/timeline.scss */
   .timeline .sliderbox .item .description {
     margin: 0 85px 0 0;
     width: 433.5px;
     height: 100%;
   }
-  /* line 198, ../sass/timeline.scss */
+  /* line 200, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .dot {
     height: 22.1px;
     width: 22.1px;
     margin: -12px 0 0 12.75px;
   }
-  /* line 204, ../sass/timeline.scss */
+  /* line 206, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .dot + p {
     padding-top: 34px;
     padding-bottom: 16px;
   }
-  /* line 209, ../sass/timeline.scss */
+  /* line 211, ../sass/timeline.scss */
   .timeline .sliderbox .item .description p {
     font-size: 16px;
     line-height: 26px;
     padding: 0 26px;
   }
-  /* line 215, ../sass/timeline.scss */
+  /* line 217, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .active {
     font-size: 18px;
     line-height: 42px;
     height: 106.25px;
     width: 106.25px;
   }
-  /* line 221, ../sass/timeline.scss */
+  /* line 223, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .active.fl {
     margin-left: -55.25px;
   }
-  /* line 225, ../sass/timeline.scss */
+  /* line 227, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .active.fr {
     margin-left: 378.25px;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1365px) {
-  /* line 233, ../sass/timeline.scss */
+  /* line 235, ../sass/timeline.scss */
   .timeline .sliderbox .item .date {
     padding: 22.5px 0 0 22.5px;
     height: 75px;
   }
-  /* line 236, ../sass/timeline.scss */
+  /* line 238, ../sass/timeline.scss */
   .timeline .sliderbox .item .date .date-item {
     font-size: 13.5px;
     line-height: 18px;
   }
-  /* line 242, ../sass/timeline.scss */
+  /* line 244, ../sass/timeline.scss */
   .timeline .sliderbox .item.active > .date {
     padding-top: 5px;
   }
-  /* line 246, ../sass/timeline.scss */
+  /* line 248, ../sass/timeline.scss */
   .timeline .sliderbox .item.active > .date > .date-item {
     font-size: 30px;
     line-height: 30px;
   }
-  /* line 251, ../sass/timeline.scss */
+  /* line 253, ../sass/timeline.scss */
   .timeline .sliderbox .item .description {
     margin: 0 75px 0 0;
     width: 382.5px;
   }
-  /* line 255, ../sass/timeline.scss */
+  /* line 257, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .dot {
     border: 2.25px solid #dbc8ae;
     height: 19.5px;
     width: 19.5px;
     margin: -11px 0 0 11.25px;
   }
-  /* line 262, ../sass/timeline.scss */
+  /* line 264, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .dot + p {
     padding-top: 30px;
     padding-bottom: 15px;
   }
-  /* line 267, ../sass/timeline.scss */
+  /* line 269, ../sass/timeline.scss */
   .timeline .sliderbox .item .description p {
     font-size: 13.5px;
     line-height: 22.5px;
     padding: 0 22.5px;
   }
-  /* line 273, ../sass/timeline.scss */
+  /* line 275, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .active {
     font-size: 15px;
     line-height: 37.5px;
     height: 93.75px;
     width: 93.75px;
   }
-  /* line 279, ../sass/timeline.scss */
+  /* line 281, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .active.fl {
     margin-left: -48.75px;
   }
-  /* line 283, ../sass/timeline.scss */
+  /* line 285, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .active.fr {
     margin-left: 333.75px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  /* line 291, ../sass/timeline.scss */
+  /* line 293, ../sass/timeline.scss */
   .timeline .sliderbox .item .date {
     padding: 21px 0 0 21px;
     height: 70px;
   }
-  /* line 294, ../sass/timeline.scss */
+  /* line 296, ../sass/timeline.scss */
   .timeline .sliderbox .item .date .date-item {
     font-size: 12.6px;
     line-height: 16.8px;
   }
-  /* line 300, ../sass/timeline.scss */
+  /* line 302, ../sass/timeline.scss */
   .timeline .sliderbox .item.active > .date {
     padding-top: 2.5px;
   }
-  /* line 304, ../sass/timeline.scss */
+  /* line 306, ../sass/timeline.scss */
   .timeline .sliderbox .item.active > .date > .date-item {
     font-size: 28px;
     line-height: 28px;
   }
-  /* line 309, ../sass/timeline.scss */
+  /* line 311, ../sass/timeline.scss */
   .timeline .sliderbox .item .description {
     margin: 0 70px 0 0;
     width: 357px;
   }
-  /* line 313, ../sass/timeline.scss */
+  /* line 315, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .dot {
     border: 2.1px solid #dbc8ae;
     height: 18.2px;
     width: 18.2px;
     margin: -10px 0 0 10.5px;
   }
-  /* line 320, ../sass/timeline.scss */
+  /* line 322, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .dot + p {
     padding-top: 28px;
     padding-bottom: 14px;
   }
-  /* line 325, ../sass/timeline.scss */
+  /* line 327, ../sass/timeline.scss */
   .timeline .sliderbox .item .description p {
     font-size: 12.6px;
     line-height: 21px;
     padding: 0 21px;
   }
-  /* line 331, ../sass/timeline.scss */
+  /* line 333, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .active {
     height: 87.5px;
     width: 87.5px;
   }
-  /* line 335, ../sass/timeline.scss */
+  /* line 337, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .active.fl {
     margin-left: -45.5px;
   }
-  /* line 339, ../sass/timeline.scss */
+  /* line 341, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .active.fr {
     margin-left: 311.5px;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 767px) {
-  /* line 347, ../sass/timeline.scss */
+  /* line 349, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .dot {
     height: 25px;
     width: 25px;
@@ -371,49 +373,49 @@
     margin: -10px 0 0 10.5px;
   }
 }
-/* line 358, ../sass/timeline.scss */
+/* line 360, ../sass/timeline.scss */
 .timeline .sliderbox .item:last-child .hr {
   width: 510px;
 }
 @media screen and (min-width: 1366px) and (max-width: 1599px) {
-  /* line 362, ../sass/timeline.scss */
+  /* line 364, ../sass/timeline.scss */
   .timeline .sliderbox .item:last-child .hr {
     width: 433.5px;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1365px) {
-  /* line 367, ../sass/timeline.scss */
+  /* line 369, ../sass/timeline.scss */
   .timeline .sliderbox .item:last-child .hr {
     width: 382.5px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  /* line 372, ../sass/timeline.scss */
+  /* line 374, ../sass/timeline.scss */
   .timeline .sliderbox .item:last-child .hr {
     width: 357px;
   }
 }
 
-/* line 383, ../sass/timeline.scss */
+/* line 385, ../sass/timeline.scss */
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
 
-/* line 388, ../sass/timeline.scss */
+/* line 390, ../sass/timeline.scss */
 ::-webkit-scrollbar-button {
   width: 0px;
   height: 0px;
 }
 
 @media screen and (max-width: 500px) {
-  /* line 393, ../sass/timeline.scss */
+  /* line 395, ../sass/timeline.scss */
   .timeline .sliderbox .item .description {
     width: 320px;
     position: relative;
     padding-bottom: 80px;
   }
-  /* line 397, ../sass/timeline.scss */
+  /* line 399, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .fl {
     left: 2px;
     top: 50%;
@@ -426,7 +428,7 @@
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  /* line 409, ../sass/timeline.scss */
+  /* line 411, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .fr {
     right: 2px;
     top: 50%;
@@ -439,11 +441,11 @@
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  /* line 421, ../sass/timeline.scss */
+  /* line 423, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .fl.active, .timeline .sliderbox .item .description .fr.active {
     opacity: .5;
   }
-  /* line 424, ../sass/timeline.scss */
+  /* line 426, ../sass/timeline.scss */
   .timeline .sliderbox .item .description .dot {
     height: 25px;
     width: 25px;

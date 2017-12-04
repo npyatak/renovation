@@ -22,7 +22,7 @@ $this->title = 'Москва без пятиэтажек';
     <?=$this->render('_top_block', ['class' => ' white']);?>
 
     <div class="container_inner">
-        <h1 class="purple_text"><span>Карта</span><?=$this->title;?></h1>
+        <h1 class="purple_text">Карта<span><?=$this->title;?></span></h1>
         <div class="top_text">
             <p>
                 <?=$page->text;?>

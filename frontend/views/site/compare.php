@@ -10,7 +10,7 @@ $this->title = 'Москва без пятиэтажек';
     <?=$this->render('_top_block');?>
     
 	<div class="container_inner">
-		<h1>Хрущёвка VS Новостройка: <span>10 отличий</span></h1>
+		<h1>Хрущевка VS Новостройка: <span>10 отличий</span></h1>
 	
 		<?php if($compares):?>
 		<div class="items_wrap">

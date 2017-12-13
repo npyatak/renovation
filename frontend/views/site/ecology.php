@@ -65,7 +65,7 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 				<?php endforeach;?>
 			</div>
 		    <ul class="pagination">
-		    <?php for ($i=1; $i <= count($models); $i++):?>
+		    <?php for ($i=1; $i <= 3; $i++):?>
 		    	<li <?=$page == $i ? 'class="active"' : '';?>><a href="<?=Url::toRoute(['site/ecology', 'page' => $i]);?>"><?=$i;?></a></li>
 		    <?php endfor;?>
 		    </ul>

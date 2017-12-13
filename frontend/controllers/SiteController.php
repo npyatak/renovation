@@ -123,18 +123,42 @@ class SiteController extends Controller
 
     public function actionLaw($page=1)
     {
-        $models = Page::find()->where(['like', 'url', 'law_'])->orderBy('id')->all();
+        $query = Page::find()->where(['like', 'url', 'law_'])->orderBy('id');
+
+        $countQuery = clone $query;
+        $pages = new \yii\data\Pagination([
+            'totalCount' => $countQuery->count(),
+            'pageSize' => 1,
+            'pageSizeParam' => false,
+        ]);
+        $models = $query->offset($pages->offset)
+            ->limit(1)
+            ->all();
+
         return $this->render('law', [
              'models' => $models,
+             'pages' => $pages,
              'page' => $page,
         ]);
     }
 
-    public function actionEcology($page=1) {
-        $models = Page::find()->where(['like', 'url', 'eco_'])->orderBy('id')->all();
+    public function actionEcology($page=1)
+    {
+        $query = Page::find()->where(['like', 'url', 'eco_'])->orderBy('id');
+
+        $countQuery = clone $query;
+        $pages = new \yii\data\Pagination([
+            'totalCount' => $countQuery->count(),
+            'pageSize' => 1,
+            'pageSizeParam' => false,
+        ]);
+        $models = $query->offset($pages->offset)
+            ->limit(1)
+            ->all();
 
         return $this->render('ecology', [
              'models' => $models,
+             'pages' => $pages,
              'page' => $page,
         ]);
     }

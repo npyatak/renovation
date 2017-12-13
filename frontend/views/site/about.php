@@ -21,6 +21,7 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 	<div class="law-header" style='background-image: url("../../images/<?=$model->url;?>.jpg")'>
 		<div class="container_inner">
 			<h1>Вокруг реновации: <br><br><?=$model->title;?></h1>
+			<p><?=$model->text_additional;?></p>
 			<div class="btn-wrap">
 				<span class="btn-down"><i class="fa fa-angle-down"></i></span>
 			</div>

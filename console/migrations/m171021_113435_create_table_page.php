@@ -17,6 +17,7 @@ class m171021_113435_create_table_page extends Migration
             'url' => $this->string(255)->notNull(),
             'title' => $this->string(255)->notNull(),
             'text' => $this->getDb()->getSchema()->createColumnSchemaBuilder('longtext'),
+            'text_additional' => $this->text(),
             'keywords' => $this->text(1000),
             'description' => $this->text(1000),
             'status' => $this->integer(1)->defaultValue(5),

@@ -36,9 +36,10 @@ class Page extends \yii\db\ActiveRecord {
     {
         return [
             [['url', 'title'], 'required'],
-            [['text', 'keywords', 'description'], 'string'],
+            [['keywords', 'description'], 'string'],
             [['created_at', 'updated_at', 'status', 'is_page'], 'integer'],
             [['url', 'title'], 'string', 'max' => 255],
+            [['text', 'text_additional'], 'safe'],
         ];
     }
 
@@ -63,6 +64,7 @@ class Page extends \yii\db\ActiveRecord {
             'created_at' => 'Дата/Время создания',
             'updated_at' => 'Время последнего изменения',
             'status' => 'Статус',
+            'text_additional' => 'Дополнительный текст',
         ];
     }
 

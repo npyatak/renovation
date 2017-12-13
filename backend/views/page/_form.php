@@ -34,6 +34,8 @@ use mihaildev\elfinder\ElFinder;
     ]);
     ?>
 
+    <?= $form->field($model, 'text_additional')->textarea();?>
+
     <?= $form->field($model, 'keywords')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'description')->textInput(['maxlength' => true]) ?>

@@ -48,6 +48,7 @@ return [
             'rules' => [
                 '' => 'site/index',
                 'rules.pdf' => 'site/rules-pdf',
+                '<page:social|infrastructure|ecology>' => 'site/about',
                 '<action:\w+>' => 'site/<action>',
                 'page/<url>'=>'site/page',
             ],

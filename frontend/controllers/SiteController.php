@@ -5,6 +5,7 @@ use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
+use yii\web\NotFoundHttpException;
 
 use common\models\Page;
 use common\models\House;
@@ -42,11 +43,6 @@ class SiteController extends Controller
         return $this->render('index', [
             'galleries' => $galleries,
         ]);
-    }
-
-    public function actionAbout()
-    {
-        return $this->render('about');
     }
 
     public function actionMap($type = null) {
@@ -136,30 +132,24 @@ class SiteController extends Controller
             ->all();
 
         return $this->render('law', [
-             'models' => $models,
-             'pages' => $pages,
-             'page' => $page,
+            'models' => $models,
+            'pages' => $pages,
+            'page' => $page,
         ]);
     }
 
-    public function actionEcology($page=1)
-    {
-        $query = Page::find()->where(['like', 'url', 'eco_'])->orderBy('id');
+    public function actionAbout($page = 'social') {
+        $items = [1 => 'social', 2 => 'infrastructure', 3 => 'ecology'];
+        $model = Page::find()->where(['url' => $page])->one();
 
-        $countQuery = clone $query;
-        $pages = new \yii\data\Pagination([
-            'totalCount' => $countQuery->count(),
-            'pageSize' => 1,
-            'pageSizeParam' => false,
-        ]);
-        $models = $query->offset($pages->offset)
-            ->limit(1)
-            ->all();
+        if($model === null) {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
 
-        return $this->render('ecology', [
-             'models' => $models,
-             'pages' => $pages,
-             'page' => $page,
+        return $this->render('about', [
+            'model' => $model,
+            'items' => $items,
+            'page' => $page,
         ]);
     }
 

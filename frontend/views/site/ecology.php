@@ -9,7 +9,7 @@ $imageUrl = Url::toRoute([Yii::$app->params['shareImage']], true);
 $title = Yii::$app->params['shareTitle'];
 $desc = Yii::$app->params['shareText'];
 
-$this->title = 'Экология';
+$this->title = 'Вокруг реновации';
 
 $this->registerJsFile(Url::toRoute('js/law.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 //$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);

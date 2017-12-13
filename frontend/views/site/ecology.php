@@ -9,7 +9,7 @@ $imageUrl = Url::toRoute([Yii::$app->params['shareImage']], true);
 $title = Yii::$app->params['shareTitle'];
 $desc = Yii::$app->params['shareText'];
 
-$this->title = 'Вокруг реновации';
+$this->title = $models[0]->title;
 
 $this->registerJsFile(Url::toRoute('js/law.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 //$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
@@ -18,7 +18,7 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 
 <div class="law">
 	<?=$this->render('_top_block', ['class' => ' white']);?>
-	<div class="law-header">
+	<div class="law-header" style='background-image: url("../../images/eco_<?=$page;?>.jpg")'>
 		<div class="container_inner">
 			<h1><?=$this->title;?></h1>
 			<div class="btn-wrap">

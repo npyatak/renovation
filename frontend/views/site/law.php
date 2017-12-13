@@ -77,10 +77,11 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 					<?=$model->text;?>
 				<?php endforeach;?>
 			</div>
-			<?=LinkPager::widget([
-				'pagination' => $pages,
-			]);
-			?>
+		    <ul class="pagination">
+		    <?php for ($i=1; $i <= count($models); $i++):?>
+		    	<li <?=$page == $i ? 'class="active"' : '';?>><a href="<?=Url::toRoute(['site/law', 'page' => $i]);?>"><?=$i;?></a></li>
+		    <?php endfor;?>
+		    </ul>
 		</div>
 	</div>
 </div>

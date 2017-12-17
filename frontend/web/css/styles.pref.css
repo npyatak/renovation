@@ -1078,6 +1078,10 @@
         margin: -95px 0 0 0;
     }
 
+    .np-section_4_new .np-section_2__image-outer {
+        margin: 0;
+    }
+
     .np-section_2_image-description{
         float: inherit;
         width: 100%;
@@ -1178,6 +1182,10 @@
 
     .np-section_2 .np-wrap {
         padding: 40px 0 0px;
+    }
+
+    .np-section_4_new .np-wrap {
+        padding-bottom: 50px !important;
     }
 
     .np-section h2 {
@@ -1291,4 +1299,16 @@
     }
 
 
+}
+
+.np-section_4_new {
+    background: url('../images/ifrastructure_main.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.np-section_4_new .np-section_2__image-outer {
+    position: static;
+}
+.np-section_4_new .np-wrap {
+    padding-bottom: 150px;
 }

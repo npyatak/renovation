@@ -109,6 +109,20 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 		<a href="" class="np-section__scroll"></a>
 	</div>
 </div>
+<div class="np-section np-section_2 np-section_4_new">
+	<div class="np-wrap np-wrap_flex">
+		<h2 class="np-section__el wow">Вокруг реновации:</h2>
+		<div class="np-section_2__image-outer np-section__el">
+			<p class="np-section_2_image-description">
+				<a href="<?=Url::toRoute(['site/social']);?>">Социальные обязательства</a>
+				<br>
+				<a href="<?=Url::toRoute(['site/infrastructure']);?>">Инфраструктура</a>
+				<br>
+				<a href="<?=Url::toRoute(['site/ecology']);?>">Экология</a>
+			</p>
+		</div>
+	</div>
+</div>
 <div class="np-section np-section_4 np-section_4_0">
 	<div class="np-wrap np-wrap_flex">
 		<h2 class="np-section__el wow">Реновация в датах</h2>

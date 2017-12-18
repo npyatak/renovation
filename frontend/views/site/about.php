@@ -56,7 +56,7 @@ $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 	<div class="law-content">
 		<div class="container_inner">
 			<ul class="urls">
-				<li><?=Html::a('Социальные обязательства', Url::toRoute(['site/about' => $items[1]]));?></li>
+				<li><?=Html::a('Социальные обязательства', Url::toRoute(['site/about', 'page' => $items[1]]));?></li>
 				<li><?=Html::a('Инфраструктура', Url::toRoute(['site/about', 'page' => $items[2]]));?></li>
 				<li><?=Html::a('Экология', Url::toRoute(['site/about', 'page' => $items[3]]));?></li>
 			</ul>

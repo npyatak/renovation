@@ -54,6 +54,7 @@ AppAsset::register($this);
                         ['label' => 'Герои', 'url' => 'http://pyatiehtazhki.tass.ru/?_ga=2.127206541.1082805625.1511712625-56336648.1505299740'],
                         ['label' => 'История вопроса', 'action' => 'history'],
                         ['label' => 'Хрущевки VS новые дома', 'action' => 'compare'],
+                        ['label' => 'Вокруг реновации', 'action' => 'social'],
                     ];
                     foreach ($menuItems as $item):?>
                         <li>

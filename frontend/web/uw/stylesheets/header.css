@@ -48,18 +48,19 @@
     display: none;
     padding-left: 0px;
     background: white;
+    overflow-y: auto;
   }
-  /* line 37, ../sass/header.scss */
+  /* line 38, ../sass/header.scss */
   .header ul.show {
     display: block;
   }
 }
-/* line 41, ../sass/header.scss */
+/* line 42, ../sass/header.scss */
 .header ul li {
   line-height: 66px;
 }
 @media screen and (max-width: 999px) {
-  /* line 41, ../sass/header.scss */
+  /* line 42, ../sass/header.scss */
   .header ul li {
     line-height: 60px;
     display: block;
@@ -67,18 +68,18 @@
     text-align: center;
   }
 }
-/* line 50, ../sass/header.scss */
+/* line 51, ../sass/header.scss */
 .header ul a {
   font-family: "Proxima Nova Light", sans-serif;
   color: #010211;
   font-size: 15px;
   font-weight: 300;
 }
-/* line 55, ../sass/header.scss */
+/* line 56, ../sass/header.scss */
 .header ul a.active, .header ul a:hover {
   color: #098fbd;
 }
-/* line 60, ../sass/header.scss */
+/* line 61, ../sass/header.scss */
 .header .map_link {
   display: none;
   position: relative;
@@ -86,23 +87,23 @@
   text-align: center;
   width: 60px;
   margin: 0 auto;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   color: #010211;
   font-size: 15px;
   font-weight: 300;
   text-decoration: none;
 }
-/* line 72, ../sass/header.scss */
+/* line 73, ../sass/header.scss */
 .header .map_link.active, .header .map_link:hover {
   color: #003878;
 }
 @media screen and (max-width: 999px) {
-  /* line 60, ../sass/header.scss */
+  /* line 61, ../sass/header.scss */
   .header .map_link {
     display: block;
   }
 }
-/* line 79, ../sass/header.scss */
+/* line 80, ../sass/header.scss */
 .header .menu-btn {
   display: none;
   position: absolute;
@@ -110,20 +111,20 @@
   top: 21px;
 }
 @media screen and (max-width: 999px) {
-  /* line 79, ../sass/header.scss */
+  /* line 80, ../sass/header.scss */
   .header .menu-btn {
     display: block;
   }
 }
-/* line 87, ../sass/header.scss */
+/* line 88, ../sass/header.scss */
 .header .menu-btn .open-menu-btn {
   display: none;
 }
-/* line 89, ../sass/header.scss */
+/* line 90, ../sass/header.scss */
 .header .menu-btn .open-menu-btn.show {
   display: block;
 }
-/* line 92, ../sass/header.scss */
+/* line 93, ../sass/header.scss */
 .header .menu-btn .open-menu-btn span {
   display: block;
   width: 30px;
@@ -131,7 +132,7 @@
   margin-bottom: 7px;
   background-color: #2e3346;
 }
-/* line 100, ../sass/header.scss */
+/* line 101, ../sass/header.scss */
 .header .menu-btn .close-menu__btn {
   position: relative;
   display: none;
@@ -142,11 +143,11 @@
   right: 2px;
   top: -2px;
 }
-/* line 109, ../sass/header.scss */
+/* line 110, ../sass/header.scss */
 .header .menu-btn .close-menu__btn.show {
   display: inline-block;
 }
-/* line 112, ../sass/header.scss */
+/* line 113, ../sass/header.scss */
 .header .menu-btn .close-menu__btn span {
   display: block;
   position: absolute;
@@ -166,7 +167,7 @@
   -o-transition: .3s ease-in .3s;
   transition: .3s ease-in .3s;
 }
-/* line 134, ../sass/header.scss */
+/* line 135, ../sass/header.scss */
 .header .menu-btn .close-menu__btn.show span:first-child {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
   -moz-transform: translate(-50%, -50%) rotate(45deg);
@@ -174,7 +175,7 @@
   -o-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
 }
-/* line 141, ../sass/header.scss */
+/* line 142, ../sass/header.scss */
 .header .menu-btn .close-menu__btn.show span:last-child {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   -moz-transform: translate(-50%, -50%) rotate(-45deg);
@@ -184,25 +185,35 @@
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 154, ../sass/header.scss */
+  /* line 155, ../sass/header.scss */
   .header .container_inner {
     width: calc(100% - 170px);
     max-width: 850px;
   }
-  /* line 157, ../sass/header.scss */
+  /* line 158, ../sass/header.scss */
   .header .container_inner ul {
     padding-left: 0;
   }
 }
 @media screen and (max-width: 999px) {
-  /* line 163, ../sass/header.scss */
+  /* line 164, ../sass/header.scss */
   .header .container_inner {
     width: 100%;
     max-width: inherit;
   }
 
-  /* line 167, ../sass/header.scss */
+  /* line 168, ../sass/header.scss */
   .logo_tass {
     display: none;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 173, ../sass/header.scss */
+  .header ul a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    line-height: normal;
+    text-align: center;
   }
 }

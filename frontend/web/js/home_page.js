@@ -25,7 +25,7 @@ var scrollButton3 = document.querySelector(".np-section_3 .np-section__scroll");
 if(scrollButton3 !== null){
     scrollButton3.onclick = function(e){
         e.preventDefault();
-        $('html, body').stop().animate({ scrollTop: $('.np-section_4_0').offset().top }, 500);
+        $('html, body').stop().animate({ scrollTop: $('.np-section_4_new').offset().top }, 500);
     }.bind(this);
 }
 

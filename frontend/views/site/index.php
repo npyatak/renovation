@@ -16,7 +16,8 @@ $this->registerMetaTag(['property' => 'og:description', 'content' => $desc], 'og
 $this->registerMetaTag(['property' => 'og:title', 'content' => $title], 'og:title');
 $this->registerMetaTag(['property' => 'og:image', 'content' => $imageUrl], 'og:image');
 $this->registerMetaTag(['property' => 'og:url', 'content' => $url], 'og:url');
-$this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:type'); 
+$this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:type');
+
 ?>
 
 <ul class="np-social">
@@ -96,7 +97,6 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 	<div class="np-wrap np-wrap_flex">
 		<div class="np-section_3__image">
 			<div class="np-bg-image">
-				<a href="<?=Url::toRoute(['site/history', 'page' => 2, '#' => 'theEnd']);?>" class="np-button np-button_play">Смотреть <span></span></a>
 				<img src="images/2-2.jpg" alt="">
 			</div>
 		</div>
@@ -104,6 +104,7 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 			<div class="np-text-content">
 				<div class="np-text-content__title">Видеогалерея</div>
 				<p>Чудовищный кризис на рынке жилья – только одна из проблем, с которыми столкнулся Советский Союз после окончания Великой Отечественной.</p>
+				<a href="<?=Url::toRoute(['site/history']);?>" class="np-button np-button_white">Читать</a>
 			</div>
 		</div>
 		<a href="" class="np-section__scroll"></a>

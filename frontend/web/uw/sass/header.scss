@@ -34,6 +34,7 @@
 			display: none;
 			padding-left: 0px;
 			background:white;
+			overflow-y: auto;
 			&.show {
 				display: block;
 			}
@@ -64,7 +65,7 @@
 	    text-align: center;
 	    width: 60px;
 	    margin: 0 auto;
-	    font-family: "Proxima Nova";
+	    font-family: "Proxima Nova", sans-serif;
 		color: #010211;
 		font-size: 15px;
 		font-weight: 300;
@@ -166,5 +167,14 @@
 	}
 	.logo_tass {
 		display: none;
+	}
+}
+@media (min-width:1000px) {
+	.header ul a {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100px;
+		line-height: normal;
+		text-align: center;
 	}
 }

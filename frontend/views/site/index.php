@@ -107,7 +107,7 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 				<a href="<?=Url::toRoute(['site/history']);?>" class="np-button np-button_white">Читать</a>
 			</div>
 		</div>
-		<a href="" class="np-section__scroll"></a>
+		<a href="" class="np-section__scroll"></a> 
 	</div>
 </div>
 <div class="np-section np-section_2 np-section_4_new">

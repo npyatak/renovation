@@ -102,7 +102,6 @@ $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:ty
 		</div>
 		<div class="np-section_3__wrap">
 			<div class="np-text-content">
-				<div class="np-text-content__title">Видеогалерея</div>
 				<p>Чудовищный кризис на рынке жилья – только одна из проблем, с которыми столкнулся Советский Союз после окончания Великой Отечественной.</p>
 				<a href="<?=Url::toRoute(['site/history']);?>" class="np-button np-button_white">Читать</a>
 			</div>

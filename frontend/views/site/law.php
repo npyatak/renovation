@@ -13,7 +13,6 @@ $desc = 'Все о проекте реновации в одном спецпр�
 $this->title = 'Москва без пятиэтажек';
 
 $this->registerJsFile(Url::toRoute('js/law.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
-//$this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile(Url::toRoute('uw/stylesheets/law.css'));
 ?>
 

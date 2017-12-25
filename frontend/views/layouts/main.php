@@ -17,6 +17,7 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <?php $this->registerJsFile(Url::toRoute('js/player_setup_footer.js'), ['depends' => [\yii\web\JqueryAsset::className()]]); ?>
 
     <?php if($_SERVER['HTTP_HOST'] !== 'renovation.local'):?>
     <!-- Google Tag Manager -->
@@ -89,7 +90,7 @@ AppAsset::register($this);
         <?php endif;?>
 
         <?php if(!in_array(Yii::$app->controller->action->id, ['index'])):?>
-<!--        <div id="footer-video"></div>-->
+        <div id="footer-video"></div>
         <?php endif;?>
 
         <div class="footer">

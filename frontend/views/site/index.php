@@ -18,6 +18,7 @@ $this->registerMetaTag(['property' => 'og:image', 'content' => $imageUrl], 'og:i
 $this->registerMetaTag(['property' => 'og:url', 'content' => $url], 'og:url');
 $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:type');
 
+
 ?>
 
 <ul class="np-social">

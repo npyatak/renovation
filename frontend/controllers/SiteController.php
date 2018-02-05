@@ -154,8 +154,8 @@ class SiteController extends Controller
     }
 
     public function actionLawFile() {
-        $completePath = __DIR__.'/../web/files/Федеральный_закон_от_1_июля_2017_года_№_141-ФЗ.pdf';
-        $filename = 'Федеральный_закон_от_1_июля_2017_года_№_141-ФЗ.pdf';
+        $completePath = __DIR__.'/../web/files/federalniy_zakon_141_fz.pdf';
+        $filename = 'federalniy_zakon_141_fz.pdf';
         return Yii::$app->response->sendFile($completePath, $filename, ['inline'=>true]);
     }
 
